@@ -24,7 +24,7 @@ function repeat(fn, num) {
 
 // do not edit below this line
 
-console.log(repeat($operation, 5))
+repeat($operation, 5)
 
 ```
 
