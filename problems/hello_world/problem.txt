@@ -1,0 +1,3 @@
+Write a program that takes a String $input and prints it in uppercase to the console.
+
+{appname} verify myprogram.js

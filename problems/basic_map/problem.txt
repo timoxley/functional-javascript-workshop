@@ -1,0 +1,17 @@
+Convert the following code from a for-loop to Array#map.
+
+The variable $input will be injected into your program.
+$input will be an Array of 1 to 20 Integers between 0 and 9
+Make sure to console.log your result.
+
+```js
+
+var result = []
+for (var i = 0; i < $input.length; i++) {
+  result.push($input[i] * 2)
+}
+
+console.log(result)
+
+```
+

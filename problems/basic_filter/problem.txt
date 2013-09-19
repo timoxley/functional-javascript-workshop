@@ -1,0 +1,50 @@
+Use Array#filter to write a function called `getShortMessages`.
+
+`getShortMessages` takes an array of objects with '.message' properties
+and prints any messages that are *less than < 50 characters long*.
+
+
+$input will be an Array of 10 to 100 random objects that look something like this:
+
+```js
+
+{
+  message: 'Esse id amet quis eu esse aute officia ipsum.' // random
+}
+
+```
+
+The console output should be of an array containing the messages themselves
+(i.e. messages *not in their containing object*).
+
+e.g.
+
+```
+
+[ 'Tempor quis esse consequat sunt ea eiusmod.',
+  'Id culpa ad proident ad nulla laborum incididunt.',
+  'Ullamco in ea et ad anim anim ullamco est.',
+  'Est ut irure irure nisi.' ]
+
+```
+
+Do not use for loops or Array#forEach.
+
+Resources:
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
+#################
+## Boilerplate ##
+#################
+
+```js
+
+function getShortMessages(arr) {
+  // SOLUTION GOES HERE
+}
+
+// do not edit below this line
+
+console.log(getShortMessages($input))
+
+```

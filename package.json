@@ -1,0 +1,17 @@
+{
+  "name": "functional-javascript-workshop",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "functional-javascript": "functional-javascript.js"
+  },
+  "scripts": {
+  },
+  "author": "Tim Oxley",
+  "license": "MIT",
+  "dependencies": {
+    "workshopper": "~0.1.4",
+    "lorem-ipsum": "~0.1.1"
+  }
+}

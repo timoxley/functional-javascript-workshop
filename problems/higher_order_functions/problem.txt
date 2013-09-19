@@ -1,0 +1,30 @@
+A higher-order function (also functional form, functional or functor) is a function that does at least one of the following:
+* take one or more functions as an input
+* output a function
+
+All other functions are first order functions. [1]
+
+Implement a higher-order function that takes a function and calls it 'n' times.
+
+It's ok to use a loop in your implementation, bonus points
+if you don't.
+
+Resources:
+* https://en.wikipedia.org/wiki/Higher-order_function
+
+#################
+## Boilerplate ##
+#################
+
+```js
+
+function repeat(fn, num) {
+  // SOLUTION GOES HERE
+}
+
+// do not edit below this line
+
+console.log(repeat($operation, 5))
+
+```
+

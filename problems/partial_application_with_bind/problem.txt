@@ -1,0 +1,32 @@
+Partial application (or partial function application) refers to the process of
+fixing a number of arguments to a function, producing another function of smaller arity.
+
+Use Function#bind to implement a logging function that allows you to namespace messages.
+
+Make sure *all* arguments passed to the returned logging function are printed.
+
+Hint: console.log and Function#apply
+
+Print the output to the console directly.
+
+Resources:
+
+* https://en.wikipedia.org/wiki/Partial_application
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+
+#################
+## Boilerplate ##
+#################
+
+```
+function logger() {
+  // SOLUTION GOES HERE
+}
+
+
+// do not edit below this line
+
+$test(logger)
+
+```
+

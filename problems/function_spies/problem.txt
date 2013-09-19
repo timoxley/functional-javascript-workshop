@@ -1,0 +1,30 @@
+Overide a method with new functionality while still maintaining all of the old
+behaviour.
+
+Create a spy that keeps track of how many times a function is is called.
+
+e.g.
+
+
+```js
+var spy = Spy(console, 'error')
+
+console.error('calling console.error')
+console.error('calling console.error')
+console.error('calling console.error')
+
+console.log(spy.count) // 3
+
+```
+Use this boilerplate:
+
+```
+function Spy(object, methodName) {
+  // SOLUTION GOES HERE
+}
+
+// do not edit below this line
+
+$test(Spy)
+
+```
