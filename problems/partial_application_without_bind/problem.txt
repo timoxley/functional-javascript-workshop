@@ -18,7 +18,7 @@ info('this is an info message')
 // INFO: this is an info message
 
 var warn = logger('WARN:')
-info('this is a warning message', 'with more info')
+warn('this is a warning message', 'with more info')
 // WARN: this is a warning message with more info
 
 ```
