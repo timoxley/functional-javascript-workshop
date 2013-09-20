@@ -30,8 +30,12 @@ e.g.
 
 Do not use for loops or Array#forEach.
 
+Hint: try chaining some array methods!
+
 Resources:
+
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
 #################
 ## Boilerplate ##

@@ -7,4 +7,5 @@ function getShortMessages(arr) {
 }
 
 // do not edit below this line
+
 console.log(getShortMessages($input))
