@@ -1,17 +1,39 @@
-Use Array#reduce to implement a function that takes an
-Array and a Function, and applies the function to each
-item in the Array.
+Array#reduce
 
-i.e. Use Array#reduce to implement Array#map.
+Task: Given an Array of strings, use Array#reduce to create an object that
+contains the number of times each string occured in the array.
+
+Example:
+
+```js
+
+var $input = ['Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian']
+
+console.log(countStrings($input))
+
+// =>
+// {
+//   Apple: 2,
+//   Banana: 1,
+//   Durian: 3
+// }
+
+```
 
 Injected Variables:
 
-* $input will be some arbitrary Array.
-* $operation will be some arbitrary Function.
+* $input will be a Array of random Strings.
+
+Conditions:
+
+* Do not use any for/while loops.
+* You do not need to define any additional functions
+ unless a stub is provided in the boilerplate.
 
 Resources:
+
 * https://en.wikipedia.org/wiki/Reduce_(higher-order_function)
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 
 #################
 ## Boilerplate ##
@@ -19,13 +41,12 @@ Resources:
 
 ```js
 
-function map(arr, fn) {
+function countStrings(arr) {
   // SOLUTION GOES HERE
 }
 
 // do not edit below this line
 
-console.log(map($input, $operation))
+console.log(countStrings($input))
 
 ```
-

@@ -1,18 +1,10 @@
 "use strict"
 
 var input = require('../../input')
+var lorem = require('lorem-ipsum')
 
-function randomInts(min, max) {
-  return Math.floor(Math.random() * max + min)
-}
-
-module.exports = input(new Array(randomInts(0, 19))
-.join(',')
-.split(',')
-.map(function() {
-  return randomInts(0, 9)
-}), function() {
-  global.$operation = function(item, index, arr) {
-    return item * 3
-  }
-})
+module.exports = input(lorem({count: 1, units:'paragraphs'})
+                       .replace(/([^\w ])/g, '')// remove non-words and spaces
+                       .toLowerCase() // lowercase I guess
+                       .split(' ') // create array of words
+                      )
