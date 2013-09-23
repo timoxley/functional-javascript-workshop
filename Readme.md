@@ -2,7 +2,9 @@
 
 Teaching basics of functional programming in Javascript. No libraries like underscore required, just ES5.
 
-**Work in Progress.** New lessons will be added weekly.
+**Work in Progress.** New lessons will be added weekly and tested upon participants of the [SingaporeJS meetup group](http://www.meetup.com/Singapore-JS/).
+
+Feedback/suggestions welcome.
 
 ## Installation
 
