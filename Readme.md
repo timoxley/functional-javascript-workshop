@@ -1,5 +1,8 @@
 # Functional Javascript Workshop
 
+Teaching basics of functional programming in Javascript. No libraries like underscore required, just ES5.
+
+Built using rvagg's [workshopper](https://github.com/rvagg/workshopper) framework.
 
 ## Installation
 
@@ -9,6 +12,7 @@ npm install -g functional-javascript-workshop
 ## Usage
 
 > functional-javascript
+
 
 ## Screenshots
 
