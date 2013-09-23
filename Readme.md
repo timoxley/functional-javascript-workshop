@@ -2,7 +2,7 @@
 
 Teaching basics of functional programming in Javascript. No libraries like underscore required, just ES5.
 
-
+**Work in Progress.** New lessons will be added weekly.
 
 ## Installation
 
