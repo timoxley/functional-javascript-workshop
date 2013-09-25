@@ -1,1 +1,3 @@
-console.log($input.toUpperCase())
+module.exports = function(input) {
+  return input.toUpperCase()
+}

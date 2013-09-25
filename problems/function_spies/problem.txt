@@ -1,10 +1,11 @@
-Overide a method with new functionality while still maintaining all of the old
+Overide a specified method of an object with new functionality while still maintaining all of the old
 behaviour.
 
 Create a spy that keeps track of how many times a function is is called.
 
-e.g.
-
+#############
+## Example ##
+#############
 
 ```js
 var spy = Spy(console, 'error')
@@ -16,15 +17,28 @@ console.error('calling console.error')
 console.log(spy.count) // 3
 
 ```
-Use this boilerplate:
 
-```
-function Spy(object, methodName) {
+Arguments:
+
+* target: an object containing the method `method`
+* method: a string the name of the method on `target`.
+
+Conditions:
+
+* Do not use any for/while loops.
+* You do not need to define any additional functions
+ unless a stub is provided in the boilerplate.
+
+#################
+## Boilerplate ##
+#################
+
+```js
+
+function Spy(target, method) {
   // SOLUTION GOES HERE
 }
 
-// do not edit below this line
-
-$test(Spy)
+module.exports = Spy
 
 ```

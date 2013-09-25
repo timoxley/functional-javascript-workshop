@@ -1,12 +1,18 @@
 Implement a logging function that allows you to prepend a namespace to messages.
 
-Do not use Function#bind.
-
-Print output to the console directly.
-
 Make sure *all* arguments passed to the returned logging function are printed.
 
+** Print the output to the console directly **
+
+Arguments:
+
+* namespace: a String to prepend to each message passed to the returned function.
+
 Hint: console.log and Function#apply
+
+Resources:
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
 
 #############
 ## Example ##
@@ -23,22 +29,19 @@ warn('this is a warning message', 'with more info')
 
 ```
 
-Documentation for Function#apply:
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
-
 #################
 ## Boilerplate ##
 #################
 
 ```js
 
-function logger() {
+var slice = Array.prototype.slice
+
+function logger(namespace) {
   // SOLUTION GOES HERE
 }
 
-// do not edit below this line
-
-$test(logger)
+module.exports = logger
 
 ```
 

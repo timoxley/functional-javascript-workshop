@@ -1,15 +1,18 @@
 Array#reduce
 
 Task: Given an Array of strings, use Array#reduce to create an object that
-contains the number of times each string occured in the array.
+contains the number of times each string occured in the array. Return the
+object directly (no need to console.log).
 
-Example:
+#############
+## Example ##
+#############
 
 ```js
 
-var $input = ['Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian']
+var inputWords = ['Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian']
 
-console.log(countStrings($input))
+console.log(countWords(inputWords))
 
 // =>
 // {
@@ -20,9 +23,9 @@ console.log(countStrings($input))
 
 ```
 
-Injected Variables:
+Arguments:
 
-* $input will be a Array of random Strings.
+* inputWords: An array of random Strings.
 
 Conditions:
 
@@ -41,12 +44,13 @@ Resources:
 
 ```js
 
-function countStrings(arr) {
-  // SOLUTION GOES HERE
+function countWords(inputWords) {
+  return inputWords.reduce(function(prev, curr) {
+    prev[curr] = ++prev[curr] || 1
+    return prev
+  }, {})
 }
 
-// do not edit below this line
-
-console.log(countStrings($input))
+module.exports = countWords
 
 ```

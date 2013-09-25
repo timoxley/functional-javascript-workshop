@@ -3,8 +3,9 @@ Use Array#filter to write a function called `getShortMessages`.
 `getShortMessages` takes an array of objects with '.message' properties
 and prints any messages that are *less than < 50 characters long*.
 
+Arguments:
 
-$input will be an Array of 10 to 100 random objects that look something like this:
+* messages: an Array of 10 to 100 random objects that look something like this:
 
 ```js
 
@@ -14,8 +15,15 @@ $input will be an Array of 10 to 100 random objects that look something like thi
 
 ```
 
-The console output should be of an array containing the messages themselves
-(i.e. messages *not in their containing object*).
+Conditions:
+
+* Do not use for loops or Array#forEach.
+
+Hint: Try chaining some Array methods!
+
+Expected Output:
+
+The output should be an array containing the messages themselves, without their containing object.
 
 e.g.
 
@@ -28,10 +36,6 @@ e.g.
 
 ```
 
-Do not use for loops or Array#forEach.
-
-Hint: try chaining some array methods!
-
 Resources:
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
@@ -43,12 +47,8 @@ Resources:
 
 ```js
 
-function getShortMessages(arr) {
+module.exports = function getShortMessages(messages) {
   // SOLUTION GOES HERE
 }
-
-// do not edit below this line
-
-console.log(getShortMessages($input))
 
 ```

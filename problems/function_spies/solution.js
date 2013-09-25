@@ -12,4 +12,4 @@ function Spy(target, method) {
   return result
 }
 
-$test(Spy)
+module.exports = Spy

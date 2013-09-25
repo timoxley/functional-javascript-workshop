@@ -4,12 +4,13 @@ item in the Array.
 
 i.e. Use Array#reduce to implement Array#map.
 
-Injected Variables:
+Arguments:
 
-* $input will be some arbitrary Array.
-* $operation will be some arbitrary Function.
+* input: an arbitrary Array of any type.
+* operation: an arbitrary Function which can be applied to items in `input`.
 
 Resources:
+
 * https://en.wikipedia.org/wiki/Reduce_(higher-order_function)
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
 
@@ -19,13 +20,9 @@ Resources:
 
 ```js
 
-function map(arr, fn) {
+module.exports = function arrayMap(arr, fn) {
   // SOLUTION GOES HERE
 }
-
-// do not edit below this line
-
-console.log(map($input, $operation))
 
 ```
 

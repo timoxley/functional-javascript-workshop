@@ -1,7 +1,7 @@
-function repeat(fn, num) {
-  // A for loop here would also be totally acceptable!
-  Array.apply(null, new Array(num)).forEach(fn)
+function repeat(operation, num) {
+  if (num <= 0) return
+  operation()
+  return repeat(operation, --num)
 }
 
-// do not edit below this line
-repeat($operation, 5)
+module.exports = repeat

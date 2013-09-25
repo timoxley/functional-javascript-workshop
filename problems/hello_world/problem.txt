@@ -1,3 +1,17 @@
-Write a program that takes a String $input and prints it in uppercase to the console.
+Write a function that takes an input string and returns it uppercased.
 
-{appname} verify myprogram.js
+Arguments:
+
+* input: a String of random words (lorem ipsum).
+
+#################
+## Boilerplate ##
+#################
+
+```js
+
+module.exports = function(input) {
+  // SOLUTION GOES HERE
+}
+
+```

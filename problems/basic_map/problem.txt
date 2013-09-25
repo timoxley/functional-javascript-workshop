@@ -1,16 +1,43 @@
-Convert the following code from a for-loop to Array#map.
-
-The variable $input will be injected into your program.
-$input will be an Array of 1 to 20 Integers between 0 and 9
-Make sure to console.log your result.
+Convert the following code from a for-loop to Array#map:
 
 ```js
 
-var result = []
-for (var i = 0; i < $input.length; i++) {
-  result.push($input[i] * 2)
+function doubleAll(numbers) {
+  var result = []
+  for (var i = 0; i < input.length; i++) {
+    result.push(input[i] * 2)
+  }
+  return result
 }
 
-console.log(result)
+module.exports = doubleAll
+
+```
+
+Arguments:
+
+* numbers: An Array of 1 to 20 Integers between 0 and 9
+
+Conditions:
+
+* Do not use any for/while loops.
+* You do not need to define any additional functions
+ unless a stub is provided in the boilerplate.
+
+Resources:
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+#################
+## Boilerplate ##
+#################
+
+```js
+
+function doubleAll(numbers) {
+  // SOLUTION GOES HERE
+}
+
+module.exports = doubleAll
 
 ```
