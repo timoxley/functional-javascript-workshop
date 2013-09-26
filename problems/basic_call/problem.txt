@@ -44,11 +44,29 @@ But what if an object doesn't inherit from Object.prototype?
 
 // create an object with 'null' prototype.
 var object = Object.create(null)
+object.quack = function() {
+  console.log('quack')
+}
 
 Object.getPrototypeOf(object) === Object.prototype // => false
 Object.getPrototypeOf(object) === null             // => true
 
-object.hasOwnProperty('quack') // => TypeError: Object object has no method 'hasOwnProperty'
+object.hasOwnProperty('quack')
+// => TypeError: Object object has no method 'hasOwnProperty'
+
+```
+
+We can still use `hasOwnProperty` from the `Object.prototype` though,
+if we call it with the `this` value set to something that 'looks like
+and object'. Function#call allows us to invoke any function with
+an altered `this` value.
+
+```js
+
+// the first argument to call becomes the value of `this`
+// the rest of the arguments are passed the function as per
+
+Object.prototype.hasOwnProperty.call(object, 'quack') // => true
 
 ```
 
@@ -67,12 +85,23 @@ Conditions:
 
 * Do not use any for/while loops.
 * Do not create any counter/accumulator variables.
-* You do not need to define any additional functions
+* You do not *need* to define any additional name functions
   unless a stub is provided in the boilerplate.
 
-Hints:
+Hint:
 
-* The arguments variable quacks like an Array.
+* The arguments variable, available in every function,
+  is an object that quacks like an Array:
+
+```js
+
+{
+  0: 'argument0',
+  1: 'argument1', // etc
+  length: 2
+}
+
+```
 
 Resources:
 

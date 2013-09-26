@@ -45,10 +45,7 @@ Resources:
 ```js
 
 function countWords(inputWords) {
-  return inputWords.reduce(function(prev, curr) {
-    prev[curr] = ++prev[curr] || 1
-    return prev
-  }, {})
+  // SOLUTION GOES HERE
 }
 
 module.exports = countWords
