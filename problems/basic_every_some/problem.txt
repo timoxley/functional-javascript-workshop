@@ -1,7 +1,7 @@
 Task:
 
 Return a function that takes a list of valid users, and returns a function that returns true
-if all of the user.
+if all of the supplied users exist in the original list of users.
 
 #############
 ## Example ##
@@ -15,7 +15,8 @@ var goodUsers = [
   { id: 3 }
 ]
 
-var testAllValid = goodUsers(goodUsers)
+// `matchList` is the function you'll define
+var testAllValid = matchList(goodUsers)
 
 testAllValid([
   { id: 2 },
@@ -44,4 +45,14 @@ Resources:
 * https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/every
 * https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/some
 
-WIP. Come and ask me if this is confusing.
+#################
+## Boilerplate ##
+#################
+
+```js
+
+module.exports = function matchList(input) {
+  // SOLUTION GOES HERE
+}
+
+```
