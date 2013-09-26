@@ -9,5 +9,6 @@
   "Implement Map with Reduce",
   "Partial Application without Bind",
   "Partial Application with Bind",
-  "Function Spies"
+  "Function Spies",
+  "Async Loops"
 ]
