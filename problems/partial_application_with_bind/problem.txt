@@ -20,6 +20,7 @@ Resources:
 
 * https://en.wikipedia.org/wiki/Partial_application
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
 
 #############
 ## Example ##
