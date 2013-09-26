@@ -4,6 +4,7 @@
   "Basic: Map",
   "Basic: Filter",
   "Basic: Reduce",
+  "Basic: Call",
   "Implement Map with Reduce",
   "Partial Application without Bind",
   "Partial Application with Bind",
