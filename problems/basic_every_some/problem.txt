@@ -17,8 +17,8 @@ var goodUsers = [
   { id: 3 }
 ]
 
-// `matchList` is the function you'll define
-var testAllValid = matchList(goodUsers)
+// `checkUsersValid` is the function you'll define
+var testAllValid = checkUsersValid(goodUsers)
 
 testAllValid([
   { id: 2 },
@@ -37,7 +37,7 @@ testAllValid([
 
 Arguments:
 
-* users: a list of valid users
+* goodUsers: a list of valid users
 
 Use array#some and Array#every to check every user passed to your returned
 function exists in the array passed to the exported function.
@@ -53,7 +53,7 @@ Resources:
 
 ```js
 
-module.exports = function matchList(input) {
+module.exports = function checkUsersValid(goodUsers) {
   // SOLUTION GOES HERE
 }
 
