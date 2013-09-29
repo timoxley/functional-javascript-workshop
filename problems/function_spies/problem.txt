@@ -1,7 +1,7 @@
-Overide a specified method of an object with new functionality while still maintaining all of the old
+Override a specified method of an object with new functionality while still maintaining all of the old
 behaviour.
 
-Create a spy that keeps track of how many times a function is is called.
+Create a spy that keeps track of how many times a function is called.
 
 #############
 ## Example ##
@@ -21,7 +21,7 @@ console.log(spy.count) // 3
 Arguments:
 
 * target: an object containing the method `method`
-* method: a string the name of the method on `target`.
+* method: a string with the name of the method on `target` to spy on.
 
 Conditions:
 
