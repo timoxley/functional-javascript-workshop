@@ -1,7 +1,7 @@
 {
   "name": "functional-javascript-workshop",
   "version": "0.0.7",
-  "description": "",
+  "description": "The basics of functional programming in JavaScript. No libraries required.",
   "main": "index.js",
   "bin": {
     "functional-javascript": "functional-javascript.js",
@@ -9,6 +9,11 @@
   },
   "scripts": {
   },
+  "keywords": [
+    "workshopper",
+    "tutorial",
+    "lesson"
+  ],
   "author": "Tim Oxley",
   "license": "MIT",
   "dependencies": {
