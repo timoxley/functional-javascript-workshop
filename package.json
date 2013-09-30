@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "functional-javascript": "functional-javascript.js"
+    "functional-javascript": "functional-javascript.js",
+    "functional-javascript-workshop": "functional-javascript.js"
   },
   "scripts": {
   },
