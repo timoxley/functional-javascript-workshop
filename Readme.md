@@ -1,10 +1,13 @@
 # Functional Javascript Workshop
 
-Teaching basics of functional programming in Javascript. No libraries like underscore required, just ES5.
+Teaching basics of functional programming in Javascript. No libraries required (i.e. no underscore), just ES5.
+
+[![NPM](https://nodei.co/npm/functional-javascript-workshop.png?downloads=true&stars=true)](https://nodei.co/npm/functional-javascript-workshop/)
+[![NPM](https://nodei.co/npm-dl/functional-javascript-workshop.png?months=1)](https://nodei.co/npm-dl/functional-javascript-workshop/)
 
 **Work in Progress.** New lessons will be added weekly and tested upon participants of the [SingaporeJS meetup group](http://www.meetup.com/Singapore-JS/).
 
-Feedback/suggestions welcome.
+Feedback and Suggestions very welcome, please log them in [issues](https://github.com/timoxley/functional-javascript-workshop/issues).
 
 ## Installation & Update
 
