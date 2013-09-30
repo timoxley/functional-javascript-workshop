@@ -6,16 +6,19 @@ Teaching basics of functional programming in Javascript. No libraries like under
 
 Feedback/suggestions welcome.
 
-## Installation & update
+## Installation & Update
 
-npm install -g functional-javascript-workshop
+```
+$ npm install -g functional-javascript-workshop@latest
+```
 
-npm update -g functional-javascript-workshop
-
+**Note**: the workshop is being updated weekly. Please regularly rerun the above command to get the lastest set of exercises.
 
 ## Usage
 
-  > functional-javascript
+```
+$ functional-javascript
+```
 
 ## Screenshots
 
