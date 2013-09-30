@@ -15,7 +15,8 @@ Feedback and Suggestions very welcome, please log them in [issues](https://githu
 $ npm install -g functional-javascript-workshop@latest
 ```
 
-**Note**: the workshop is being updated weekly. Please regularly rerun the above command to get the lastest set of exercises.
+**Note**: the workshop is being updated weekly. 
+Please regularly rerun the above command to get the latest set of exercises.
 
 ## Usage
 
