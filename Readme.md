@@ -6,6 +6,9 @@ Teaching basics of functional programming in Javascript. No libraries required (
 
 Feedback and Suggestions very welcome, please log them in [issues](https://github.com/timoxley/functional-javascript-workshop/issues).
 
+[![NPM](https://nodei.co/npm/functional-javascript-workshop.png?downloads=true&stars=true)](https://nodei.co/npm/functional-javascript-workshop/)
+[![NPM](https://nodei.co/npm-dl/functional-javascript-workshop.png?months=1)](https://nodei.co/npm-dl/functional-javascript-workshop/)
+
 ## Installation & Update
 
 ```
@@ -33,7 +36,3 @@ This tutorial was built using rvagg's [workshopper](https://github.com/rvagg/wor
 ## Licence
 
 MIT
-
-
-[![NPM](https://nodei.co/npm/functional-javascript-workshop.png?downloads=true&stars=true)](https://nodei.co/npm/functional-javascript-workshop/)
-[![NPM](https://nodei.co/npm-dl/functional-javascript-workshop.png?months=1)](https://nodei.co/npm-dl/functional-javascript-workshop/)
