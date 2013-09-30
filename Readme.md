@@ -10,8 +10,6 @@ Feedback/suggestions welcome.
 
 npm install -g functional-javascript-workshop
 
-To update the workshop after installation
-
 npm update -g functional-javascript-workshop
 
 
