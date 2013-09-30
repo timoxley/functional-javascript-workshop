@@ -20,7 +20,7 @@ $ npm install -g functional-javascript-workshop@latest
 ## Usage
 
 ```
-$ functional-javascript
+$ functional-javascript-workshop
 ```
 
 ## Screenshots
