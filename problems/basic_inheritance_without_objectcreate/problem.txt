@@ -36,7 +36,11 @@ console.log('Hello ' + joe) // 'Hello [BetterUser joe (20)]'
 
 ```js
 module.exports = function(User) {
-  // YOUR SOLUTION HERE
+  // EDIT THESE AS NECESSARY
+  function BetterUser() {
+
+  }
+  return BetterUser
 }
 ```
 
