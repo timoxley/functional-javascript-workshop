@@ -1,0 +1,43 @@
+##########
+## Task ##
+##########
+
+Create an "BetterUser" that extends "User"  by simply overriding
+the User's toString method.
+
+You will be passed a "User" constructor that looks like this:
+
+```js
+
+function User(name, age) {
+  this.name = name
+  this.age = age
+  console.info('NEW USER: ' + this)
+}
+
+```
+
+#####################
+## Expected Output ##
+#####################
+
+An `BetterUser` constructor function that extends User with a custom `toString` method that works like so:
+
+var joe = new BetterUser('joe', 20) // pass in name and age
+console.log('Hello ' + joe) // 'Hello [BetterUser joe (20)]'
+
+#################
+## Boilerplate ##
+#################
+
+```js
+module.exports = function(User) {
+  // YOUR SOLUTION HERE
+}
+```
+
+################
+## Conditions ##
+################
+
+* Don't call the User constructor unnecessarily!

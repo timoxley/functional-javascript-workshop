@@ -6,9 +6,11 @@
   "Basic: Every Some",
   "Basic: Reduce",
   "Basic: Call",
+  "Basic: Inheritance",
   "Implement Map with Reduce",
   "Partial Application without Bind",
   "Partial Application with Bind",
   "Function Spies",
-  "Async Loops"
+  "Async Loops",
+  "Function Call"
 ]
