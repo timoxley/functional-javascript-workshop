@@ -28,7 +28,7 @@ function User(name, age) {
 An `BetterUser` constructor function that extends User with a custom `toString` method that works like so:
 
 var joe = new BetterUser('joe', 20) // pass in name and age
-console.log('Hello ' + joe) // 'Hello [BetterUser joe (20)]'
+console.log('Hello ' + joe) // 'Hello [BetterUser: joe (20)]'
 
 #################
 ## Boilerplate ##
