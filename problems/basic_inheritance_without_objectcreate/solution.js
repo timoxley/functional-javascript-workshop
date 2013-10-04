@@ -8,7 +8,7 @@ module.exports = function(User) {
   BetterUser.prototype = new C()
 
   BetterUser.prototype.toString = function() {
-    return '[BetterUser: '+this.name+' ('+ this.age +')]'
+    return '[BetterUser: '+this.displayName()+']'
   }
 
   return BetterUser
