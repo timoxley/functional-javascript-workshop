@@ -7,6 +7,10 @@ module.exports = input().wrap(function(input, submission) {
   var Lookup = submission.Lookup
   var Create = submission.Create
 
+  var animal = {
+    hungry: true
+  }
+
   var cat = {
     color: 'black'
   }
@@ -20,6 +24,7 @@ module.exports = input().wrap(function(input, submission) {
     color: 'grey'
   }
 
+  cat.__PROTO__ = animal
   kitten.__PROTO__ = cat
   otherKitten.__PROTO__ = cat
 
@@ -29,7 +34,10 @@ module.exports = input().wrap(function(input, submission) {
   console.log("Lookup(kitten, 'color')", Lookup(kitten, 'color'))
   console.log("Lookup(otherKitten, 'color')", Lookup(otherKitten, 'color'))
   console.log("Lookup(kitten, 'wings')", Lookup(kitten, 'wings'))
-
+  console.log("Lookup(cat, 'hungry')", Lookup(cat, 'hungry'))
+  console.log("Lookup(kitten, 'hungry')", Lookup(kitten, 'hungry'))
+  console.log()
+  console.log('Changing prototype property...')
 
   console.log("cat.color = 'blue'")
   cat.color = 'blue'
