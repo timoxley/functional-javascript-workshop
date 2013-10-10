@@ -6,6 +6,7 @@
   "Basic: Every Some",
   "Basic: Reduce",
   "Basic: Call",
+  "Prototypical Inheritance By Hand",
   "Basic: Inheritance with Object.create",
   "Basic: Inheritance without Object.create",
   "Implement Map with Reduce",
