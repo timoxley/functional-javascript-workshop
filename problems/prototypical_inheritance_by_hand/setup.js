@@ -109,4 +109,18 @@ module.exports = input().wrap(function(input, submission) {
   }
 
   console.log("New(Dog)", New(Dog))
+  console.log()
+  console.log('Ensuring we can access prototype properties in the constructor...')
+  console.log("function Cow() { console.log('moo', Lookup(this, 'moo')) } ")
+
+  function Cow() {
+    console.log('moo', Lookup(this, 'moo'));
+  }
+
+  console.log('Cow.PROTOTYPE.moo = true ')
+  Cow.PROTOTYPE = {}
+  Cow.PROTOTYPE.moo = true
+
+  console.log('New(Cow)')
+  var cow = New(Cow)
 })

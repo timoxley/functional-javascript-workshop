@@ -167,6 +167,22 @@ brownCat.color // => brown
 
 ```
 
+Prototype properties should be available in the constructor:
+
+```js
+function Cow() {
+  // lookup this.moo:
+  console.log('moo', Lookup(this, 'moo'));
+}
+
+// this step is done for you automatically in 'real' javascript.
+Cow.PROTOTYPE = {}
+
+Cow.PROTOTYPE.moo = true
+var cow = New(Cow) // 'moo' true
+
+```
+
 We also need to simulate one other behaviour of the `new` keyword:
 If the constructor itself returns a value, `New` will return that value.
 
