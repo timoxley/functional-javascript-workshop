@@ -1,5 +1,5 @@
 We're going to implement a rough analog of JavaScript's prototypical inheritance by hand,
-to ensure we fully understand how it fits together.
+to ensure we fully understand exactly how prototypical inheritance fits together.
 
 ########
 # Task #
@@ -9,7 +9,7 @@ Implement the functions `New`, `Create` and `Lookup` to simulate JavaScript's
 `new`, `Object.create` and property lookup mechanisms respectively.
 
 Throughout this exercise, you will avoid using any built-in JavaScript inheritance features.
-Instead you will need to use your own New, Create and Lookup functions as well as `__PROTO__`
+Instead, you will need to use your own New, Create and Lookup functions as well as `__PROTO__`
 to represent an instance's prototype, and `PROTOTYPE` to represent a constructor's prototype.
 
 i.e.
@@ -22,9 +22,9 @@ i.e.
 # Part 1: Lookup #
 ##################
 
-`Lookup` will simulate the behaviour of JavaScript's property lookup mechanism.
-When you reference any object's property in JavaScript, it will
-'walk up the prototype chain' to find the property, otherwise it will return `undefined`.
+`Lookup` will simulate the behaviour of JavaScript's property lookup mechanism, or "Getters".
+When you reference any object's property in JavaScript, it will 'walk up the prototype chain'
+to find the property, if found it will return its value, otherwise it will return `undefined`.
 
 Your `Lookup` function will be passed a context object, and the property String
 that we're looking for. If the property is found on the current context,
