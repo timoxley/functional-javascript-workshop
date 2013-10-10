@@ -1,0 +1,70 @@
+We've seen an example of the 'curry' concept in the book.
+Every example of this concept in the book was implemented for currying a specific number of arguments i.e. 'curry2', 'curry3'.
+
+This is an example implementation of curry3:
+
+```js
+
+function curry3(fun){
+    return function(three){
+        return function(two){
+            return function (one){
+                return fun(one, two, three);
+            };
+        };
+    };
+}
+
+```
+
+If we were to use this implementation with this sample function:
+
+```js
+
+function abc (one, two, three) {
+    return one / two / three;
+}
+
+```
+
+It would work like this:
+
+```js
+
+var curryC = curry3(abc);
+var curryB = curryC(2);
+var curryA = curryB(3);
+console.log(curryA(6));
+==> 1
+
+```
+
+In this challenge, we're going to implement a 'curry' function that does the same for an arbitrary number of arguments.
+This function- 'curryN', will have two parameters:
+    - The function we want to apply 'curry' to.
+    - The 'n' number of arguments we are going to curry.
+
+Implement this function so we could use it similarly to the 'curry3' function but with any number of arguments that we choose.
+This how an example usage of this function should look like:
+
+```js
+
+var curryC = curryN(abc, 3);
+var curryB = curryC(2);
+var curryA = curryB(3);
+console.log(curryA(6));
+==> 1
+
+```
+
+#################
+## Boilerplate ##
+#################
+
+```js
+
+module.exports = function curryN(fun, n) {
+  // SOLUTION GOES HERE
+}
+
+```
