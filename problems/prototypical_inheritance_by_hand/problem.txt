@@ -209,3 +209,46 @@ var cat = New(Cat) // 3
 #########
 
 * Use `hasOwnProperty` to discover if an object has a property.
+
+
+#################
+## Boilerplate ##
+#################
+
+```js
+
+/**
+ * @param context {Object} Initial object to start searching for `property`
+ * @param property {String} name of property we are trying to locate.
+ * @return {Mixed} The value of `property` in `context` or somewhere in its prototype chain.
+ */
+
+function Lookup(context, property) {
+
+}
+
+/**
+ * @param proto {Object} The prototype to use for the created object.
+ * @return A new Object whose prototype is set to `proto`
+ */
+
+function Create(proto) {
+
+}
+
+/**
+ * @param Constructor {Function} Constructor for a new type.
+ * @return new instance of the type defined by `Constructor`.
+ */
+
+function New(Constructor) {
+
+}
+
+module.exports = {
+  Lookup: Lookup,
+  Create: Create,
+  New: New
+}
+
+```
