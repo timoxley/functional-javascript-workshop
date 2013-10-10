@@ -14,7 +14,7 @@ function New(Type) {
   var obj = Create(Type.PROTOTYPE)
   var args = [].slice.call(arguments, 1) // remove Type arg
   var result = Type.apply(obj, args)
-  if (result) return result
+  if (typeof result !== 'undefined') return result
   return obj
 }
 

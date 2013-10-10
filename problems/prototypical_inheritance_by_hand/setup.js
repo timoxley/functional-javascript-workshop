@@ -96,9 +96,17 @@ module.exports = input().wrap(function(input, submission) {
   console.log("Lookup(kitten, 'speak')()", Lookup(kitten, 'speak')())
   console.log()
   console.log('Testing constructor can return any object...')
-  console.log('e.g. Dog constructor returns 3.')
-  function Dog() {
+  console.log('var Dog = function Dog() { return 3 }')
+  var Dog = function Dog() {
     return 3
   }
+
+  console.log("New(Dog)", New(Dog))
+
+  console.log('var Dog = function Dog() { return false }')
+  var Dog = function() {
+    return false
+  }
+
   console.log("New(Dog)", New(Dog))
 })
