@@ -67,6 +67,19 @@ Lookup(otherKitten, 'color')  // => 'grey'
 
 ```
 
+Side Note: in JavaScript, when you 'get' a property (i.e. lookup), the engine walks
+up the prototype chain to find the value, but if you 'set' a property it ignores
+the prototype chain and simply sets the value on the current object.
+We could have implemented a 'Setter' as an exercise, but since there's no magic, it's pretty trivial:
+
+```js
+
+function Setter(context, property, value) {
+  return context[property] = value
+}
+
+```
+
 ##################
 # Part 2: Create #
 ##################
