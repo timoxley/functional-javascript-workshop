@@ -14,6 +14,6 @@
   "Partial Application with Bind",
   "Function Spies",
   "Async Loops",
+  "Currying",
   "Function Call",
-  "Meta curry args"
 ]
