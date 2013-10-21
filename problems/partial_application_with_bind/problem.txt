@@ -10,21 +10,17 @@ Make sure *all* arguments passed to the returned logging function are printed.
 
 ** Print the output to the console directly **
 
-Arguments:
+###############
+## Arguments ##
+###############
 
 * namespace: a String to prepend to each message passed to the returned function.
-
-Resources:
-
-* https://en.wikipedia.org/wiki/Partial_application
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
 
 #############
 ## Example ##
 #############
 
-```
+```js
 var info = logger('INFO:')
 info('this is an info message')
 // INFO: this is an info message
@@ -47,3 +43,10 @@ module.exports = function(namespace) {
 
 ```
 
+###############
+## Resources ##
+###############
+
+* https://en.wikipedia.org/wiki/Partial_application
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
