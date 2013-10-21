@@ -33,7 +33,6 @@ var loremIpsum = {
     }
   }
 }
-}
 
 getDependencies(loremIpsum) // => [ 'inflection@1.2.6', 'optimist@0.3.7', 'wordwrap@0.0.2' ]
 
