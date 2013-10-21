@@ -1,14 +1,12 @@
 Partial application (or partial function application) refers to the process of
 fixing a number of arguments to a function, producing another function of smaller arity.
 
-Use Function#bind to implement a logging function that allows you to namespace messages.
+**Use Function#bind** to implement a logging function that allows you to namespace messages.
 
 Your implementation should take a string namespace, and return a function that prints
 messages to the console with the namespace string prepended.
 
 Make sure *all* arguments passed to the returned logging function are printed.
-
-Hint: console.log and Function#apply
 
 ** Print the output to the console directly **
 
