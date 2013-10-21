@@ -1,6 +1,3 @@
-// Solution Source:
-// http://benalman.com/news/2012/09/partial-application-in-javascript/#manually-specifying-function-arity
-
 function curryN(fn, n) {
   // If `n` argument was omitted, use the function .length property.
   if (typeof n !== 'number') n = fn.length
@@ -24,3 +21,6 @@ function curryN(fn, n) {
 }
 
 module.exports = curryN
+
+// Solution Source:
+// http://benalman.com/news/2012/09/partial-application-in-javascript/#manually-specifying-function-arity
