@@ -1,5 +1,4 @@
 
-
 # Functional Javascript Workshop
 <img alt="Functional Javascript Workshop" src="https://f.cloud.github.com/assets/43438/1368315/63919ad8-3997-11e3-909e-8193f5a94b59.png" align="right">
 
@@ -17,7 +16,6 @@
 Feedback and Suggestions very welcome, please log them in [issues](https://github.com/timoxley/functional-javascript-workshop/issues). 
 
 Full curriculum reviews [like this one](https://github.com/timoxley/functional-javascript-workshop/issues/7) are incredibly helpful. More feedback like this please!
-
 
 ## Installation & Update
 
@@ -38,6 +36,11 @@ $ functional-javascript-workshop
 
 ![screen shot 2013-09-27 at 5 18 45 pm](https://f.cloud.github.com/assets/43438/1225514/08c87a70-276a-11e3-8db7-485e3c760373.png)
 ![screen shot 2013-09-23 at 9 13 02 pm](https://f.cloud.github.com/assets/43438/1191466/f289f38a-2451-11e3-9ba5-a3c224b5ca97.png)
+
+## Resources
+
+[A growing collection of quality functional javascript resources can be found in the wiki](https://github.com/timoxley/functional-javascript-workshop/wiki). 
+
 
 ## Thanks rvagg
 
