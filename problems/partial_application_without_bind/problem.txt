@@ -1,24 +1,26 @@
+Partial application refers to the process of fixing a number of arguments to a function,
+producing another function of smaller arity.
+
 Implement a logging function that allows you to prepend a namespace to messages.
+
+Your implementation should take a namespace string, and return a function that prints
+messages to the console with the namespace prepended.
 
 Make sure *all* arguments passed to the returned logging function are printed.
 
 ** Print the output to the console directly **
 
-Arguments:
+###############
+## Arguments ##
+###############
 
 * namespace: a String to prepend to each message passed to the returned function.
-
-Hint: console.log and Function#apply
-
-Resources:
-
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
 
 #############
 ## Example ##
 #############
 
-```
+```js
 var info = logger('INFO:')
 info('this is an info message')
 // INFO: this is an info message
@@ -28,6 +30,12 @@ warn('this is a warning message', 'with more info')
 // WARN: this is a warning message with more info
 
 ```
+
+################
+## Conditions ##
+################
+
+* Do not use Function#bind
 
 #################
 ## Boilerplate ##
@@ -45,3 +53,9 @@ module.exports = logger
 
 ```
 
+###############
+## Resources ##
+###############
+
+* https://en.wikipedia.org/wiki/Partial_application
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
