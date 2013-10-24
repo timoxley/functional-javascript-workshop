@@ -29,9 +29,9 @@ $ npm install -g functional-javascript-workshop@latest
 **Note**: the workshop is being updated weekly. 
 Please regularly rerun the above command to get the latest set of exercises.
 
-## Usage
+## Usage Instructions
 
-#### 1. Displaying the Problems Menu
+#### 1. Selecting a problem to work on
 
 Once the workshop is installed, run `functional-javascript-workshop` to print a menu
 where you can select a problem to work on.
@@ -46,7 +46,9 @@ will build on skills developed by solving previous problems.
 #### 2. Writing your solution
 
 Once you have selected a problem, the workshop will remember which problem you are working on. 
-Using your preferred editor, create a file to write your solution in.
+Using your preferred editor, simply create a file to write your solution in. Most problems will
+supply some boilerplate with which to get started. Copy this from the problem description to your
+solution file.
 
 #### 3. Testing your solution
 
