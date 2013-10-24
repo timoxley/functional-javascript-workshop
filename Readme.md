@@ -11,6 +11,15 @@
 
 **Work in Progress.** New lessons and/or revisions will be added weekly and tested upon participants of the [SingaporeJS meetup group](http://www.meetup.com/Singapore-JS/).
 
+## Mission
+
+Many functional programming learning resources will teach you to write functional code, but it's often highly indirect,
+deeply abstracted, requires understanding complex relationships between custom library calls, and doesn't represent
+the reality of how people actually write JavaScript.
+
+The goal of this workshop is to create realistic problems that can be solved using terse, vanilla, idomatic JavaScript.
+
+
 ## Installation & Update
 
 ```
@@ -22,17 +31,40 @@ Please regularly rerun the above command to get the latest set of exercises.
 
 ## Usage
 
+#### Displaying the Problems Menu
+
+Once the workshop is installed, run `functional-javascript-workshop` to print a menu
+where you can select a problem to work on.
+
 ```
 $ functional-javascript-workshop
 ```
 
-## Mission
+Problems are listed in rough order of difficulty. You are advised to complete them in order, as later problems
+will build on skills developed by solving previous problems.
 
-Many functional programming learning resources will teach you to write functional code, but it's often highly indirect,
-deeply abstracted, requires understanding complex relationships between custom library calls, and doesn't represent
-the reality of how people actually write JavaScript.
+#### Writing a solution.
 
-The goal of this workshop is to create realistic problems that can be solved using terse, vanilla, idomatic JavaScript.
+Once you have selected a problem, the workshop will remember which problem you are working on. 
+Using your preferred editor, create a file to write your solution in.
+
+#### Testing your solution
+
+Use the workshop's `run` command to point the workshop at your solution file. Your solution will loaded 
+and passed the problem input. This usually won't perform any validation, it will only show the program output.
+
+```
+$ functional-javascript-workshop run mysolution.js
+```
+ 
+#### Verifying your solution
+
+Verify your solution against the output of the 'official' solution. If all of the output matches, then you have successfully
+solved the problem!
+
+```
+$ functional-javascript-workshop verify mysolution.js
+```
 
 ## Stuck?
 
