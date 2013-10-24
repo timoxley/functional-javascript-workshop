@@ -11,6 +11,21 @@
 
 **Work in Progress.** New lessons and/or revisions will be added weekly and tested upon participants of the [SingaporeJS meetup group](http://www.meetup.com/Singapore-JS/).
 
+## Installation & Update
+
+```
+$ npm install -g functional-javascript-workshop@latest
+```
+
+**Note**: the workshop is being updated weekly. 
+Please regularly rerun the above command to get the latest set of exercises.
+
+## Usage
+
+```
+$ functional-javascript-workshop
+```
+
 ## Mission
 
 Many functional programming learning resources will teach you to write functional code, but it's often highly indirect,
@@ -27,20 +42,6 @@ Full curriculum reviews [like this one](https://github.com/timoxley/functional-j
 
 We're looking for more practical problems, so if you come across a problem in your day-to-day work which was solved simply and elegantly with some functional JavaScript techniques, please help us create an exercise out of it.
 
-## Installation & Update
-
-```
-$ npm install -g functional-javascript-workshop@latest
-```
-
-**Note**: the workshop is being updated weekly. 
-Please regularly rerun the above command to get the latest set of exercises.
-
-## Usage
-
-```
-$ functional-javascript-workshop
-```
 
 ## Screenshots
 
