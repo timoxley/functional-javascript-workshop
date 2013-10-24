@@ -5,10 +5,11 @@
 
 ### Teaching fundamental functional programming features of Javascript.
 
-### No libraries required (i.e. no underscore), just ES5.
+#### No libraries required (i.e. no underscore), just ES5.
 
 <a href="https://nodei.co/npm/functional-javascript-workshop/" ><img src="https://nodei.co/npm/functional-javascript-workshop.png?downloads=true&stars=true"></a>
 
+**Work in Progress.** New lessons and/or revisions will be added weekly and tested upon participants of the [SingaporeJS meetup group](http://www.meetup.com/Singapore-JS/).
 
 ## Mission
 
@@ -18,15 +19,13 @@ Many functional programming learning resources will teach you to write functiona
 deeply abstracted, requires understanding complex relationships between custom library calls, and doesn't represent
 the reality of how people actually write JavaScript.
 
-If you come across a problem in your day-to-day work which was solved simply and elegantly with some functional JavaScript techniques, please help us create an exercise out of it.
-
 ## Stuck?
 
 Feedback and critisism is welcome, please log your troubles in [issues](https://github.com/timoxley/functional-javascript-workshop/issues). 
 
 Full curriculum reviews [like this one](https://github.com/timoxley/functional-javascript-workshop/issues/7) are incredibly helpful. More feedback like this please!
 
-**Work in Progress.** New lessons will be added weekly and tested upon participants of the [SingaporeJS meetup group](http://www.meetup.com/Singapore-JS/).
+We're looking for more practical problems, so if you come across a problem in your day-to-day work which was solved simply and elegantly with some functional JavaScript techniques, please help us create an exercise out of it.
 
 ## Installation & Update
 
