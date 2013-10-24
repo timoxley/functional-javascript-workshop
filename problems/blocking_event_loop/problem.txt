@@ -29,3 +29,9 @@ module.exports = repeat
 
 ```
 
+#########
+# Hints #
+#########
+
+* If your program takes a long time to run, something is probably wrong.
+  Use Control - C to kill the node process.

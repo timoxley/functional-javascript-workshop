@@ -68,5 +68,7 @@ module.exports = function(operation, num) {
 #########
 
 * Modify `repeat` so it returns the 'next step', if there is one.
-* A trampoline continues to syncronously execute steps, getting new
+* A trampoline continues to synchronously execute steps, getting new
   steps, until there are no more steps. You can use a loop here!
+* If your program takes a long time to run, something is probably wrong.
+  Use Control - C to kill the node process.
