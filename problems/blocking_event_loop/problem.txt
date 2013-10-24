@@ -35,3 +35,9 @@ module.exports = repeat
 
 * If your program takes a long time to run, something is probably wrong.
   Use Control - C to kill the node process.
+
+#############
+# Resources #
+#############
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Timers
