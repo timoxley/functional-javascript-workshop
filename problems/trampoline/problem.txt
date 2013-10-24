@@ -30,7 +30,11 @@ console.log('executed %d times', count)
 ########
 
 Modify the boilerplate below such that it uses a trampoline to
-continuously call itself syncronously.
+continuously call itself synchronously.
+
+You can assume that the operation passed to repeat does not take
+arguments (or they are already bound to the function) and the
+return value is not important.
 
 ##############
 # Conditions #
