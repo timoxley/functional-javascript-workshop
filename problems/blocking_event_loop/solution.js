@@ -3,10 +3,10 @@ function repeat(operation, num) {
 
   operation()
 
-  // release control every 500 or so
-  // iterations. In this case 500 is
-  // fairly arbitrary.
-  if (num % 499 === 0) {
+  // release control every 10 or so
+  // iterations.
+  // 10 is arbitrary.
+  if (num % 10 === 0) {
     setTimeout(function() {
       repeat(operation, --num)
     })
