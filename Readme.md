@@ -1,4 +1,3 @@
-
 # Functional Javascript Workshop
 <img alt="Functional Javascript Workshop" src="https://f.cloud.github.com/assets/43438/1368315/63919ad8-3997-11e3-909e-8193f5a94b59.png" align="right">
 
@@ -11,11 +10,23 @@
 <a href="https://nodei.co/npm/functional-javascript-workshop/" ><img src="https://nodei.co/npm/functional-javascript-workshop.png?downloads=true&stars=true"></a>
 
 
-**Work in Progress.** New lessons will be added weekly and tested upon participants of the [SingaporeJS meetup group](http://www.meetup.com/Singapore-JS/).
+## Mission
 
-Feedback and Suggestions very welcome, please log them in [issues](https://github.com/timoxley/functional-javascript-workshop/issues). 
+The goal of this workshop is to create realistic problems that can be solved using vanilla, idomatic JavaScript.
+
+Many functional programming learning resources will teach you to write functional code, but it's often highly indirect,
+deeply abstracted, requires understanding complex relationships between custom library calls, and doesn't represent
+the reality of how people actually write JavaScript.
+
+If you come across a problem in your day-to-day work which was solved simply and elegantly with some functional JavaScript techniques, please help us create an exercise out of it.
+
+## Stuck?
+
+Feedback and critisism is welcome, please log your troubles in [issues](https://github.com/timoxley/functional-javascript-workshop/issues). 
 
 Full curriculum reviews [like this one](https://github.com/timoxley/functional-javascript-workshop/issues/7) are incredibly helpful. More feedback like this please!
+
+**Work in Progress.** New lessons will be added weekly and tested upon participants of the [SingaporeJS meetup group](http://www.meetup.com/Singapore-JS/).
 
 ## Installation & Update
 
