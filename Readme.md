@@ -13,11 +13,11 @@
 
 ## Mission
 
-The goal of this workshop is to create realistic problems that can be solved using vanilla, idomatic JavaScript.
-
 Many functional programming learning resources will teach you to write functional code, but it's often highly indirect,
 deeply abstracted, requires understanding complex relationships between custom library calls, and doesn't represent
 the reality of how people actually write JavaScript.
+
+The goal of this workshop is to create realistic problems that can be solved using terse, vanilla, idomatic JavaScript.
 
 ## Stuck?
 
