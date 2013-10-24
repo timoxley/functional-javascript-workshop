@@ -11,10 +11,10 @@
   "Partial Application with Bind",
   "Implement Map with Reduce",
   "Function Spies",
-  "Recursion",
-  "Trampoline",
   "Blocking Event Loop",
+  "Trampoline",
   "Async Loops",
+  "Recursion",
   "Currying",
   "Function Call"
 ]
