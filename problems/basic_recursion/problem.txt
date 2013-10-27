@@ -12,6 +12,9 @@ a function, and an initial value which will return an object containing the coun
 in the array. You don't need to implement this functionality, it will supplied to your reduce
 implementation.
 
+For simplicity, your implementation of reduce **need not replicate the behaviour of a reduce missing an initial value**.
+You may assume the initial value will always be supplied.
+
 ###############
 ## Arguments ##
 ###############
@@ -19,7 +22,7 @@ implementation.
 * arr: An Array to reduce over
 * fn: Function to use as the reduction step. 
   Like regular Array#reduce, this function must be passed previousValue, currentValue, index and the array we're iterating over.
-* init: Initial value of the reduction
+* init: Initial value of the reduction. Unlike Array#reduce, this value is required (and you may assume it will always be supplied).
 
 #############
 ## Example ##
