@@ -54,7 +54,9 @@ Resources:
 ```js
 
 module.exports = function checkUsersValid(goodUsers) {
-  // SOLUTION GOES HERE
+  return function(submittedUsers) {
+    // SOLUTION GOES HERE
+  };
 }
 
 ```
