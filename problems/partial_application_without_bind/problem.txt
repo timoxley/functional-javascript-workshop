@@ -44,7 +44,7 @@ addTen(0) // => 10
 ```
 
 All of the above examples are same as calling `add(10, y)`, where `y` was supplied in the call to 
-appropriately named `addTen`.
+the appropriately named `addTen`.
 
 ##########
 ## Task ##
