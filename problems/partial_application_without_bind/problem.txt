@@ -139,6 +139,8 @@ add.apply(null, [10, 20]) // => 30
 Also contrast `apply` with `Function.prototype.call`:
 
 ```js
+
 add.apply(null, [10, 20]) // => 30
 add.call(null, 10, 20) // => 30
+
 ```
