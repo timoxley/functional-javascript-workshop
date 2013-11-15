@@ -42,12 +42,12 @@ var nums = [1,2,3,4,5]
 // behaviour of slice, except it takes the array
 // as the first arguments
 
-slice(nums, 0, 2) // [1, 2, 3]
-slice(nums, 1, 2) // [2, 3]
+slice(nums, 0, 2) // [1, 2]
+slice(nums, 1, 2) // [2]
 
 // regular slice usage for comparison
-nums.slice(0, 2) // [1, 2, 3]
-nums.slice(1, 2) // [2, 3]
+nums.slice(0, 2) // [1, 2]
+nums.slice(1, 2) // [2]
 ```
 
 ################
@@ -73,7 +73,7 @@ module.exports = // your solution here!
 * This is absolutely a one liner.
 * Every JavaScript Function inherits methods such as call, apply and bind
   from the object `Function.prototype`.
-* Function#call executes whatever  the value of `this` when it's invoked. 
+* Function#call executes whatever the value of `this` when it's invoked. 
   e.g. someFunction.call() // `this` inside `call` is `someFunction`
 * Function.call itself is a function thus it inherits from `Function.prototype`
 
