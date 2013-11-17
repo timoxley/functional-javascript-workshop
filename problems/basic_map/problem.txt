@@ -23,6 +23,7 @@ Conditions:
 * Do not use any for/while loops.
 * You do not need to define any additional functions
  unless a stub is provided in the boilerplate.
+* Your solution should use Array.prototype.map()
 
 Resources:
 
