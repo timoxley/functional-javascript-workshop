@@ -18,7 +18,7 @@ BUT note that executing `repeat` with a large `num` causes a stack overflow:
 var count = 0
 repeat(function() {
   count++
-}, 100)
+}, 100000)
 
 console.log('executed %d times', count)
 // => RangeError: Maximum call stack size exceeded
