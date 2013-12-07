@@ -91,6 +91,28 @@ We're looking for more practical problems, so if you come across a problem in yo
 
 This tutorial was built using rvagg's [workshopper](https://github.com/rvagg/workshopper) framework.
 
+## Summary
+
+```
+ project  : functional-javascript
+ repo age : 3 months
+ active   : 32 days
+ commits  : 119
+ files    : 70
+ authors  :
+    69	Tim                     58.0%
+    40	Tim Oxley               33.6%
+     2	ZJ                      1.7%
+     1	Matthew Hokanson        0.8%
+     1	Naor Biton              0.8%
+     1	Arvid Andersson         0.8%
+     1	Steve Teo               0.8%
+     1	Wei Lu                  0.8%
+     1	Pavel Kornilov          0.8%
+     1	Brendon Murphy          0.8%
+     1	Lorcan Coyle            0.8%
+```
+
 ## Licence
 
 MIT
