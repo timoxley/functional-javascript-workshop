@@ -9,8 +9,6 @@
 
 <a href="https://nodei.co/npm/functional-javascript-workshop/" ><img src="https://nodei.co/npm/functional-javascript-workshop.png?downloads=true&stars=true"></a>
 
-**Work in Progress.** New lessons and/or revisions will be added weekly and tested upon participants of the [SingaporeJS meetup group](http://www.meetup.com/Singapore-JS/).
-
 ## Mission
 
 Many functional programming learning resources will teach you to write functional code, but it's often highly indirect,
@@ -19,6 +17,7 @@ the reality of how people actually write JavaScript.
 
 The goal of this workshop is to create realistic problems that can be solved using terse, vanilla, idomatic JavaScript.
 
+**Please read the exercises thoroughly and obey all conditions, they are there to help you learn!**
 
 ## Installation & Update
 
