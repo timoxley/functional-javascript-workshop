@@ -1,14 +1,13 @@
 # Functional Javascript Workshop
 <img alt="Functional Javascript Workshop" src="https://f.cloud.github.com/assets/43438/1368315/63919ad8-3997-11e3-909e-8193f5a94b59.png" align="right">
 
-
-
 ### Teaching fundamental functional programming features of Javascript.
 
 #### No libraries required (i.e. no underscore), just ES5.
 
 <a href="https://nodei.co/npm/functional-javascript-workshop/" ><img src="https://nodei.co/npm/functional-javascript-workshop.png?downloads=true&stars=true"></a>
 
+[![Gittip](http://img.shields.io/gittip/timoxley.png)](https://www.gittip.com/Shields.io/)
 ## Mission
 
 Many functional programming learning resources will teach you to write functional code, but it's often highly indirect,
