@@ -14,7 +14,7 @@ Many functional programming learning resources will teach you to write functiona
 deeply abstracted, requires understanding complex relationships between custom library calls, and doesn't represent
 the reality of how people actually write JavaScript.
 
-The goal of this workshop is to create realistic problems that can be solved using terse, vanilla, idomatic JavaScript.
+The goal of this workshop is to create realistic problems that can be solved using terse, vanilla, idiomatic JavaScript.
 
 **Please read the exercises thoroughly and obey all conditions, they are there to help you learn!**
 
@@ -68,7 +68,7 @@ $ functional-javascript-workshop verify mysolution.js
 
 ## Stuck?
 
-Feedback and critisism is welcome, please log your troubles in [issues](https://github.com/timoxley/functional-javascript-workshop/issues). 
+Feedback and criticism is welcome, please log your troubles in [issues](https://github.com/timoxley/functional-javascript-workshop/issues). 
 
 Full curriculum reviews [like this one](https://github.com/timoxley/functional-javascript-workshop/issues/7) are incredibly helpful. More feedback like this please!
 
