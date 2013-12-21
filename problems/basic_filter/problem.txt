@@ -23,7 +23,7 @@ Hint: Try chaining some Array methods!
 
 Expected Output:
 
-The output should be an array containing the messages themselves, without their containing object.
+The function should return an array containing the messages themselves, without their containing object.
 
 e.g.
 
