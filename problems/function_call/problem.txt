@@ -79,7 +79,7 @@ module.exports = // your solution here!
 
 ```js
 
-var myFunction() {
+function myFunction() {
   console.log('called my function')
 }
 
