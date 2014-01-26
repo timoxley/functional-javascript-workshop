@@ -24,8 +24,7 @@ The goal of this workshop is to create realistic problems that can be solved usi
 $ npm install -g functional-javascript-workshop@latest
 ```
 
-**Note**: the workshop is being updated weekly. 
-Please regularly rerun the above command to get the latest set of exercises.
+Some npm installations require use of `sudo` in the above command. Recommend to instead [reinstall node/npm so you don't need sudo](https://gist.github.com/isaacs/579814).
 
 ## Usage Instructions
 
