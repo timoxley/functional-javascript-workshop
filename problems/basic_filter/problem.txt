@@ -1,7 +1,7 @@
 Use Array#filter to write a function called `getShortMessages`.
 
 `getShortMessages` takes an array of objects with '.message' properties
-and prints any messages that are *less than < 50 characters long*.
+and returns an array of messages that are *less than < 50 characters long*.
 
 Arguments:
 
@@ -23,7 +23,8 @@ Hint: Try chaining some Array methods!
 
 Expected Output:
 
-The function should return an array containing the messages themselves, without their containing object.
+The function should return an array containing the messages themselves,
+*without their containing object*.
 
 e.g.
 
