@@ -1,15 +1,12 @@
-Array#reduce
+# Task
 
-Task: Given an Array of strings, use Array#reduce to create an object that
+Given an Array of strings, use `Array#reduce` to create an object that
 contains the number of times each string occured in the array. Return the
 object directly (no need to console.log).
 
-#############
-## Example ##
-#############
+## Example
 
 ```js
-
 var inputWords = ['Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian']
 
 console.log(countWords(inputWords))
@@ -20,34 +17,29 @@ console.log(countWords(inputWords))
 //   Banana: 1,
 //   Durian: 3
 // }
-
 ```
 
-Arguments:
+## Arguments
 
 * inputWords: An array of random Strings.
 
-Conditions:
+## Conditions
 
 * Do not use any for/while loops.
 * You do not need to define any additional functions
  unless a stub is provided in the boilerplate.
 
-Resources:
+## Resources
 
 * https://en.wikipedia.org/wiki/Reduce_(higher-order_function)
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 
-#################
-## Boilerplate ##
-#################
+## Boilerplate
 
 ```js
-
 function countWords(inputWords) {
   // SOLUTION GOES HERE
 }
 
 module.exports = countWords
-
 ```

@@ -1,6 +1,4 @@
-##########
-## Task ##
-##########
+# Task
 
 Write a function that allows you to use `Array.prototype.slice` without 
 using `.call` to invoke it.
@@ -8,13 +6,11 @@ using `.call` to invoke it.
 Normally you have to use slice with call or apply:
 
 ```js
-
 var slice = Array.prototype.slice
 
 function() {
   var args = slice.call(arguments) // this works
 }
-
 ```
 
 We want this to work:
@@ -25,17 +21,13 @@ var slice = yourFunction
 function() {
   var args = slice(arguments) // this works
 }
-
 ```
 
-#####################
-## Expected Output ##
-#####################
+## Expected Output
 
 A function, `slice` that exhibits the following behaviour:
 
 ```js
-
 var nums = [1,2,3,4,5]
 
 // your slice function should match the regular
@@ -50,25 +42,11 @@ nums.slice(0, 2) // [1, 2]
 nums.slice(1, 2) // [2]
 ```
 
-################
-## Conditions ##
-################
+## Conditions
 
 * Do not use the `function` keyword :D
 
-#################
-## Boilerplate ##
-#################
-
-```js
-
-module.exports = // your solution here!
-
-```
-
-###########
-## Hints ##
-###########
+## Hints
 
 * This is absolutely a one liner.
 * Every JavaScript Function inherits methods such as call, apply and bind
@@ -78,11 +56,15 @@ module.exports = // your solution here!
 * Function.call itself is a function thus it inherits from `Function.prototype`
 
 ```js
-
 function myFunction() {
   console.log('called my function')
 }
 
 Function.prototype.call.call(myFunction) // => "called my function"
+```
 
+## Boilerplate
+
+```js
+module.exports = // your solution here!
 ```

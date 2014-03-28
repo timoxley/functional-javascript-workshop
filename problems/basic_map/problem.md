@@ -1,7 +1,8 @@
+# Task
+
 Convert the following code from a for-loop to Array#map:
 
 ```js
-
 function doubleAll(numbers) {
   var result = []
   for (var i = 0; i < numbers.length; i++) {
@@ -11,34 +12,29 @@ function doubleAll(numbers) {
 }
 
 module.exports = doubleAll
-
 ```
 
-Arguments:
+## Arguments
 
 * numbers: An Array of 1 to 20 Integers between 0 and 9
 
-Conditions:
+## Conditions
 
 * Do not use any for/while loops.
 * You do not need to define any additional functions
  unless a stub is provided in the boilerplate.
 * Your solution should use Array.prototype.map()
 
-Resources:
+## Resources
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
-#################
-## Boilerplate ##
-#################
+## Boilerplate
 
 ```js
-
 function doubleAll(numbers) {
   // SOLUTION GOES HERE
 }
 
 module.exports = doubleAll
-
 ```

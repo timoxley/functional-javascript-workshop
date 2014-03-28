@@ -13,7 +13,6 @@ We can use Object#hasOwnProperty to detect if an object 'has' a property defined
 inherited from its prototype):
 
 ```js
-
 var duck = {
   quack: function() {
     console.log('quack')
@@ -21,7 +20,6 @@ var duck = {
 }
 
 duck.hasOwnProperty('quack') // => true
-
 ```
 
 We didn't give the duck a .hasOwnProperty method, where did it come from?
@@ -30,18 +28,15 @@ Duck was created with the `{}` syntax, and as such
 it inherits from Object.prototype:
 
 ```js
-
 var object = {quack: true}
 
 Object.getPrototypeOf(object) === Object.prototype // => true
 object.hasOwnProperty('quack')                     // => true
-
 ```
 
 But what if an object doesn't inherit from Object.prototype?
 
 ```js
-
 // create an object with 'null' prototype.
 var object = Object.create(null)
 object.quack = function() {
@@ -53,7 +48,6 @@ Object.getPrototypeOf(object) === null             // => true
 
 object.hasOwnProperty('quack')
 // => TypeError: Object object has no method 'hasOwnProperty'
-
 ```
 
 We can still use `hasOwnProperty` from the `Object.prototype` though,
@@ -62,15 +56,13 @@ an object'. Function#call allows us to invoke any function with
 an altered `this` value.
 
 ```js
-
 // the first argument to call becomes the value of `this`
 // the rest of the arguments are passed to the function as per
 
 Object.prototype.hasOwnProperty.call(object, 'quack') // => true
-
 ```
 
-Task:
+# Task:
 
 Write a function `duckCount` that returns the number of arguments passed to it which
 have a property 'quack' defined directly on them. Do not match values inherited
@@ -79,40 +71,36 @@ from prototypes.
 Example:
 
 ```js
-
 var notDuck = Object.create({quack: true})
 var duck = {quack: true}
 duckCount(duck, notDuck) // 1
-
 ```
-Arguments:
+## Arguments
 
 * You will be passed 0-20 arguments. Each argument could be of any type with any
   properties. Some of these items will have a 'quack' property.
 
-Conditions:
+## Conditions
 
 * Do not use any for/while loops.
 * Do not create any counter/accumulator variables.
 * You do not need to define any additional name functions
   unless a stub is provided in the boilerplate.
 
-Hint:
+## Hint
 
 * The arguments variable, available in every function,
   is an object that quacks like an Array:
 
 ```js
-
 {
   0: 'argument0',
   1: 'argument1', // etc
   length: 2
 }
-
 ```
 
-Resources:
+## Resources
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
@@ -121,16 +109,12 @@ Resources:
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/arguments
 
 
-#################
-## Boilerplate ##
-#################
+## Boilerplate
 
 ```js
-
 function duckCount() {
   // SOLUTION GOES HERE
 }
 
 module.exports = duckCount
-
 ```
