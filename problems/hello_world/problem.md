@@ -1,17 +1,17 @@
+# Task
+
 Write a function that takes an input string and returns it uppercased.
 
-Arguments:
+## Arguments
 
 * input: a String of random words (lorem ipsum).
 
-#################
-## Boilerplate ##
-#################
+## Boilerplate
 
 ```js
-
-module.exports = function(input) {
+function upperCaser(input) {
   // SOLUTION GOES HERE
 }
 
+module.exports = upperCaser
 ```

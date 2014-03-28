@@ -1,6 +1,4 @@
-########
-# Task #
-########
+# Task
 
 Modify the recursive `repeat` function provided in the boilerplate,
 such that it does not block the event loop (i.e. Timers and IO handlers can fire).  
@@ -12,12 +10,18 @@ loop such that the timeout fires before 1500 milliseconds elapse.
 
 Try to perform as many operations as you can before the timeout fires!
 
-###############
-# Boilerplate #
-###############
+## Hints
+
+* If your program takes a long time to run, something is probably wrong.
+  Use Control - C to kill the node process.
+
+## Resources
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Timers
+
+## Boilerplate
 
 ```js
-
 function repeat(operation, num) {
   // modify this so it can be interrupted
   if (num <= 0) return
@@ -26,18 +30,4 @@ function repeat(operation, num) {
 }
 
 module.exports = repeat
-
 ```
-
-#########
-# Hints #
-#########
-
-* If your program takes a long time to run, something is probably wrong.
-  Use Control - C to kill the node process.
-
-#############
-# Resources #
-#############
-
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Timers
