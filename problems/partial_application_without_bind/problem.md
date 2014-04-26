@@ -1,4 +1,4 @@
-Partial application allows you create new functions from existing functions, while fixing
+Partial application allows you to create new functions from existing functions, while fixing
 some number of arguments. After setting the arguments to be partially applied, you get a
 new function ready to take the rest of the arguments and perhaps execute the original
 function.
