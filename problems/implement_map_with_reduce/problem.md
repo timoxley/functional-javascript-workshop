@@ -4,8 +4,7 @@ Use Array#reduce to implement a simple version of Array#map.
 
 ## Expected Output
 
-A function `map` that applies a function to each item in an array and
-collects the results in a new Array.
+A function `map` that applies a function to each item in an array and collects the results in a new Array.
 
 ```js
 

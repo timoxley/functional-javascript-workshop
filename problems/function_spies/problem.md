@@ -1,7 +1,6 @@
 # Task
 
-Override a specified method of an object with new functionality while still maintaining all of the old
-behaviour.
+Override a specified method of an object with new functionality while still maintaining all of the old behaviour.
 
 Create a spy that keeps track of how many times a function is called.
 
@@ -29,8 +28,7 @@ console.log(spy.count) // 3
 
 ## Hint
 
-* Functions have context, input and output. Make sure you consider the context,
-  input to *and output from* the function you are spying on.
+* Functions have context, input and output. Make sure you consider the context, input to *and output from* the function you are spying on.
 
 ## Boilerplate
 

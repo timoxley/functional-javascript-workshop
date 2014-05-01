@@ -1,16 +1,10 @@
-JavaScript implements 'duck' typing. Duck typing is a style of dynamic typing in
-which an object's methods and properties determine the valid semantics,
-rather than its inheritance from a particular class or implementation of a
-specific interface. The name of the concept refers to the duck test, attributed
-to James Whitcomb Riley, which may be phrased as follows:
+JavaScript implements 'duck' typing. Duck typing is a style of dynamic typing in which an object's methods and properties determine the valid semantics, rather than its inheritance from a particular class or implementation of a specific interface. The name of the concept refers to the duck test, attributed to James Whitcomb Riley, which may be phrased as follows:
 
   "When I see a bird that walks like a duck and swims like a duck and quacks like a duck, I call that bird a duck"
 
-In JavaScript, in order to write robust programs we sometimes need to
-check an object conforms to the type that we need.
+In JavaScript, in order to write robust programs we sometimes need to check an object conforms to the type that we need.
 
-We can use Object#hasOwnProperty to detect if an object 'has' a property defined on itself (i.e. not
-inherited from its prototype):
+We can use Object#hasOwnProperty to detect if an object 'has' a property defined on itself (i.e. not inherited from its prototype):
 
 ```js
 var duck = {
@@ -24,8 +18,7 @@ duck.hasOwnProperty('quack') // => true
 
 We didn't give the duck a .hasOwnProperty method, where did it come from?
 
-Duck was created with the `{}` syntax, and as such
-it inherits from Object.prototype:
+Duck was created with the `{}` syntax, and as such it inherits from Object.prototype:
 
 ```js
 var object = {quack: true}
@@ -50,10 +43,7 @@ object.hasOwnProperty('quack')
 // => TypeError: Object object has no method 'hasOwnProperty'
 ```
 
-We can still use `hasOwnProperty` from the `Object.prototype` though,
-if we call it with the `this` value set to something that 'looks like
-an object'. Function#call allows us to invoke any function with
-an altered `this` value.
+We can still use `hasOwnProperty` from the `Object.prototype` though, if we call it with the `this` value set to something that 'looks like an object'. Function#call allows us to invoke any function with an altered `this` value.
 
 ```js
 // the first argument to call becomes the value of `this`
@@ -64,9 +54,7 @@ Object.prototype.hasOwnProperty.call(object, 'quack') // => true
 
 # Task:
 
-Write a function `duckCount` that returns the number of arguments passed to it which
-have a property 'quack' defined directly on them. Do not match values inherited
-from prototypes.
+Write a function `duckCount` that returns the number of arguments passed to it which have a property 'quack' defined directly on them. Do not match values inherited from prototypes.
 
 Example:
 
@@ -77,8 +65,7 @@ duckCount(duck, notDuck) // 1
 ```
 ## Arguments
 
-* You will be passed 0-20 arguments. Each argument could be of any type with any
-  properties. Some of these items will have a 'quack' property.
+* You will be passed 0-20 arguments. Each argument could be of any type with any properties. Some of these items will have a 'quack' property.
 
 ## Conditions
 
@@ -88,8 +75,7 @@ duckCount(duck, notDuck) // 1
 
 ## Hint
 
-* The arguments variable, available in every function,
-  is an object that quacks like an Array:
+* The `arguments` variable, available in every function, is an *Object* that quacks like an *Array*:
 
 ```js
 {

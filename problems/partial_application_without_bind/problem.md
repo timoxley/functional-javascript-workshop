@@ -1,10 +1,6 @@
-Partial application allows you to create new functions from existing functions, while fixing
-some number of arguments. After setting the arguments to be partially applied, you get a
-new function ready to take the rest of the arguments and perhaps execute the original
-function.
+Partial application allows you to create new functions from existing functions, while fixing some number of arguments. After setting the arguments to be partially applied, you get a new function ready to take the rest of the arguments and perhaps execute the original function.
 
-More formally: Partial application refers to the process of fixing a number of arguments to a function,
-producing another function of smaller arity.
+More formally: Partial application refers to the process of fixing a number of arguments to a function, producing another function of smaller arity.
 
 As an example, say we have a function `add`, that takes 2 arguments and adds them together:
 
@@ -18,8 +14,7 @@ add(10, 20) // => 30
 
 ```
 
-Now, pretend we have a function `partiallyApply`. `partiallyApply` takes a function, and some
-arguments to 'partially apply'.
+Now, pretend we have a function `partiallyApply`. `partiallyApply` takes a function, and some arguments to 'partially apply'.
 
 Here we 'partially apply' the first parameter, `x`, of our `add` function:
 
@@ -32,7 +27,7 @@ var addTen = partiallyApply(add, 10) // fix `x` to 10
 `addTen` is a new function that takes the `y` parameter of `add`. `add` has not yet been called!
 
 Once we pass the argument for `y`, we can execute the original `add` function:
- 
+
 ```js
 
 addTen(20) // => 30
@@ -43,16 +38,13 @@ addTen(0) // => 10
 
 ```
 
-All of the above examples are same as calling `add(10, y)`, where `y` was supplied in the call to 
-the appropriately named `addTen`.
+All of the above examples are same as calling `add(10, y)`, where `y` was supplied in the call to the appropriately named `addTen`.
 
 # Task
 
-Use partial application to create a function that fixes the first argument to `console.log`.
-i.e. Implement a logging function that prepends a namespace string to its output.
+Use partial application to create a function that fixes the first argument to `console.log`.  i.e. Implement a logging function that prepends a namespace string to its output.
 
-Your implementation should take a namespace String and return a function that prints
-messages to the console with the namespace prepended.
+Your implementation should take a namespace String and return a function that prints messages to the console with the namespace prepended.
 
 You should use `Function#apply` to implement the partial application.
 
@@ -114,8 +106,7 @@ console.log(1,2,3) // => 1 2 3
 
 We simply want to 'partially apply' the first argument to `console.log`.
 
-`Function.prototype.apply` allows us to execute a function, supply a new 'value for this'
-(we can ignore in this case), and then *an array of arguments to apply to the function*:
+`Function.prototype.apply` allows us to execute a function, supply a new 'value for this' (we can ignore in this case), and then *an array of arguments to apply to the function*:
 
 
 ```js

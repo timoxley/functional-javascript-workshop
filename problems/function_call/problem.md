@@ -1,7 +1,6 @@
 # Task
 
-Write a function that allows you to use `Array.prototype.slice` without 
-using `.call` to invoke it.
+Write a function that allows you to use `Array.prototype.slice` without using `.call` to invoke it.
 
 Normally you have to use `slice` with `call` or `apply`:
 
@@ -32,7 +31,7 @@ var nums = [1,2,3,4,5]
 
 // your slice function should match the regular
 // behaviour of slice, except it takes the array
-// as the first arguments
+// as the first argument
 
 slice(nums, 0, 2) // [1, 2]
 slice(nums, 1, 2) // [2]
@@ -50,10 +49,8 @@ nums.slice(1, 2) // [2]
 ## Hints
 
 * This is absolutely a one liner.
-* Every JavaScript Function inherits methods such as call, apply and bind
-  from the object `Function.prototype`.
-* Function#call executes whatever the value of `this` when it's invoked.
-  e.g. someFunction.call() // `this` inside `call` is `someFunction`
+* Every JavaScript Function inherits methods such as call, apply and bind from the object `Function.prototype`.
+* Function#call executes whatever the value of `this` when it's invoked.  e.g. someFunction.call() // `this` inside `call` is `someFunction`
 * Function.call itself is a function thus it inherits from `Function.prototype`
 
 ```js

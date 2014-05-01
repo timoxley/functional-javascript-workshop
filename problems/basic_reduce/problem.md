@@ -1,8 +1,6 @@
 # Task
 
-Given an Array of strings, use `Array#reduce` to create an object that
-contains the number of times each string occured in the array. Return the
-object directly (no need to console.log).
+Given an Array of strings, use `Array#reduce` to create an object that contains the number of times each string occured in the array. Return the object directly (no need to console.log).
 
 ## Example
 

@@ -1,10 +1,8 @@
 # Task
 
-Create a new "BetterUser" type that extends "User" by overriding
-the User's `.toString` method.
+Create a new "BetterUser" type that extends "User" by overriding the User's `.toString` method.
 
-Your exported function will be passed the constructor function
-for a "User" type that looks like this:
+Your exported function will be passed the constructor function for a "User" type that looks like this:
 
 ```js
 /**
@@ -42,8 +40,7 @@ Note: you do not need to copy this into your solution.
 
 ## Example
 
-From your exported function, return a `BetterUser` constructor function
-that extends `User` with a custom `toString` method that works like so:
+From your exported function, return a `BetterUser` constructor function that extends `User` with a custom `toString` method that works like so:
 
 ```js
 var joe = new BetterUser('Mr.', 'Joe Smith') // pass in title and name

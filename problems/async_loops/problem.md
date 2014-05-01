@@ -1,7 +1,6 @@
 This code is broken!
 
-A Java developer has committed this terrible code to our codebase
-and didn't test it!
+A Java developer has committed this terrible code to our codebase and didn't test it!
 
 ```js
 function loadUsers(userIds, load, done) {
@@ -15,14 +14,14 @@ function loadUsers(userIds, load, done) {
 module.exports = loadUsers
 ```
 
-# Task: Fix this code! The callback should be called with all the users loaded.
-The order of the users should match the order of supplied user ids.
-Because this function is asynchronous, we do not care about its return value.
+# Task
+
+Fix this code! The callback should be called with all the users loaded.
+The order of the users should match the order of supplied user ids. Because this function is asynchronous, we do not care about its return value.
 
 ## Arguments
 * userIds: an Array of numeric user ids.
-* load: a Function used to load user objects. Expects a numeric id and a callback. The callback will be called with the
-  result of loading the user with the specified id (either a user object or null).
+* load: a Function used to load user objects. Expects a numeric id and a callback. The callback will be called with the result of loading the user with the specified id (either a user object or null).
 * done: a Function that expects an Array of user objects (as retrieved from `load`).
 
 ## Conditions

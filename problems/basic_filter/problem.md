@@ -1,8 +1,7 @@
 # Task
 Use Array#filter to write a function called `getShortMessages`.
 
-`getShortMessages` takes an array of objects with '.message' properties
-and returns an array of messages that are *less than < 50 characters long*.
+`getShortMessages` takes an array of objects with '.message' properties and returns an array of messages that are *less than < 50 characters long*.
 
 ## Arguments
 
@@ -25,8 +24,7 @@ and returns an array of messages that are *less than < 50 characters long*.
 
 ## Example
 
-The function should return an array containing the messages themselves,
-*without their containing object*.
+The function should return an array containing the messages themselves, *without their containing object*.
 
 e.g.
 ```

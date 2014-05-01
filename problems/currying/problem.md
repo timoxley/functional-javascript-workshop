@@ -37,8 +37,7 @@ In this challenge, we're going to implement a 'curry' function for an arbitrary 
 `curryN` will take two parameters:
 
 * fn: The function we want to curry.
-* n: Optional number of arguments to curry.
-  If not supplied, `curryN` should use the fn's arity as the value for `n`.
+* n: Optional number of arguments to curry. If not supplied, `curryN` should use the fn's arity as the value for `n`.
 
 ## Example
 
@@ -62,8 +61,7 @@ console.log(curryN(add3)(1)(2)(3)) // => 6
 
 ## Hint
 
-* You can detect the number of expected arguments to a function (it's arity)
-  by checking a function's .length property.
+* You can detect the number of expected arguments to a function (it's arity) by checking a function's .length property.
 
 ## Boilerplate
 

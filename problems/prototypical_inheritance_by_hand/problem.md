@@ -1,14 +1,10 @@
-We're going to implement a rough analog of JavaScript's prototypical inheritance by hand,
-to ensure we fully understand exactly how prototypical inheritance fits together.
+We're going to implement a rough analog of JavaScript's prototypical inheritance by hand, to ensure we fully understand exactly how prototypical inheritance fits together.
 
 # Task
 
-Implement the functions `New`, `Create` and `Lookup` to simulate JavaScript's
-`new`, `Object.create` and property lookup mechanisms respectively.
+Implement the functions `New`, `Create` and `Lookup` to simulate JavaScript's `new`, `Object.create` and property lookup mechanisms respectively.
 
-Throughout this exercise, you will avoid using any built-in JavaScript inheritance features.
-Instead, you will need to use your own New, Create and Lookup functions as well as `__PROTO__`
-to represent an instance's prototype, and `PROTOTYPE` to represent a constructor's prototype.
+Throughout this exercise, you will avoid using any built-in JavaScript inheritance features.  Instead, you will need to use your own New, Create and Lookup functions as well as `__PROTO__` to represent an instance's prototype, and `PROTOTYPE` to represent a constructor's prototype.
 
 i.e.
 
@@ -18,16 +14,11 @@ i.e.
 
 ## Part 1: Lookup
 
-`Lookup` will simulate the behaviour of JavaScript's property lookup mechanism, or "Getters".
-When you reference any object's property in JavaScript, it will 'walk up the prototype chain'
-to find the property, if found it will return its value, otherwise it will return `undefined`.
+`Lookup` will simulate the behaviour of JavaScript's property lookup mechanism, or "Getters".  When you reference any object's property in JavaScript, it will 'walk up the prototype chain' to find the property, if found it will return its value, otherwise it will return `undefined`.
 
-Your `Lookup` function will be passed a context object, and the property String
-that we're looking for. If the property is found on the current context,
-return that property, otherwise check the context's prototype, `__PROTO__`.
+Your `Lookup` function will be passed a context object, and the property String that we're looking for. If the property is found on the current context, return that property, otherwise check the context's prototype, `__PROTO__`.
 
-If a property cannot be found in the object's prototype chain, simply
-return `undefined`.
+If a property cannot be found in the object's prototype chain, simply return `undefined`.
 
 ```js
 
@@ -63,10 +54,7 @@ Lookup(otherKitten, 'color')  // => 'grey'
 
 ```
 
-Side Note: in JavaScript, when you 'get' a property (i.e. lookup), the engine walks
-up the prototype chain to find the value, but if you 'set' a property it ignores
-the prototype chain and simply sets the value on the current object.
-We could have implemented a 'Setter' as an exercise, but since there's no magic, it's pretty trivial:
+Side Note: in JavaScript, when you 'get' a property (i.e. lookup), the engine walks up the prototype chain to find the value, but if you 'set' a property it ignores the prototype chain and simply sets the value on the current object.  We could have implemented a 'Setter' as an exercise, but since there's no magic, it's pretty trivial:
 
 ```js
 
@@ -80,8 +68,7 @@ function Setter(context, property, value) {
 
 `Create` will simulate the behaviour of `Object.create`.
 
-`Create` will be passed an object, and you must return a new object with its
-prototype (`__PROTO__`) set to the supplied object.
+`Create` will be passed an object, and you must return a new object with its prototype (`__PROTO__`) set to the supplied object.
 
 ```js
 fuction Cat() {
@@ -107,9 +94,7 @@ Lookup(kitten, 'speak')() // => 'Meow!'
 
 `New` will simulate the behaviour of JavaScript's `new` keyword.
 
-The first argument passed to `New` will be a constructor function (i.e. a type).
-Subsequent parameters must be passed to the constructor function when creating the
-the new object.
+The first argument passed to `New` will be a constructor function (i.e. a type).  Subsequent parameters must be passed to the constructor function when creating the the new object.
 
 `New` will return new objects using the supplied constructor function.
 
@@ -127,9 +112,7 @@ brownCat.color // => brown
 
 ```
 
-The constructor function passed to `New` may have a `.PROTOTYPE` property.
-All objects created with this constructor will have their `__PROTO__`
-set to the constructor's `.PROTOTYPE` property.
+The constructor function passed to `New` may have a `.PROTOTYPE` property.  All objects created with this constructor will have their `__PROTO__` set to the constructor's `.PROTOTYPE` property.
 
 ```js
 
@@ -175,8 +158,7 @@ var cow = New(Cow) // 'moo' true
 
 ```
 
-We also need to simulate one other behaviour of the `new` keyword:
-If the constructor itself returns a value, `New` will return that value.
+We also need to simulate one other behaviour of the `new` keyword: If the constructor itself returns a value, `New` will return that value.
 
 ```js
 

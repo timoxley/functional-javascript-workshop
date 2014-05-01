@@ -1,5 +1,4 @@
-The boilerplate includes a definition of `repeat`. `repeat` will take
-a Function operation, and a Number num, and invoke operation num times:
+The boilerplate includes a definition of `repeat`. `repeat` will take a Function operation, and a Number num, and invoke operation num times:
 
 ```js
 var count = 0
@@ -25,12 +24,9 @@ console.log('executed %d times', count)
 
 # Task
 
-Modify the boilerplate below such that it uses a trampoline to
-continuously call itself synchronously.
+Modify the boilerplate below such that it uses a trampoline to continuously call itself synchronously.
 
-You can assume that the operation passed to repeat does not take
-arguments (or they are already bound to the function) and the
-return value is not important.
+You can assume that the operation passed to repeat does not take arguments (or they are already bound to the function) and the return value is not important.
 
 ## Conditions
 
@@ -40,10 +36,8 @@ return value is not important.
 ## Hints
 
 * Modify `repeat` so it returns the 'next step', if there is one.
-* A trampoline continues to synchronously execute steps, getting new
-  steps, until there are no more steps. You can use a loop here!
-* If your program takes a long time to run, something is probably wrong.
-  Use Control - C to kill the node process.
+* A trampoline continues to synchronously execute steps, getting new steps, until there are no more steps. You can use a loop here!
+* If your program takes a long time to run, something is probably wrong.  Use Control - C to kill the node process.
 
 ## Boilerplate
 
