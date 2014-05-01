@@ -96,22 +96,26 @@ This tutorial was built using rvagg's [workshopper](https://github.com/rvagg/wor
 
 ```
  project  : functional-javascript
- repo age : 3 months
- active   : 32 days
- commits  : 119
+ repo age : 7 months
+ active   : 50 days
+ commits  : 152
  files    : 70
  authors  :
-    69	Tim                     58.0%
-    40	Tim Oxley               33.6%
-     2	ZJ                      1.7%
-     1	Matthew Hokanson        0.8%
-     1	Naor Biton              0.8%
-     1	Arvid Andersson         0.8%
-     1	Steve Teo               0.8%
-     1	Wei Lu                  0.8%
-     1	Pavel Kornilov          0.8%
-     1	Brendon Murphy          0.8%
-     1	Lorcan Coyle            0.8%
+    69	Tim                     45.4%
+    67	Tim Oxley               44.1%
+     3	Sequoia McDowell        2.0%
+     2	ZJ                      1.3%
+     1	Naor Biton              0.7%
+     1	Pavel Kornilov          0.7%
+     1	Steve Teo               0.7%
+     1	Wei Lu                  0.7%
+     1	Yoshua Wuyts            0.7%
+     1	flakyfilibuster         0.7%
+     1	Arvid Andersson         0.7%
+     1	tim walker              0.7%
+     1	Brendon Murphy          0.7%
+     1	Lorcan Coyle            0.7%
+     1	Matthew Hokanson        0.7%
 ```
 
 ## Licence
