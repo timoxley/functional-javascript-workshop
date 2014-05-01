@@ -56,7 +56,8 @@ reduce([1,2,3], function(prev, curr, index, arr) {
 ## Conditions
 
 * Do not use any for/while loops.
-* Do not use any Array methods like map or reduce.
+* Do not use any Array methods like Array#map or Array#reduce.
+* Do not create any unecessary functions e.g. helpers.
 
 ## Resources
 

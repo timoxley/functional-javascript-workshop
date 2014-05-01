@@ -46,9 +46,7 @@ addTen(0) // => 10
 All of the above examples are same as calling `add(10, y)`, where `y` was supplied in the call to 
 the appropriately named `addTen`.
 
-##########
-## Task ##
-##########
+# Task
 
 Use partial application to create a function that fixes the first argument to `console.log`.
 i.e. Implement a logging function that prepends a namespace string to its output.
@@ -62,15 +60,11 @@ Make sure *all* arguments passed to the returned logging function are printed.
 
 ** Print the output to the console directly **
 
-###############
-## Arguments ##
-###############
+## Arguments
 
 * namespace: a String to prepend to each message passed to the returned function.
 
-#############
-## Example ##
-#############
+## Example
 
 ```js
 
@@ -83,16 +77,12 @@ warn('this is a warning message', 'with more info')
 // WARN: this is a warning message with more info
 ```
 
-################
-## Conditions ##
-################
+## Conditions
 
 * Do not use Function#bind
 * Use Function#apply
 
-#################
-## Boilerplate ##
-#################
+## Boilerplate
 
 ```js
 
@@ -106,16 +96,12 @@ module.exports = logger
 
 ```
 
-###############
-## Resources ##
-###############
+## Resources
 
 * https://en.wikipedia.org/wiki/Partial_application
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
 
-###########
-## Hints ##
-###########
+## Hints
 
 Remember `console.log` takes any number of arguments and prints them, separated by spaces:
 

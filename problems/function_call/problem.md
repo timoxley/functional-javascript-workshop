@@ -3,7 +3,7 @@
 Write a function that allows you to use `Array.prototype.slice` without 
 using `.call` to invoke it.
 
-Normally you have to use slice with call or apply:
+Normally you have to use `slice` with `call` or `apply`:
 
 ```js
 var slice = Array.prototype.slice
@@ -23,7 +23,7 @@ function() {
 }
 ```
 
-## Expected Output
+## Example
 
 A function, `slice` that exhibits the following behaviour:
 
@@ -44,6 +44,7 @@ nums.slice(1, 2) // [2]
 
 ## Conditions
 
+* Do not use any for/while loops or Array#forEach.
 * Do not use the `function` keyword :D
 
 ## Hints
@@ -51,7 +52,7 @@ nums.slice(1, 2) // [2]
 * This is absolutely a one liner.
 * Every JavaScript Function inherits methods such as call, apply and bind
   from the object `Function.prototype`.
-* Function#call executes whatever the value of `this` when it's invoked. 
+* Function#call executes whatever the value of `this` when it's invoked.
   e.g. someFunction.call() // `this` inside `call` is `someFunction`
 * Function.call itself is a function thus it inherits from `Function.prototype`
 

@@ -38,6 +38,11 @@ testAllValid([
 Use array#some and Array#every to check every user passed to your returned
 function exists in the array passed to the exported function.
 
+## Conditions
+
+* Do not use any for/while loops or Array#forEach.
+* Do not create any unecessary functions e.g. helpers.
+
 ## Resources
 
 * https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/every

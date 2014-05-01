@@ -1,8 +1,8 @@
+# Task
+
 Use Array#reduce to implement a simple version of Array#map.
 
-#####################
-## Expected Output ##
-#####################
+## Expected Output
 
 A function `map` that applies a function to each item in an array and
 collects the results in a new Array.
@@ -20,23 +20,17 @@ console.log(output) // => [2,4,6,8,10]
 
 ```
 
-###########
-## Input ##
-###########
+## Arguments
 
 * input: an arbitrary Array of any type.
 * operation: an arbitrary Function which can be applied to items in `input`.
 
-###############
-## Resources ##
-###############
+## Resources
 
 * https://en.wikipedia.org/wiki/Reduce_(higher-order_function)
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
 
-#################
-## Boilerplate ##
-#################
+## Boilerplate
 
 ```js
 

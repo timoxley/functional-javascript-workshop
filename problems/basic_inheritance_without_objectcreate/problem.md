@@ -63,7 +63,7 @@ User.prototype.toString = function() {
 
 Note: you do not need to copy this into your solution.
 
-## Expected Output
+## Example
 
 From your exported function, return a `BetterUser` constructor function
 that extends `User` with a custom `toString` method that works like so:

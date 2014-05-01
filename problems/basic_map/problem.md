@@ -20,10 +20,9 @@ module.exports = doubleAll
 
 ## Conditions
 
-* Do not use any for/while loops.
-* You do not need to define any additional functions
- unless a stub is provided in the boilerplate.
 * Your solution should use Array.prototype.map()
+* Do not use any for/while loops or Array.prototype.forEach.
+* Do not create any unecessary functions e.g. helpers.
 
 ## Resources
 

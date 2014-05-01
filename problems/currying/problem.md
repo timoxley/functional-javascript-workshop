@@ -56,6 +56,10 @@ console.log(curryA(10)) // => 13
 console.log(curryN(add3)(1)(2)(3)) // => 6
 ```
 
+## Conditions
+
+* Do not use any for/while loops or Array#forEach.
+
 ## Hint
 
 * You can detect the number of expected arguments to a function (it's arity)

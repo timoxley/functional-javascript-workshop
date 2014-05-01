@@ -1,9 +1,7 @@
 We're going to implement a rough analog of JavaScript's prototypical inheritance by hand,
 to ensure we fully understand exactly how prototypical inheritance fits together.
 
-########
-# Task #
-########
+# Task
 
 Implement the functions `New`, `Create` and `Lookup` to simulate JavaScript's
 `new`, `Object.create` and property lookup mechanisms respectively.
@@ -18,9 +16,7 @@ i.e.
 * `obj.__PROTO__` == obj.__proto__ || Object.getPrototypeOf(obj)
 * `Constructor.PROTOTYPE` == `Constructor.prototype`
 
-##################
-# Part 1: Lookup #
-##################
+## Part 1: Lookup
 
 `Lookup` will simulate the behaviour of JavaScript's property lookup mechanism, or "Getters".
 When you reference any object's property in JavaScript, it will 'walk up the prototype chain'
@@ -80,9 +76,7 @@ function Setter(context, property, value) {
 
 ```
 
-##################
-# Part 2: Create #
-##################
+## Part 2: Create
 
 `Create` will simulate the behaviour of `Object.create`.
 
@@ -109,9 +103,7 @@ Lookup(kitten, 'speak')() // => 'Meow!'
 
 ```
 
-###############
-# Finale: New #
-###############
+## Finale: New
 
 `New` will simulate the behaviour of JavaScript's `new` keyword.
 
@@ -196,24 +188,18 @@ var cat = New(Cat) // 3
 
 ```
 
-##############
-# Conditions #
-##############
+## Conditions
 
 * Do not use any built-in javascript prototypical inheritance features.
 * Do not call `new`
 * Do not use `__proto__`, `Object.getPrototypeOf` or `Object.setPrototypeOf`
 
-#########
-# Hints #
-#########
+## Hints
 
 * Use `hasOwnProperty` to discover if an object has a property.
 
 
-#################
-## Boilerplate ##
-#################
+## Boilerplate
 
 ```js
 

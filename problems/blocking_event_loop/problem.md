@@ -10,6 +10,11 @@ loop such that the timeout fires before 1500 milliseconds elapse.
 
 Try to perform as many operations as you can before the timeout fires!
 
+## Conditions
+
+* Do not use any for/while loops or Array#forEach.
+* Do not create any unecessary functions e.g. helpers.
+
 ## Hints
 
 * If your program takes a long time to run, something is probably wrong.

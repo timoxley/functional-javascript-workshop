@@ -25,9 +25,8 @@ console.log(countWords(inputWords))
 
 ## Conditions
 
-* Do not use any for/while loops.
-* You do not need to define any additional functions
- unless a stub is provided in the boilerplate.
+* Do not use any for/while loops or Array#forEach.
+* Do not create any unecessary functions e.g. helpers.
 
 ## Resources
 

@@ -82,10 +82,9 @@ duckCount(duck, notDuck) // 1
 
 ## Conditions
 
-* Do not use any for/while loops.
+* Do not use any for/while loops or Array#forEach.
 * Do not create any counter/accumulator variables.
-* You do not need to define any additional name functions
-  unless a stub is provided in the boilerplate.
+* Do not create any unecessary functions e.g. helpers.
 
 ## Hint
 

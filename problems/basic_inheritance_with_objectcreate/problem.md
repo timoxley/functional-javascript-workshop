@@ -40,7 +40,7 @@ User.prototype.toString = function() {
 
 Note: you do not need to copy this into your solution.
 
-## Expected Output
+## Example
 
 From your exported function, return a `BetterUser` constructor function
 that extends `User` with a custom `toString` method that works like so:
@@ -54,6 +54,7 @@ console.log('Hello ' + joe) // 'Hello [BetterUser: Mr. Joe Smith]'
 
 * Don't call the User constructor unnecessarily!
 * Don't use `__proto__`
+* Do not create any unecessary functions e.g. helpers.
 
 ## Resources
 

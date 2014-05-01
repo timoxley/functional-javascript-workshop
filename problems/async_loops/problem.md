@@ -26,11 +26,13 @@ Because this function is asynchronous, we do not care about its return value.
 * done: a Function that expects an Array of user objects (as retrieved from `load`).
 
 ## Conditions
-* Do not use any for/while loops.
+
+* Do not use for/while loops (Array#forEach ok).
 * The order of the results in `done` must be the same as they were specified in `userIds`.
 * Users should be loaded in parallel i.e. the entire job should not take more than 1 second.
+* Do not create any unecessary functions e.g. helpers.
 
-## Hint 
+## Hint
 
 * You don't need to use a sort to maintain ordering.
 

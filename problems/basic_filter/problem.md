@@ -16,13 +16,14 @@ and returns an array of messages that are *less than < 50 characters long*.
 
 ## Conditions
 
-* Do not use for loops or Array#forEach.
+* Do not use any for/while loops or Array#forEach.
+* Do not create any unecessary functions e.g. helpers.
 
 ## Hint
 
 * Try chaining some Array methods!
 
-## Expected Output
+## Example
 
 The function should return an array containing the messages themselves,
 *without their containing object*.

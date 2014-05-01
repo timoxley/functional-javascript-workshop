@@ -34,8 +34,8 @@ return value is not important.
 
 ## Conditions
 
-* Do not change the implementation of repeat to include any loops (you
-  may change it in other ways though).
+* Do not change the implementation of repeat to include any loops
+(you may change it in other ways though).
 
 ## Hints
 
