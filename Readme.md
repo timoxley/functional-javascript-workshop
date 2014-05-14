@@ -11,7 +11,7 @@
 
 
 
-[![Gittip](http://img.shields.io/gittip/timoxley.png)](https://www.gittip.com/Shields.io/)
+[![Gittip](http://img.shields.io/gittip/timoxley.png)](https://www.gittip.com/timoxley/)
 ## Mission
 
 Many functional programming learning resources will teach you to write functional code, but it's often highly indirect,
