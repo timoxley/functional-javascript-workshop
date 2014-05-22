@@ -77,14 +77,14 @@ duckCount(duck, notDuck) // 1
 ```
 ## Arguments
 
-* You will be passed 0-20 arguments. Each argument could be of any type with any
+* You will be passed 0-20 arguments. Each argument could be of any type with any 
   properties. Some of these items will have a 'quack' property.
 
 ## Conditions
 
 * Do not use any for/while loops.
 * Do not create any counter/accumulator variables.
-* You do not need to define any additional name functions
+* You do not need to define any additional name functions 
   unless a stub is provided in the boilerplate.
 
 ## Hint
