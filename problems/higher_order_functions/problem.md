@@ -5,9 +5,15 @@ A higher-order function (also functional form, functional or functor) is a funct
 
 All other functions are first order functions. [1]
 
+Unlike many other languages with imperative features, JavaScript allows you to utilise higher-order functions because it has "first-class functions". This means functions can be treated just like any other value in JavaScript: just like Strings or Numbers, Function values can be stored in variables, as properties on objects or passed to other functions as arguments. Functions are actually Object types so you can even add properties and store values on them, just like a regular Object.
+
+The key difference between Functions and other value types in JavaScript is the call syntax: if a reference to a function is followed by parens and some optional comma-separated values: `someFunctionValue(arg1, arg2, etc)`, then the  function body will be executed with the supplied arguments (if any).
+
+In this exercise we're going demonstrate that functions can be passed as values by passing you a function as an argument.
+
 # Task
 
-Implement a higher-order function that takes a function and calls it 'n' times.
+Implement a function that takes a function as its first argument, a number `num` as its second argument, then executes the passed in function `num` times.
 
 ## Arguments
 
@@ -16,12 +22,15 @@ Implement a higher-order function that takes a function and calls it 'n' times.
 
 ## Resources
 
-* https://en.wikipedia.org/wiki/Higher-order_function
+* https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions_and_function_scope
 
-## Hint: Recursion
+## Hints 
 
-It's ok to use a loop in your implementation, bonus points
-if you don't.
+* This is really simple.
+* It's ok to use a loop in your implementation, bonus points
+if you use recursion instead.
+* You may notice some output. That is coming from the function we passed you.
+* You do not need to console.log anything.
 
 ## Boilerplate
 
