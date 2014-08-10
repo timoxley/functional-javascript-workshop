@@ -15,6 +15,8 @@ In this exercise we're going demonstrate that functions can be passed as values 
 
 Implement a function that takes a function as its first argument, a number `num` as its second argument, then executes the passed in function `num` times.
 
+Use the boilerplate code given to you below to get started. Most/all future exercises will provide boilerplate.
+
 ## Arguments
 
 * operation: A Function, takes no arguments, returns no useful value.
@@ -40,5 +42,6 @@ function repeat(operation, num) {
   // SOLUTION GOES HERE
 }
 
+// Do not remove the line below
 module.exports = repeat
 ```
