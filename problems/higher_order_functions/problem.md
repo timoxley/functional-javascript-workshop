@@ -1,11 +1,11 @@
-A higher-order function (also functional form, functional or functor) is a function that does at least one of the following:
+A higher-order function is a function that does at least one of the following:
 
-* take one or more functions as an input
-* output a function
+* Take one or more functions as an input
+* Output a function
 
 All other functions are first order functions. [1]
 
-Unlike many other languages with imperative features, JavaScript allows you to utilise higher-order functions because it has "first-class functions". This means functions can be treated just like any other value in JavaScript: just like Strings or Numbers, Function values can be stored in variables, as properties on objects or passed to other functions as arguments. Functions are actually Object types so you can even add properties and store values on them, just like a regular Object.
+Unlike many other languages with imperative features, JavaScript allows you to utilise higher-order functions because it has "first-class functions". This means functions can be treated just like any other value in JavaScript: just like Strings or Numbers, Function values can be stored as variables, properties on objects or passed to other functions as arguments. Function values are actually Objects (inheriting from `Function.prototype`) so you can even add properties and store values on them, just like any regular Object.
 
 The key difference between Functions and other value types in JavaScript is the call syntax: if a reference to a function is followed by parens and some optional comma-separated values: `someFunctionValue(arg1, arg2, etc)`, then the  function body will be executed with the supplied arguments (if any).
 
@@ -23,6 +23,7 @@ Implement a function that takes a function as its first argument, a number `num`
 ## Resources
 
 * https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions_and_function_scope
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype
 
 ## Hints 
 
