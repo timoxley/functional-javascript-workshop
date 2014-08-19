@@ -1,6 +1,6 @@
 {
   "name": "functional-javascript-workshop",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "The basics of functional programming in JavaScript. No libraries required.",
   "main": "index.js",
   "bin": {

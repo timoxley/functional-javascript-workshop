@@ -27,7 +27,7 @@ module.exports = input(new Array(randomInt(10, 20))
       var match = users.filter(function(user) {return user.id === id})
       if (match.length) fn(match[0])
       else fn(null)
-    }, Math.random() * 1000)
+    }, Math.floor(Math.random() * 1000))
   }
   var done = function(submittedUsers) {
     clearTimeout(tooLong)
