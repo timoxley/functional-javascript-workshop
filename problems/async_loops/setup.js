@@ -7,12 +7,42 @@ function randomInt(min, max) {
   return Math.floor((Math.random() * (max - min + 1)) + min)
 }
 
-module.exports = input(new Array(randomInt(10, 20))
-.join(',')
-.split(',')
-.map(function() {
+//http://stackoverflow.com/a/2450976/1011470
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+function makeArrayOfInts(length, start) {
+  var result = [];
+
+  start = start || 0;
+
+  if (length > 0) {
+    while(result.push(result.length + start) < length);
+  } 
+
+  return result;
+}
+
+module.exports = input(shuffle(makeArrayOfInts(randomInt(10, 20), randomInt(1, 10000)))
+.map(function(currentValue) {
   return {
-    id: randomInt(0, 1000),
+    id: currentValue,
     name: lorem().split(' ').slice(0, 2).map(function(word) {word[0] = word[0].toUpperCase(); return word;}).join(' ')
   }
 })).wrap(function(input, mod) {
