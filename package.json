@@ -19,5 +19,13 @@
   "dependencies": {
     "workshopper": "~0.7.2",
     "lorem-ipsum": "~0.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timoxley/functional-javascript-workshop"
+  },
+  "bugs": {
+    "url": "https://github.com/timoxley/functional-javascript-workshop/issues"
+  },
+  "homepage": "https://github.com/timoxley/functional-javascript-workshop"
 }
