@@ -7,6 +7,6 @@ var path = require('path')
 
 Workshopper({
     name   : 'functional-javascript'
-  , title  : 'FUNCTIONAL JAVASCRIPT IS GOOD'
-  , appDir : path.join(__dirname)
-}).init()
+  , appDir : __dirname
+  , languages   : ['en', 'fr']
+})

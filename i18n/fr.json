@@ -1,0 +1,42 @@
+{
+  "title": "JAVASCRIPT FONCTIONNEL C’EST LE BIEN",
+  "subtitle" : "\u001b[23mSélectionnez un exercice et tapez \u001b[3mEnter\u001b[23m pour démarrer",
+  "common": {
+    "exercise": {
+      "fail": {
+        "missing_deps": "You need to install all of the dependencies you are using in your solution (e.g. lodash)",
+        "module_not_found": "Could not find your file. Make sure the path is correct.",
+        "must_export_function": "You should always return a function using the module.exports object."
+      },
+      "input":      "entrée:            %j",
+      "submission": "votre résultat :   %j",
+      "solution":   "résultat attendu : %j"
+    }
+  },
+  "exercise": {
+    "Hello World": "Bonjour Monde",
+    "Higher Order Functions": "Fonctions d’Ordre Supérieur",
+    "Basic: Map": "Les bases : Map",
+    "Basic: Filter": "Les bases : Filter",
+    "Basic: Every Some": "Les bases : Every, Some",
+    "Basic: Reduce": "Les bases : Reduce",
+    "Basic: Recursion": "Les bases : Récursion",
+    "Basic: Call": "Les bases : Call",
+    "Partial Application without Bind": "Application Partielle sans Bind",
+    "Partial Application with Bind": "Application Partielle avec Bind",
+    "Implement Map with Reduce": "Implémenter Map à l’aide de Reduce",
+    "Function Spies": "Espions sur Fonctions",
+    "Blocking Event Loop": "Boucle d’Événements Bloquée",
+    "Trampoline": "Trampoline",
+    "Async Loops": "Boucles Asynchrones",
+    "Recursion": "Récursion",
+    "Currying": "Currying",
+    "Function Call": "Appel de Fonction"
+  },
+  "exercises": {
+    "Basic: Map": {
+      "didnt_use_map": "Vous n’avez pas utilisé Array#map",
+      "used_map": "Youpi !  Vous avez utilisé Array#map"
+    }
+  }
+}
