@@ -19,7 +19,7 @@ function runner() {
     try {
         submittedFx = require(path.resolve(process.cwd(), this.args[0]));
     } catch (e) {
-        var message = (e.code !== 'MODULE_NOT_FOUND'
+        var message = (e.code === 'MODULE_NOT_FOUND'
                         ? __('fail.module_not_found')
                         : __('fail.missing_deps'))
 
