@@ -1,15 +1,10 @@
 "use strict"
 
+var random = require('../randomizer')
 var runner = require('../../runner')
 var util = require('util')
 
-function randomInt(min, max) {
-  return Math.floor((Math.random() * (max - min)) + min)
-}
-
-var input = Array.apply(null, { length: randomInt(0, 20) }).map(function() {
-  return randomInt(0, 10)
-})
+var input = random.arrayOfInts(20, 0, 10)
 
 module.exports = runner.custom(function(fx, numbers) {
   var valid = 1

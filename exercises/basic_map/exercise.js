@@ -1,13 +1,9 @@
 "use strict"
 
+var random = require('../randomizer')
 var runner = require('../../runner')
 
-function randomInt(min, max) {
-  return Math.floor((Math.random() * (max - min)) + min)
-}
-
-var input = new Array(randomInt(0, 19)).join(',').split(',')
-  .map(function() { return randomInt(0, 9) })
+var input = random.arrayOfInts(19, 0, 9)
 
 var regularMap = Array.prototype.map, usedMap
 Array.prototype.map = function() {

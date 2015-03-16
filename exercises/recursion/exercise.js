@@ -1,10 +1,7 @@
 "use strict"
 
+var random = require('../randomizer')
 var runner = require('../../runner')
-
-function randomInt(min, max) {
-  return Math.floor((Math.random() * (max - min)) + min)
-}
 
 var data = {
   "name": "functional-javascript-workshop",
@@ -105,7 +102,7 @@ var data = {
 }
 
 function getRandomSubTree() {
-  return randomInt(0, Object.keys(data.dependencies.workshopper.dependencies).length)
+  return random.int(0, Object.keys(data.dependencies.workshopper.dependencies).length)
 }
 
 var items = [getRandomSubTree(), getRandomSubTree(), getRandomSubTree(), getRandomSubTree()]

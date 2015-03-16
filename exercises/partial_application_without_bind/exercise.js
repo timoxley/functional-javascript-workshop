@@ -1,11 +1,10 @@
 "use strict"
 
 var loremIpsum = require('lorem-ipsum')
+var random = require('../randomizer')
 var runner = require('../../runner')
 
-var input = Array.apply(null, {length: Math.random() * 20 + 1}).map(function() {
-  return loremIpsum()
-})
+var input = random.arrayOfLorems(1, 20)
 
 // FIXME: THIS DOES NOT CAPTURE console.log OUTPUT PROPERLY (as it happens
 // inside the runner, not in child processes).  WE NEED TO CHANGE THIS INTO

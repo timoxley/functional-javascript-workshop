@@ -1,13 +1,11 @@
 "use strict"
 
 var loremIpsum = require('lorem-ipsum')
+var random = require('../randomizer')
 var runner = require('../../runner')
 
-function randomInt(min, max) {
-  return Math.floor((Math.random() * (max - min)) + min)
-}
-
-var input = new Array(randomInt(10, 30)).join(',').split(',')
-  .map(function() { return { message: loremIpsum() } })
+var input = random.arrayOf(10, 30, function() {
+  return { message: loremIpsum() }
+})
 
 module.exports = runner.hideInput(input)
