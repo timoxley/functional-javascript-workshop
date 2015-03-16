@@ -4,7 +4,7 @@
  */
 "use strict";
 
-var runner = require('../../runner')
+var runner = require('../runner')
 
 module.exports = runner.custom(function(curryN) {
   function add3(one, two, three) {

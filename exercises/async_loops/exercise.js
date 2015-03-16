@@ -4,7 +4,7 @@ var deepEqual = require('deep-eql')
 var inspect = require('util').inspect
 var loremIpsum = require('lorem-ipsum')
 var random = require('../randomizer')
-var runner = require('../../runner')
+var runner = require('../runner')
 
 // All deepEqual impls (assert, deep-eql…) seem to b0rk when multiple objects
 // in an array share the same `id` value (wtf?!), so we make sure they're unique.

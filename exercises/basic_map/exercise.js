@@ -1,7 +1,7 @@
 "use strict"
 
 var random = require('../randomizer')
-var runner = require('../../runner')
+var runner = require('../runner')
 
 var input = random.arrayOfInts(19, 0, 9)
 

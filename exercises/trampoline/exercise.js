@@ -1,6 +1,6 @@
 "use strict"
 
-var runner = require('../../runner')
+var runner = require('../runner')
 
 module.exports = runner.custom(function(repeat) {
   console.log('repeating 100000 times')

@@ -1,6 +1,6 @@
 "use strict"
 
-var runner = require('../../runner')
+var runner = require('../runner')
 
 function randomInt(min, max) {
   return Math.floor((Math.random() * (max - min)) + min)

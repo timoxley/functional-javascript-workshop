@@ -1,7 +1,7 @@
 "use strict"
 
 var random = require('../randomizer')
-var runner = require('../../runner')
+var runner = require('../runner')
 
 var data = {
   "name": "functional-javascript-workshop",

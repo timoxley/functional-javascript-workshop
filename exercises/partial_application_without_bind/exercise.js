@@ -2,7 +2,7 @@
 
 var loremIpsum = require('lorem-ipsum')
 var random = require('../randomizer')
-var runner = require('../../runner')
+var runner = require('../runner')
 
 var input = random.arrayOfLorems(1, 20)
 

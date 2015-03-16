@@ -1,7 +1,7 @@
 "use strict"
 
 var loremIpsum = require('lorem-ipsum')
-var runner = require('../../runner')
+var runner = require('../runner')
 
 var input = loremIpsum({count: 1, units:'paragraphs'})
  .replace(/([^\w ])/g, '')// remove non-words and spaces
