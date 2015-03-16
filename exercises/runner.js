@@ -3,19 +3,19 @@ var deepEqual = require('deep-eql')
 var execute = require('workshopper-exercise/execute')
 var exerciser = require('workshopper-exercise')
 var filecheck = require('workshopper-exercise/filecheck')
+var fs = require('fs')
+var os = require('os')
 var path = require('path')
 
-var verbose = true, showInput = true, compareDisplays = false, initFx, wrapUpFx, customFx
+var verbose = true, showInput = true, initFx, wrapUpFx, customFx, wrapperModulePath
 
 function runner() {
-  var exercise = filecheck(exerciser())
+  var exercise = execute(filecheck(exerciser()))
   var input = Array.prototype.slice.call(arguments)
-  if (compareDisplays) {
-    exercise = compareStdOut(exercise)
-  }
+  var submittedFx, __
 
   exercise.addProcessor(function(mode, callback) {
-    var submittedFx, __ = exercise.__.bind(exercise)
+    __ = exercise.__.bind(exercise)
     try {
         submittedFx = require(path.resolve(process.cwd(), this.args[0]));
     } catch (e) {
@@ -31,6 +31,31 @@ function runner() {
         this.emit('fail', __('fail.must_export_function'))
         return callback(null, false)
     }
+
+    callback(null, true)
+  });
+
+  if (wrapperModulePath) {
+    exercise.addSetup(function setupWrapperModule(mode, callback) {
+      this.solutionCommand = [ wrapperModulePath, this.solution ].concat(this.solutionArgs)
+      this.submissionCommand = [ wrapperModulePath, this.submission ].concat(this.submissionArgs)
+
+      if (input.length > 0) {
+        var file = path.join(os.tmpdir(), path.basename(this.solution)) + '.input.json'
+        fs.writeFileSync(file, JSON.stringify(input), { encoding: 'utf-8' })
+        exercise.addCleanup(function(mode, pass, callback) {
+          fs.unlink(file, callback)
+        })
+        this.solutionCommand.splice(2, 0, file)
+        this.submissionCommand.splice(2, 0, file)
+      }
+      process.nextTick(callback)
+    })
+
+    return compareStdOut(exercise)
+  }
+
+  exercise.addProcessor(function(mode, callback) {
     if (initFx) { initFx(); }
     var submittedResult = obtainResult(submittedFx, input)
     if (verbose) {
@@ -59,7 +84,7 @@ function runner() {
     exercise.addVerifyProcessor(wrapUpFx)
   }
 
-  return execute(exercise)
+  return exercise
 }
 
 function obtainResult(fx, input) {
@@ -68,11 +93,6 @@ function obtainResult(fx, input) {
     return customFx.apply(null, input)
   }
   return fx.apply(null, input)
-}
-
-runner.compareDisplay = function compareDisplay() {
-  compareDisplays = true
-  return this.quiet.apply(this, arguments)
 }
 
 runner.custom = function custom(fx) {
@@ -93,6 +113,12 @@ runner.init = function init(fx) {
 runner.quiet = function quiet() {
   verbose = false
   return runner.apply(null, arguments)
+}
+
+runner.wrapWith = function wrapWith(modulePath) {
+  verbose = false
+  wrapperModulePath = modulePath
+  return runner.apply(null, Array.prototype.slice.call(arguments, 1))
 }
 
 runner.wrapUp = function wrapUp(fx) {

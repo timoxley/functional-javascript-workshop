@@ -1,34 +1,38 @@
 "use strict"
 
-var input = require('../../input')
-var lorem = require('lorem-ipsum')
+var deepEqual = require('deep-eql')
+var random = require('../randomizer')
+var runner = require('../runner')
+var loremIpsum = require('lorem-ipsum')
+var util = require('util')
 
-module.exports = input(Array.apply(null, {length: Math.random() * 20}).map(function() {
-  return lorem().split(' ')
-})).wrap(function(input, Spy) {
-  input = input[0]
-  var assert = require('assert')
+var input = random.arrayOf(20, function() { return loremIpsum().split(' ') })
 
-  console.log.bind = function () {
-    throw new Error('Try implementing this without bind!')
-  }
-
-  var count = 0
+var exercise = module.exports = runner.custom(function(Spy, input) {
+  var count = 0, slice = Array.prototype.slice
   var parent = {
     test: function() {
-      assert.deepEqual([].slice.call(arguments), input[count], "Check you are passing ALL the arguments! Hint: Function#apply")
-      assert.strictEqual(this, parent, "Check the function's this! Hint: Function#apply")
+      if (!deepEqual(slice.call(arguments), input[count])) {
+        exercise.emit('fail', "Check you are passing ALL the arguments! Hint: Function#apply")
+      }
+      if (this !== parent) {
+        exercise.emit('fail', "Check the function's this! Hint: Function#apply")
+      }
       return arguments
     }
   }
   var originalFn = parent.test.bind(parent)
   var spy = Spy(parent, 'test')
 
+  var result = []
   input.forEach(function(args, i) {
-    console.log.apply(console, args)
+    result.push(util.format.apply(util, args))
     count = i
-    assert.deepEqual(originalFn.apply(parent, args), parent.test.apply(parent, args), "Check your function's return value!")
+    if (!deepEqual(originalFn.apply(parent, args), parent.test.apply(parent, args))) {
+      exercise.emit('fail', "Check your function's return value!")
+    }
   })
 
-  console.log('Method called %d times. ', spy.count)
-})
+  result.push(util.format('Method called %d times. ', spy.count))
+  return result
+}).quiet(input)
