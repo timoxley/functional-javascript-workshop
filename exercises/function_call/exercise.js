@@ -1,35 +1,21 @@
 "use strict"
 
-var input = require('../../input')
-var lorem = require('lorem-ipsum')
+var loremIpsum = require('lorem-ipsum')
+var runner = require('../../runner')
 
-function randomInt(min, max) {
-  return Math.floor((Math.random() * max - min) + min)
-}
-
-function listOfWords() {
-  return lorem({count: 5, units:'words'})
+var words = loremIpsum({ count: 5, units:'words'})
   .replace(/([^\w ])/g, '')// remove non-words and spaces
   .toLowerCase() // lowercase I guess
   .split(' ') // create array of words
-}
 
-var words = listOfWords()
-module.exports = input(listOfWords())
-.wrap(function(words, slice) {
-  words.forEach(function(words) {
-    console.log('words:', words)
-    console.log('')
-    console.log('slice(words):')
-    console.log(slice(words))
-    console.log('')
-    console.log('slice(words, 0, 1):')
-    console.log(slice(words, 0, 1))
-    console.log('')
-    console.log('slice(words, 2):')
-    console.log(slice(words, 2))
-    console.log('')
-    console.log('slice(words, -1):')
-    console.log(slice(words, -1))
+module.exports = runner.custom(function(slice, words) {
+  var result = []
+  words.forEach(function(word) {
+    result.push('word:', word);
+    result.push('slice(word):', slice(word))
+    result.push('slice(word, 0, 1):', slice(word, 0, 1))
+    result.push('slice(word, 2):', slice(word, 2))
+    result.push('slice(word, -1):', slice(word, -1))
   })
-})
+  return result
+})(words)
