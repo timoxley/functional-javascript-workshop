@@ -1,9 +1,9 @@
 "use strict"
 
-var input = require('../../input')
+var runner = require('../../runner')
 
 function randomInt(min, max) {
-  return Math.floor((Math.random() * max - min) + min)
+  return Math.floor((Math.random() * (max - min)) + min)
 }
 
 var data = {
@@ -108,17 +108,20 @@ function getRandomSubTree() {
   return randomInt(0, Object.keys(data.dependencies.workshopper.dependencies).length)
 }
 
-module.exports = input(data, [getRandomSubTree(), getRandomSubTree(), getRandomSubTree(), getRandomSubTree()]).wrap(function(input, getDependencies) {
-  var data = input[0]
-  var items = input[1]
+var items = [getRandomSubTree(), getRandomSubTree(), getRandomSubTree(), getRandomSubTree()]
+
+module.exports = runner.custom(function(getDependencies) {
   var dependencyTree1 = data.dependencies.workshopper.dependencies[Object.keys(data.dependencies.workshopper.dependencies)[items[0]]]
   var dependencyTree2 = data.dependencies.workshopper.dependencies[Object.keys(data.dependencies.workshopper.dependencies)[items[1]]]
   var dependencyTree3 = data.dependencies.workshopper.dependencies[Object.keys(data.dependencies.workshopper.dependencies)[items[2]]]
   var dependencyTree4 = data.dependencies[Object.keys(data.dependencies)[1]]
   var fullTree = data
-  console.log("getDependencies(dependencyTree1)", getDependencies(dependencyTree1))
-  console.log("getDependencies(dependencyTree2)", getDependencies(dependencyTree2))
-  console.log("getDependencies(dependencyTree3)", getDependencies(dependencyTree3))
-  console.log("getDependencies(dependencyTree4)", getDependencies(dependencyTree4))
-  console.log("getDependencies(fullTree)", getDependencies(fullTree))
-})
+
+  var result = []
+  result.push("getDependencies(dependencyTree1)", getDependencies(dependencyTree1))
+  result.push("getDependencies(dependencyTree2)", getDependencies(dependencyTree2))
+  result.push("getDependencies(dependencyTree3)", getDependencies(dependencyTree3))
+  result.push("getDependencies(dependencyTree4)", getDependencies(dependencyTree4))
+  result.push("getDependencies(fullTree)", getDependencies(fullTree))
+  return result
+}).hideInput(data)
