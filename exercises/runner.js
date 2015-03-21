@@ -6,6 +6,7 @@ var filecheck = require('workshopper-exercise/filecheck')
 var fs = require('fs')
 var os = require('os')
 var path = require('path')
+var util = require('util')
 
 var verbose = true, showInput = true, initFx, wrapUpFx, customFx, wrapperModulePath
 
@@ -62,9 +63,9 @@ function runner() {
       if (showInput) {
         var displayInput = input.length === 1 ? input[0] :
           input.map(function(o) { return 'function' === typeof o ? o.toString() : o })
-        console.log(__('input'), displayInput)
+        console.log(__('input'), util.inspect(displayInput, { colors: true }).replace(/,\n\s*/g, ", "))
       }
-      console.log(__('submission'), submittedResult)
+      console.log(__('submission'), util.inspect(submittedResult, { colors: true }).replace(/,\n\s*/g, ", "))
     }
 
     if ('run' === mode) {
@@ -75,7 +76,7 @@ function runner() {
     var solutionFx = require(this.solution)
     var solutionResult = obtainResult(solutionFx, input)
     if (verbose) {
-      console.log(__('solution'), solutionResult)
+      console.log(__('solution'), util.inspect(solutionResult, { colors: true }).replace(/,\n\s*/g, ", "))
     }
     callback(null, deepEqual(submittedResult, solutionResult))
   })

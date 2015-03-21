@@ -50,7 +50,7 @@ Use array#some and Array#every to check every user passed to your returned funct
 
 ```js
 function checkUsersValid(goodUsers) {
-  return function(submittedUsers) {
+  return function allUsersValid(submittedUsers) {
     // SOLUTION GOES HERE
   };
 }

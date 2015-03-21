@@ -5,9 +5,9 @@ var runner = require('../runner')
 
 var counter
 
-module.exports = runner.init(function() {
+var exercise = module.exports = runner.init(function() {
   console.log("------------------------")
   counter = 0
 }).quiet(function count() {
-  console.log("Called function %d times.", ++counter)
+  console.log(exercise.__('call_log', ++counter))
 }, random.int(3, 10))

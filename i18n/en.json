@@ -8,15 +8,21 @@
         "module_not_found": "Could not find your file. Make sure the path is correct.",
         "must_export_function": "You should always return a function using the module.exports object."
       },
-      "input": "input:      %j",
-      "submission": "submission: %j",
-      "solution": "solution:   %j"
+      "input": "input:      %s",
+      "submission": "submission: %s",
+      "solution": "solution:   %s"
     }
   },
   "exercises": {
     "Basic: Map": {
       "didnt_use_map": "You did not use Array#map",
       "used_map": "Yay!  You used Array#map"
+    },
+    "Basic: Every Some": {
+      "found_good_lists": "found %d good lists!"
+    },
+    "Higher Order Functions": {
+      "call_log": "Called function %d times."
     }
   }
 }

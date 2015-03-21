@@ -26,7 +26,7 @@ var lists = random.arrayOf(20, function() {
   })
 })
 
-module.exports = runner.custom(function(fx, good, lists) {
+var exercise = module.exports = runner.custom(function(fx, good, lists) {
   var test = fx(good)
 
   var goodLists = 0
@@ -35,5 +35,5 @@ module.exports = runner.custom(function(fx, good, lists) {
     test(list) && ++goodLists
   })
 
-  return 'found ' + goodLists + ' good lists!'
+  return exercise.__('found_good_lists', goodLists)
 }).hideInput(good, lists)
