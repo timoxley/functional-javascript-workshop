@@ -1,5 +1,5 @@
 {
-  "title": "JAVASCRIPT FONCTIONNEL C’EST LE BIEN",
+  "title": "LE JAVASCRIPT FONCTIONNEL C’EST LE BIEN",
   "subtitle" : "\u001b[23mSélectionnez un exercice et tapez \u001b[3mEnter\u001b[23m pour démarrer",
   "common": {
     "exercise": {
@@ -20,7 +20,7 @@
     "Basic: Filter": "Les bases : Filter",
     "Basic: Every Some": "Les bases : Every, Some",
     "Basic: Reduce": "Les bases : Reduce",
-    "Basic: Recursion": "Les bases : Récursion",
+    "Basic: Recursion": "Les bases : Récursivité",
     "Basic: Call": "Les bases : Call",
     "Partial Application without Bind": "Application Partielle sans Bind",
     "Partial Application with Bind": "Application Partielle avec Bind",
@@ -29,7 +29,7 @@
     "Blocking Event Loop": "Boucle d’Événements Bloquée",
     "Trampoline": "Trampoline",
     "Async Loops": "Boucles Asynchrones",
-    "Recursion": "Récursion",
+    "Recursion": "Récursivité",
     "Currying": "Currying",
     "Function Call": "Appel de Fonction"
   },
@@ -40,6 +40,9 @@
     },
     "Basic: Every Some": {
       "found_good_lists": "%d bonnes listes trouvées !"
+    },
+    "Basic: Call": {
+      "matched_objects": "Ai détecté %d des %d objets valides, sur un total de %d."
     },
     "Higher Order Functions": {
       "call_log": "Fonction appelée %d fois."

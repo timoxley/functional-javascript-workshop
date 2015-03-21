@@ -2,11 +2,10 @@
 
 var random = require('../randomizer')
 var runner = require('../runner')
-var util = require('util')
 
 var input = random.arrayOfInts(20, 0, 10)
 
-module.exports = runner.custom(function(fx, numbers) {
+var exercise = module.exports = runner.custom(function(fx, numbers) {
   var valid = 1
   var objects = [{quack: true}].concat(numbers.map(function(num) {
     switch(num) {
@@ -54,5 +53,5 @@ module.exports = runner.custom(function(fx, numbers) {
     }
   }))
 
-  return util.format('Matched %d of %d valid objects from %d total.', fx.apply(null, objects), valid, objects.length)
-})(input)
+  return exercise.__('matched_objects', fx.apply(null, objects), valid, objects.length)
+}).hideInput(input)

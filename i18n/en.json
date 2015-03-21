@@ -21,6 +21,9 @@
     "Basic: Every Some": {
       "found_good_lists": "found %d good lists!"
     },
+    "Basic: Call": {
+      "matched_objects": "Matched %d of %d valid objects from %d total."
+    },
     "Higher Order Functions": {
       "call_log": "Called function %d times."
     }
