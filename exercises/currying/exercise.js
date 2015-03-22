@@ -6,7 +6,7 @@
 
 var runner = require('../runner')
 
-module.exports = runner.custom(function(curryN) {
+var exercise = module.exports = runner.custom(function(curryN) {
   function add3(one, two, three) {
     return one + two + three
   }
@@ -27,8 +27,10 @@ module.exports = runner.custom(function(curryN) {
     return Array.prototype.concat.apply([], args).join(" ");
   }
 
+  var words = exercise.__('five_words').split(',')
+  var call = words.map(function(word) { return "('" + word + "')" }).join('')
   result.push(
-    "curryN(strConcat, 5)('This')('problem')('has')('been')('solved')) => " +
-    curryN(strConcat, 5)('This')('problem')('has')('been')('solved'))
+    "curryN(strConcat, 5)" + call + ") => " +
+    curryN(strConcat, 5)(words[0])(words[1])(words[2])(words[3])(words[4]))
   return result
 }).hideInput()

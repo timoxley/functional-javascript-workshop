@@ -61,6 +61,9 @@
       "all_loaded": "L’ensemble des %d utilisateurs a été chargé !",
       "bad_result": "j’attendais : \n%s\n mais j’ai reçu :\n%s",
       "took_too_long": "Ça a pris trop longtemps !"
+    },
+    "Currying": {
+      "five_words": "Ce,problème,est,désormais,résolu"
     }
   }
 }
