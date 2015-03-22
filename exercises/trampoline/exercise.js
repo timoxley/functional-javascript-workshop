@@ -2,11 +2,12 @@
 
 var runner = require('../runner')
 
-module.exports = runner.custom(function(repeat) {
-  console.log('repeating 100000 times')
+var exercise = module.exports = runner.custom(function(repeat) {
+  var COUNT = 100000
+  console.log(exercise.__('intro', COUNT))
   var count = 0
   repeat(function() {
     count++
-  }, 100000)
-  console.log('Sucessfully executed %d times.', count)
+  }, COUNT)
+  console.log(exercise.__('result', count))
 }).quiet()

@@ -52,6 +52,15 @@
       "incorrect_return": "Vérifiez la valeur de retour de votre fonction !",
       "incorrect_this": "Vérifiez le `this` de votre fonction ! Conseil : `Function#apply()`.",
       "not_all_args": "Vérifiez que vous transmettez bien TOUS les arguments ! Conseil : `Function#apply()`."
+    },
+    "Trampoline": {
+      "intro": "Répétition de la fonction %d fois",
+      "result": "Ai pu exécuter la fonction avec succès %d fois."
+    },
+    "Async Loops": {
+      "all_loaded": "L’ensemble des %d utilisateurs a été chargé !",
+      "bad_result": "j’attendais : \n%s\n mais j’ai reçu :\n%s",
+      "took_too_long": "Ça a pris trop longtemps !"
     }
   }
 }

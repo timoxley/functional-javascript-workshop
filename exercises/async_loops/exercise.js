@@ -42,17 +42,17 @@ module.exports = runner.custom(function(f) {
     console.log(submittedUsers)
 
     if (!deepEqual(submittedUsers, users)) {
-      self.emit('fail', 'expected: \n' + inspect(users) + '\n but got: \n'+ inspect(submittedUsers))
+      self.emit('fail', self.__('bad_result', inspect(users), inspect(submittedUsers)))
       return callback(null, false)
     }
 
-    console.log('All %d users loaded!', submittedUsers.length)
+    console.log(self.__('all_loaded', submittedUsers.length))
     callback(null, true)
   }
 
   fx.call(fx, ids, load, done)
   var tooLong = setTimeout(function() {
-    self.emit('fail', 'Took too long!')
+    self.emit('fail', self.__('took_too_long'))
     callback(null, false)
   }, 1000)
 }).quiet(users)
