@@ -46,6 +46,12 @@
     },
     "Higher Order Functions": {
       "call_log": "Fonction appelée %d fois."
+    },
+    "Function Spies": {
+      "call_times": "Méthode appelée %d fois.",
+      "incorrect_return": "Vérifiez la valeur de retour de votre fonction !",
+      "incorrect_this": "Vérifiez le `this` de votre fonction ! Conseil : `Function#apply()`.",
+      "not_all_args": "Vérifiez que vous transmettez bien TOUS les arguments ! Conseil : `Function#apply()`."
     }
   }
 }

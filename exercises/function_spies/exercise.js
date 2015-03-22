@@ -13,10 +13,10 @@ var exercise = module.exports = runner.custom(function(Spy, input) {
   var parent = {
     test: function() {
       if (!deepEqual(slice.call(arguments), input[count])) {
-        exercise.emit('fail', "Check you are passing ALL the arguments! Hint: Function#apply")
+        exercise.emit('fail', exercise.__('not_all_args'))
       }
       if (this !== parent) {
-        exercise.emit('fail', "Check the function's this! Hint: Function#apply")
+        exercise.emit('fail', exercise.__('incorrect_this'))
       }
       return arguments
     }
@@ -29,10 +29,10 @@ var exercise = module.exports = runner.custom(function(Spy, input) {
     result.push(util.format.apply(util, args))
     count = i
     if (!deepEqual(originalFn.apply(parent, args), parent.test.apply(parent, args))) {
-      exercise.emit('fail', "Check your function's return value!")
+      exercise.emit('fail', exercise.__('incorrect_return'))
     }
   })
 
-  result.push(util.format('Method called %d times. ', spy.count))
+  result.push(exercise.__('call_times', spy.count))
   return result
 }).quiet(input)

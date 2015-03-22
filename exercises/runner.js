@@ -8,7 +8,7 @@ var os = require('os')
 var path = require('path')
 var util = require('util')
 
-var verbose = true, showInput = true, initFx, wrapUpFx, customFx, wrapperModulePath
+var verbose = true, showInput = true, initFx, wrapUpFx, customFx, wrapperModule
 
 function runner() {
   var exercise = execute(filecheck(exerciser()))
@@ -36,10 +36,17 @@ function runner() {
     callback(null, true)
   });
 
-  if (wrapperModulePath) {
+  if (wrapperModule && wrapperModule.path) {
     exercise.addSetup(function setupWrapperModule(mode, callback) {
-      this.solutionCommand = [ wrapperModulePath, this.solution ].concat(this.solutionArgs)
-      this.submissionCommand = [ wrapperModulePath, this.submission ].concat(this.submissionArgs)
+      var modulePath = wrapperModule.path
+      if (wrapperModule.options && wrapperModule.options.localized) {
+        var localizedPath = modulePath.replace(/\.\w+$/, '_' + exercise.lang + '$&')
+        if (fs.existsSync(path.resolve(process.cwd(), localizedPath))) {
+          modulePath = localizedPath
+        }
+      }
+      this.solutionCommand = [ modulePath, this.solution ].concat(this.solutionArgs)
+      this.submissionCommand = [ modulePath, this.submission ].concat(this.submissionArgs)
 
       if (input.length > 0) {
         var file = path.join(os.tmpdir(), path.basename(this.solution)) + '.input.json'
@@ -116,9 +123,9 @@ runner.quiet = function quiet() {
   return runner.apply(null, arguments)
 }
 
-runner.wrapWith = function wrapWith(modulePath) {
+runner.wrapWith = function wrapWith(modulePath, options) {
   verbose = false
-  wrapperModulePath = modulePath
+  wrapperModule = { path: modulePath, options: options }
   return runner.apply(null, Array.prototype.slice.call(arguments, 1))
 }
 

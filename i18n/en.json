@@ -26,6 +26,12 @@
     },
     "Higher Order Functions": {
       "call_log": "Called function %d times."
+    },
+    "Function Spies": {
+      "call_times": "Method called %d times.",
+      "incorrect_return": "Check your function's return value!",
+      "incorrect_this": "Check the function's this! Hint: Function#apply",
+      "not_all_args": "Check you are passing ALL the arguments! Hint: Function#apply"
     }
   }
 }
