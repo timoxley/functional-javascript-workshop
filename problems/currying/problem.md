@@ -2,9 +2,9 @@ This is an example implementation of `curry3`, which curries up to 3 arguments:
 
 ```js
 function curry3(fun){
-  return function(three){
+  return function(one){
     return function(two){
-      return function (one){
+      return function (three){
         return fun(one, two, three)
       }
     }
@@ -24,10 +24,10 @@ It would work like so:
 
 ```js
 var curryC = curry3(abc)
-var curryB = curryC(2)
+var curryB = curryC(6)
 var curryA = curryB(3)
 
-console.log(curryA(6)) // => 1
+console.log(curryA(2)) // => 1
 ```
 
 # Task
