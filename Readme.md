@@ -6,7 +6,7 @@
 #### No libraries required (i.e. no underscore), just ES5.
 
 <a href="https://nodei.co/npm/functional-javascript-workshop/" ><img src="https://nodei.co/npm/functional-javascript-workshop.png?downloads=true&stars=true"><br />
-<img src="https://nodei.co/npm-dl/functional-javascript-workshop.png?months=6">
+<img src="https://nodei.co/npm-dl/functional-javascript-workshop.png?months=12">
 </a>
 
 
