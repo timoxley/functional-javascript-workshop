@@ -38,7 +38,7 @@ Utilisez `Array#some()` et `Array#every()` pour vérifier que chaque utilisateur
 
 ## Conditions
 
-* Do not use * N’utilisez ni boucle (`for`, `while`…) ni `Array.prototype.forEach`
+* N’utilisez ni boucle (`for`, `while`…) ni `Array.prototype.forEach`
 * Ne créez aucune fonction superflue
 
 ## Ressources

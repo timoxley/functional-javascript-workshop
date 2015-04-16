@@ -1,5 +1,3 @@
-RESUME/FIXME
-
 # Défi
 
 **Utilisez `Function#bind()`** pour implémenter une fonction de log qui vous permet de préfixer vos messages.

@@ -1,4 +1,4 @@
-JavaScript implémente le « duck typing ».  On désigne ainsi un style de typage dynamique dans lequel ce sont les méthodes et propriétés d’un objet qui déterminent sa sémantique, plutôt que de se baser sur l’héritage d’une classe particulière ou l’implémentation d’une interface donnée.  Le nom de ce concept vient du « test du canard », attribué à James Whitcomb Riley, qu’on peut formuler ainsi :
+JavaScript supporte le « duck typing », une méthode dynamique de test des types d’objet.  Elle repose sur l’analyse des méthodes et propriétés d’un objet pour déterminer sa sémantique, plutôt que de se fier à un héritage de classe particulière ou à l’implémentation d’une interface abstraite…  Le nom de ce concept vient du « test du canard », attribué à James Whitcomb Riley, qu’on peut formuler ainsi :
 
   > « Quand je vois un volatile qui marche comme un canard, nage comme un canard, et cancane comme un canard, alors j’appelle ce volatile un canard. »
 

@@ -25,7 +25,7 @@ Votre fonction doit renvoyer un tableau contenant les messages eux-mêmes, *sans
 
 * Essayez d’enchaîner des méthodes de `Array` !
 
-## Exemple
+## Exemple de résultat
 
 ```
 [ 'Tempor quis esse consequat sunt ea eiusmod.',

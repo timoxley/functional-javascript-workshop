@@ -16,7 +16,7 @@ module.exports = loadUsers
 
 ## Défi
 
-Corrigez ce code !  La fonction de rappel `done()` devrait être appelée une fois que tous les utilisateurs ont été chargés.  L’ordre des utilisateurs devrait correspondre à celui des IDs reçus.  Vu que cette fonction est asynchrone, on se fiche de sa valeur de retour.
+Corrigez ce code !  La fonction de rappel `done()` devrait être appelée une fois que tous les utilisateurs ont été chargés.  L’ordre des utilisateurs doit correspondre à celui des IDs reçus.  Vu que cette fonction est asynchrone, on se fiche de sa valeur de retour.
 
 ## Arguments
 
