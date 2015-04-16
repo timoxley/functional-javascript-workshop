@@ -1,0 +1,69 @@
+{
+  "title": "LE JAVASCRIPT FONCTIONNEL C’EST LE BIEN",
+  "subtitle" : "\u001b[23mSélectionnez un exercice et tapez \u001b[3mEnter\u001b[23m pour démarrer",
+  "common": {
+    "exercise": {
+      "fail": {
+        "missing_deps": "Vous avez besoin d’installer toutes les dépendances que vous utilisez dans votre solution (ex. lodash)",
+        "module_not_found": "Impossible de trouver votre fichier.  Assurez-vous que le chemin d’accès au fichier est correct.",
+        "must_export_function": "Vous devriez toujours renvoyer une fonction au travers de `module.exports`."
+      },
+      "input":      "entrée:            %s",
+      "submission": "votre résultat :   %s",
+      "solution":   "résultat attendu : %s"
+    }
+  },
+  "exercise": {
+    "Hello World": "Bonjour Monde",
+    "Higher Order Functions": "Fonctions d’Ordre Supérieur",
+    "Basic: Map": "Les bases : Map",
+    "Basic: Filter": "Les bases : Filter",
+    "Basic: Every Some": "Les bases : Every, Some",
+    "Basic: Reduce": "Les bases : Reduce",
+    "Basic: Recursion": "Les bases : Récursivité",
+    "Basic: Call": "Les bases : Call",
+    "Partial Application without Bind": "Application Partielle sans Bind",
+    "Partial Application with Bind": "Application Partielle avec Bind",
+    "Implement Map with Reduce": "Implémenter Map à l’aide de Reduce",
+    "Function Spies": "Espions sur Fonctions",
+    "Blocking Event Loop": "Boucle d’Événements Bloquée",
+    "Trampoline": "Trampoline",
+    "Async Loops": "Boucles Asynchrones",
+    "Recursion": "Récursivité",
+    "Currying": "Currying",
+    "Function Call": "Appel de Fonction"
+  },
+  "exercises": {
+    "Basic: Map": {
+      "didnt_use_map": "Vous n’avez pas utilisé Array#map",
+      "used_map": "Youpi !  Vous avez utilisé Array#map"
+    },
+    "Basic: Every Some": {
+      "found_good_lists": "%d bonnes listes trouvées !"
+    },
+    "Basic: Call": {
+      "matched_objects": "Détection de %d des %d objets valides, sur un total de %d."
+    },
+    "Higher Order Functions": {
+      "call_log": "Fonction appelée %d fois."
+    },
+    "Function Spies": {
+      "call_times": "Méthode appelée %d fois.",
+      "incorrect_return": "Vérifiez la valeur de retour de votre fonction !",
+      "incorrect_this": "Vérifiez le `this` de votre fonction ! Conseil : `Function#apply()`.",
+      "not_all_args": "Vérifiez que vous transmettez bien TOUS les arguments ! Conseil : `Function#apply()`."
+    },
+    "Trampoline": {
+      "intro": "Répétition de la fonction %d fois",
+      "result": "La fonction a été exécutée avec succès %d fois."
+    },
+    "Async Loops": {
+      "all_loaded": "L’ensemble des %d utilisateurs a été chargé !",
+      "bad_result": "j’attendais : \n%s\n mais j’ai reçu :\n%s",
+      "took_too_long": "Ça a pris trop longtemps !"
+    },
+    "Currying": {
+      "five_words": "Ce,problème,est,désormais,résolu"
+    }
+  }
+}

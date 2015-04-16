@@ -1,0 +1,49 @@
+{
+  "title": "FUNCTIONAL JAVASCRIPT IS GOOD",
+  "subtitle": "\u001b[23mSelect an exercise and hit \u001b[3mEnter\u001b[23m to begin",
+  "common": {
+    "exercise": {
+      "fail": {
+        "missing_deps": "You need to install all of the dependencies you are using in your solution (e.g. lodash)",
+        "module_not_found": "Could not find your file. Make sure the path is correct.",
+        "must_export_function": "You should always return a function using the module.exports object."
+      },
+      "input": "input:      %s",
+      "submission": "submission: %s",
+      "solution": "solution:   %s"
+    }
+  },
+  "exercises": {
+    "Basic: Map": {
+      "didnt_use_map": "You did not use Array#map",
+      "used_map": "Yay!  You used Array#map"
+    },
+    "Basic: Every Some": {
+      "found_good_lists": "found %d good lists!"
+    },
+    "Basic: Call": {
+      "matched_objects": "Matched %d of %d valid objects from %d total."
+    },
+    "Higher Order Functions": {
+      "call_log": "Called function %d times."
+    },
+    "Function Spies": {
+      "call_times": "Method called %d times.",
+      "incorrect_return": "Check your function's return value!",
+      "incorrect_this": "Check the function's this! Hint: Function#apply",
+      "not_all_args": "Check you are passing ALL the arguments! Hint: Function#apply"
+    },
+    "Trampoline": {
+      "intro": "repeating %d times",
+      "result": "Successfully executed %d times."
+    },
+    "Async Loops": {
+      "all_loaded": "All %d users loaded!",
+      "bad_result": "expected: \n%s\n but got:\n%s",
+      "took_too_long": "Took too long!"
+    },
+    "Currying": {
+      "five_words": "This,problem,has,been,solved"
+    }
+  }
+}
