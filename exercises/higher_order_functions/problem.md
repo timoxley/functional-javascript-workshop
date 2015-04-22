@@ -29,7 +29,7 @@ Use the boilerplate code given to you below to get started. Most/all future exer
 
 ## Hints 
 
-* This is really simple.
+* Don't overthink it, the code should be rather simple.
 * It's ok to use a loop in your implementation, bonus points
 if you use recursion instead.
 * You may notice some output. That is coming from the function we passed you.
