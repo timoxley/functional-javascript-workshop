@@ -35,8 +35,7 @@ The order of the users should match the order of supplied user ids. Because this
 ## Hint
 
 * You don't need to use a sort to maintain ordering.
-* Using `console.log` will affect verification. Only use `console.log`
-when using `functional-javascript run`.
+* Using `console.log` will affect verification. Only use `console.log` when using `functional-javascript run`.
 
 ## Boilerplate
 
