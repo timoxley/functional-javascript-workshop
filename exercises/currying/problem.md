@@ -57,7 +57,8 @@ console.log(curryN(add3)(1)(2)(3)) // => 6
 
 ## Conditions
 
-* Do not use any for/while loops or Array#forEach.
+* Do not use any for/while loops or `Array.prototype.forEach`.
+* Do not use `Function.prototype.bind`.
 
 ## Hint
 
