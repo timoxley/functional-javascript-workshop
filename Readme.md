@@ -1,7 +1,7 @@
 # Functional Javascript Workshop
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/timoxley/functional-javascript-workshop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-<img alt="Functional Javascript Workshop" src="https://f.cloud.github.com/assets/43438/1368315/63919ad8-3997-11e3-909e-8193f5a94b59.png" align="right">
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nodeschool/discussions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+<img alt="NodeSchool Discussions" src="https://f.cloud.github.com/assets/43438/1368315/63919ad8-3997-11e3-909e-8193f5a94b59.png" align="right">
 
 ### Teaching fundamental functional programming features of Javascript.
 
