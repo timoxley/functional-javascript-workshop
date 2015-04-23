@@ -2,7 +2,7 @@
 
 Modifiez la fonction récursive `repeat()`, fournie plus bas dans la base de travail, de façon à ce qu’elle ne bloque pas la boucle événementielle (c’est-à-dire pour qu’elle laisse passer les timers et gestionnaires E/S).  Il vous faudra nécessairement en faire une fonction asynchrone.
 
-Un timeout sera déclenché après 100 millisecondes, qui affichera les résultats du test et terminara le processus.  `repeat()` doit relâcher son contrôle sur la boucle événementielle de telle sorte que ce timeout puisse s’exécuter avant toutes les opérations complètes.
+Un timeout sera déclenché après 100 millisecondes, qui affichera les résultats du test et terminara le processus.  `repeat()` doit relâcher son contrôle sur la boucle événementielle pour permettre au timeout de s’exécuter avant que toutes les opérations ne se terminent.
 
 Essayez d’exécuter l’opération passée à `repeat()` autant de fois que possible avant le timeout !
 

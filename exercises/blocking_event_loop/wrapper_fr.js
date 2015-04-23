@@ -18,7 +18,7 @@ function operation() {
 console.error()
 console.error(operation.toString())
 console.error()
-console.error('J’essaie de répéter l’opération %d fois, ce peut se bloquer…', CYCLES)
+console.error('J’essaie de répéter l’opération %d fois, ce peut planter…', CYCLES)
 console.error()
 console.error('Pressez Ctrl+C pour interrompre.')
 console.error()
@@ -31,7 +31,7 @@ setTimeout(function() {
   console.error('J’ai effectué %d opérations.', count)
 
   if (count < 10) {
-    console.log('Fail ! Vous devez effectuer quelques opérations !')
+    console.log('Raté ! Vous auriez dû pouvoir effectuer quelques opérations !')
     process.exit(1)
   }
 
@@ -40,7 +40,7 @@ setTimeout(function() {
     process.exit(1)
   }
 
-  console.log('Opérations interrompues succès !')
+  console.log('Opérations interrompues avec succès !')
   console.error('Interrompu après %d millisecondes.', end - start)
   process.exit()
 }, 100)
