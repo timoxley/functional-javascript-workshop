@@ -5,20 +5,22 @@ var path = require('path')
 var repeat = require(path.resolve(process.cwd(), process.argv[2]))
 
 var count = 0
-var CYCLES = 100000
+var CYCLES = 10000
 
 function operation() {
-  for (var i = 0; i < 1000000; i++) {}  // burn some CPU cycles
+  for (var i = 0; i < 1000000; i++) {
+    // burn some CPU cycles
+  }
   count++ // count how many times this function was called
 }
 
-console.log()
-console.log('l’opération :')
-console.log(operation.toString())
-console.log()
-console.log('J’essaie de répéter l’opération %d fois…', CYCLES)
-console.log('Pressez Ctrl+C pour interrompre.')
-console.log()
+console.error()
+console.error(operation.toString())
+console.error()
+console.error('J’essaie de répéter l’opération %d fois, ce peut se bloquer…', CYCLES)
+console.error()
+console.error('Pressez Ctrl+C pour interrompre.')
+console.error()
 
 var start = Date.now()
 repeat(operation, CYCLES)
