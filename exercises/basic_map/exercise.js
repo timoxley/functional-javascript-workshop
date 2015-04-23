@@ -3,9 +3,11 @@
 var random = require('../randomizer')
 var runner = require('../runner')
 
-var input = random.arrayOfInts(19, 0, 9)
+var input = random.arrayOfInts(19, 3, 9)
 
-var regularMap = Array.prototype.map, usedMap
+var usedMap = false
+var regularMap = Array.prototype.map
+
 Array.prototype.map = function() {
   usedMap = true
   return regularMap.apply(this, arguments)
