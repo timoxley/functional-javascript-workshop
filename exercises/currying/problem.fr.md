@@ -2,9 +2,9 @@ Voici un exemple d’implémentation de `curry3()`, qui « curryfie » jusqu�
 
 ```js
 function curry3(fun){
-  return function(three){
+  return function(one){
     return function(two){
-      return function (one){
+      return function (three){
         return fun(one, two, three)
       }
     }
@@ -24,10 +24,10 @@ function abc(one, two, three) {
 
 ```js
 var curryC = curry3(abc)
-var curryB = curryC(2)
+var curryB = curryC(6)
 var curryA = curryB(3)
 
-console.log(curryA(6)) // => 1
+console.log(curryA(2)) // => 1
 ```
 
 # Défi
