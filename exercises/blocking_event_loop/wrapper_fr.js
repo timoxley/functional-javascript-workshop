@@ -11,7 +11,8 @@ function operation() {
   for (var i = 0; i < 1000000; i++) {
     // burn some CPU cycles
   }
-  count++ // count how many times this function was called
+  // count how many times this function was called
+  count++
 }
 
 console.error()
@@ -28,8 +29,13 @@ repeat(operation, CYCLES)
 setTimeout(function() {
   var end = Date.now()
   console.error('J’ai effectué %d opérations.', count)
-  if (count === CYCLES) console.log('Raté ! Je n’aurais pas du pouvoir aller au bout !')
-  if (end - start < 1500) console.log('Interruption au bout d’environ 1 seconde !')
-  else console.log('Raté ! Interruption au bout de %d millisecondes', end - start)
+
+  if (count >= CYCLES) {
+    console.log('Raté ! Je n’aurais pas du pouvoir aller au bout !')
+    process.exit(1)
+  }
+
+  console.log('Opérations interrompues succès !')
+  console.error('Interrompu après %d millisecondes.', end - start)
   process.exit()
-}, 1000)
+})
