@@ -20,6 +20,7 @@ Fix this code! The callback should be called with all the users loaded.
 The order of the users should match the order of supplied user ids. Because this function is asynchronous, we do not care about its return value.
 
 ## Arguments
+
 * userIds: an Array of numeric user ids.
 * load: a Function used to load user objects. Expects a numeric id and a callback. The callback will be called with the result of loading the user with the specified id (either a user object or null).
 * done: a Function that expects an Array of user objects (as retrieved from `load`).
@@ -34,10 +35,11 @@ The order of the users should match the order of supplied user ids. Because this
 ## Hint
 
 * You don't need to use a sort to maintain ordering.
-* Using console.log will affect verification. Only use console.log
+* Using `console.log` will affect verification. Only use `console.log`
 when using `functional-javascript run`.
 
 ## Boilerplate
+
 ```js
 function loadUsers(userIds, load, done) {
   var users = []
