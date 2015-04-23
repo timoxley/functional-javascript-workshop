@@ -31,6 +31,11 @@ setTimeout(function() {
   var end = Date.now()
   console.error('Performed %d operations.', count)
 
+  if (count < 10) {
+    console.log('Fail! You should have completed some operations!')
+    process.exit(1)
+  }
+
   if (count >= CYCLES) {
     console.log('Fail! Should not have completed all operations!')
     process.exit(1)
@@ -39,4 +44,4 @@ setTimeout(function() {
   console.log('Operations successfully interrupted!')
   console.error('Interrupted after %d milliseconds.', end - start)
   process.exit()
-})
+}, 100)
