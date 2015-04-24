@@ -22,6 +22,11 @@ var exercise = module.exports = runner.custom(function(curryN) {
   result.push("curryA(10) => " + curryA(10)) // => 13
   result.push("curryN(add3)(1)(2)(3) => " + curryN(add3)(1)(2)(3)) // => 6
 
+
+  result.push("curryN(add3)(1)(2, 3) => " + curryN(add3)(1)(2, 3)) // => 6
+  result.push("curryN(add3)(1, 2)(3) => " + curryN(add3)(1, 2)(3)) // => 6
+  result.push("curryN(add3)(1, 2, 3) => " + curryN(add3)(1, 2, 3)) // => 6
+
   function joinWithComma() {
     return Array.prototype.join.call(arguments, ',');
   }

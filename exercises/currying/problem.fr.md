@@ -53,6 +53,9 @@ console.log(curryA(3))  // => 6
 console.log(curryA(10)) // => 13
 
 console.log(curryN(add3)(1)(2)(3)) // => 6
+console.log(curryN(add3)(1)(2, 3)) // => 6
+console.log(curryN(add3)(1, 2)(3)) // => 6
+console.log(curryN(add3)(1, 2, 3)) // => 6
 ```
 
 ## Conditions
