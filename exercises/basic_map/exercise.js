@@ -3,7 +3,7 @@
 var random = require('../randomizer')
 var runner = require('../runner')
 
-var input = random.arrayOfInts(19, 3, 9)
+var input = random.arrayOfInts(20, 0, 9)
 
 var usedMap = false
 var regularMap = Array.prototype.map
