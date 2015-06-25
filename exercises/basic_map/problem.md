@@ -16,7 +16,7 @@ module.exports = doubleAll
 
 ## Arguments
 
-* numbers: An Array of 1 to 20 Integers between 0 and 9
+* numbers: An Array of 0 to 20 Integers between 0 and 9
 
 ## Conditions
 
