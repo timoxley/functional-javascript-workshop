@@ -33,7 +33,7 @@ console.log(output) // => [2,4,6,8,10]
 
 ```js
 
-module.exports = function arrayMap(arr, fn) {
+module.exports = function arrayMap(arr, fn, thisArg) {
   // SOLUTION GOES HERE
 }
 
