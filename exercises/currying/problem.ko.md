@@ -1,4 +1,4 @@
-이 프로그램은 3 인자를 curries up하는 `curry3`의 구현 예제입니다.
+이 프로그램은 세 인자를 curries up하는 `curry3`의 구현 예제입니다.
 
 ```js
 function curry3(fun){
@@ -12,7 +12,7 @@ function curry3(fun){
 }
 ```
 
-이 구현을 이런 간단한 함수에 사용하려한다고 해봅시다.
+이 구현을 이런 간단한 함수에 사용하려 한다고 해봅시다.
 
 ```js
 function abc(one, two, three) {

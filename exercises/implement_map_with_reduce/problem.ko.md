@@ -22,7 +22,7 @@ console.log(output) // => [2,4,6,8,10]
 ## 인자
 
 * input: 어떤 형도 넣을 수 있는 임의의 배열
-* operation: `input`안의 요소에 적용할 수 있는 임의의 함수
+* operation: `input` 안의 요소에 적용할 수 있는 임의의 함수
 
 ## 참고
 

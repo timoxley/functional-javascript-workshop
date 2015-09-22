@@ -29,7 +29,7 @@ function() {
 ```js
 var nums = [1,2,3,4,5]
 
-// slice 함수는 첫 번째 인자로 배열을 받는 것을 재외하고
+// slice 함수는 첫 번째 인자로 배열을 받는 것을 제외하고
 // slice의 일반적인 행동과 같아야 합니다.
 
 slice(nums, 0, 2) // [1, 2]
@@ -48,7 +48,7 @@ nums.slice(1, 2) // [2]
 ## 힌트
 
 * 한 줄이면 충분합니다.
-* 모든 JavaScript 함수는 call, apply, bind같은 메소드를 `Function.prototype` 객체로 부터 상속합니다.
+* 모든 JavaScript 함수는 call, apply, bind 같은 메소드를 `Function.prototype` 객체로부터 상속합니다.
 * Function#call은 호출될 때 `this`의 값을 실행합니다.  `someFunction.call()` 안에서 `this`의 값은 `someFunction`이 됩니다.
 * Function.call 자체는 `Function.prototype`에서 상속되는 함수입니다.
 

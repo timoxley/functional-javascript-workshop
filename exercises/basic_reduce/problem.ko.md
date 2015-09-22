@@ -24,7 +24,7 @@ console.log(countWords(inputWords))
 ## 조건
 
 * for/while 반복문이나 Array#forEach를 사용하지 마세요.
-* 헬퍼같은 불필요한 함수를 만들지 마세요.
+* 헬퍼 같은 불필요한 함수를 만들지 마세요.
 
 ## 참고
 

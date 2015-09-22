@@ -26,15 +26,15 @@ reduce가 올바르게 동작하는지 테스트하기 위해 구현하신 reduc
 
 ## 인자
 
-* arr: reduce할 배열
-* fn: reduce 단계에서 사용할 함수. 일반 Array#reduce 처럼, 이 함수에는 previousValue, currentValue, index, 반복할 배열을 넘겨야 합니다.
+* arr: reduce 할 배열
+* fn: reduce 단계에서 사용할 함수. 일반 Array#reduce처럼, 이 함수에는 previousValue, currentValue, index, 반복할 배열을 넘겨야 합니다.
 * init: reduce의 초기값. Array#reduce와는 다르게, 이 값은 필요합니다. (그리고 항상 제공된다고 가정합니다.)
 
 ## 예제
 
 ```js
 // reduce 함수는 첫 번째 인자로 배열을 받는 것을
-// 재외하고 일반 Array#reduce와 같은 동작을 합니다
+// 제외하고 일반 Array#reduce와 같은 동작을 합니다
 
 reduce([1,2,3], function(prev, curr, index, arr) {
   return prev + curr
@@ -45,8 +45,8 @@ reduce([1,2,3], function(prev, curr, index, arr) {
 ## 조건
 
 * for/while 반복문을 사용하지 마세요.
-* Array#map이나 Array#reduce같은 Array 메소드를 사용하지 마세요.
-* 헬퍼같은 불필요한 함수를 만들지 마세요.
+* Array#map이나 Array#reduce 같은 Array 메소드를 사용하지 마세요.
+* 헬퍼 같은 불필요한 함수를 만들지 마세요.
 
 ## 참고
 

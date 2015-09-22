@@ -22,7 +22,7 @@ module.exports = doubleAll
 
 * Array.prototype.map()을 사용하셔야 합니다.
 * for/while 반복문이나 Array.prototype.forEach를 사용하지 마세요.
-* 헬퍼같은 불필요한 함수를 만들지 마세요.
+* 헬퍼 같은 불필요한 함수를 만들지 마세요.
 
 ## 참고
 

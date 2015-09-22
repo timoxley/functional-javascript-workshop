@@ -4,7 +4,7 @@
 
 ## 인자
 
-* input: 아무 영단어의 문자열(lorem ipsum).
+* input: 임의의 영단어 문자열(lorem ipsum).
 
 ## 템플릿
 

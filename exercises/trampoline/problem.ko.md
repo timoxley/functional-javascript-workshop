@@ -10,7 +10,7 @@ console.log('executed %d times.', count)
 // => executed 100 times.
 ```
 
-하지만 `repeat`를 큰 `num`으로 수행하면 스택 오버플로우가 될 수 있습니다.
+하지만 `repeat`를 큰 `num`으로 수행하면 스택 오버플로가 일어날 수 있습니다.
 
 ```
 var count = 0
@@ -26,7 +26,7 @@ console.log('executed %d times', count)
 
 trampoline을 사용해 지속적으로 동기 호출하도록 밑의 템플릿을 수정하세요.
 
-반복되는 연산이 인자를 사용하지 않(거나 이미 기능에 바인딩되었)고 반환 값이 중요하지 않다고 생각해도 됩니다.
+반복되는 연산이 인자를 사용하지 않고(혹은 이미 기능에 바인딩되었고) 반환 값이 중요하지 않다고 생각해도 됩니다.
 
 ## 조건
 
@@ -43,18 +43,18 @@ trampoline을 사용해 지속적으로 동기 호출하도록 밑의 템플릿�
 
 ```js
 function repeat(operation, num) {
-  // Modify this so it doesn't cause a stack overflow!
+  // 스택 오버플로를 일으키지 않도록 수정하세요!
   if (num <= 0) return
   operation()
   return repeat(operation, --num)
 }
 
 function trampoline(fn) {
-  // You probably want to implement a trampoline!
+  // trampoline을 구현하셔야 합니다.
 }
 
 module.exports = function(operation, num) {
-  // You probably want to call your trampoline here!
+  // 여기서 trampoline을 호출하셔야 합니다!
   return repeat(operation, num)
 }
 ```
