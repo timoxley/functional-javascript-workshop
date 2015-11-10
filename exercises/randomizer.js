@@ -33,7 +33,7 @@ function randomWords(count, options) {
   var result = loremIpsum().split(' ').slice(0, count)
   if (options.capitalized) {
     result = result.map(function(word) {
-      word = word[0].toUpperCase() + word.subString(1)
+      word = word[0].toUpperCase() + word.substring(1)
       return word
     })
   }
