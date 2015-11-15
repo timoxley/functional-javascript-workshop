@@ -1,0 +1,69 @@
+{
+  "title": "FUNCTIONAL JAVASCRIPT IS GOOD",
+  "subtitle": "\u001b[23m연습 문제를 선택하고 \u001b[3m엔터\u001b[23m를 눌러 시작하세요",
+  "common": {
+    "exercise": {
+      "fail": {
+        "missing_deps": "해결책에서 사용하는 모든 의존성을 설치하셔야 합니다. (예: lodash)",
+        "module_not_found": "파일을 찾을 수 없습니다. 경로가 정확한지 확인하세요.",
+        "must_export_function": "항상 module.exports 객체를 사용해 함수를 반환해야 합니다."
+      },
+      "input": "input:      %s",
+      "submission": "submission: %s",
+      "solution": "solution:   %s"
+    }
+  },
+  "exercise": {
+    "Hello World": "헬로우 월드",
+    "Higher Order Functions": "고차 함수",
+    "Basic: Map": "기초: Map",
+    "Basic: Filter": "기초: Filter",
+    "Basic: Every Some": "기초: Every, Some",
+    "Basic: Reduce": "기초: Reduce",
+    "Basic: Recursion": "기초: Recursion",
+    "Basic: Call": "기초: Call",
+    "Partial Application without Bind": "바인드 없는 부분 애플리케이션",
+    "Partial Application with Bind": "바인드 있는 부분 애플리케이션",
+    "Implement Map with Reduce": "Reduce로 Map 구현하기",
+    "Function Spies": "함수 스파이",
+    "Blocking Event Loop": "블로킹 이벤트 루프",
+    "Trampoline": "트램폴린",
+    "Async Loops": "비동기 반복",
+    "Recursion": "재귀",
+    "Currying": "Currying",
+    "Function Call": "함수 호출"
+  },
+  "exercises": {
+    "Basic: Map": {
+      "didnt_use_map": "Array#map을 사용하지 않았습니다.",
+      "used_map": "야호! Array#map을 사용했습니다."
+    },
+    "Basic: Every Some": {
+      "found_good_lists": "%d개의 좋은 목록을 발견했습니다!"
+    },
+    "Basic: Call": {
+      "matched_objects": "Matched %d of %d valid objects from %d total."
+    },
+    "Higher Order Functions": {
+      "call_log": "함수가 %d번 호출되었습니다."
+    },
+    "Function Spies": {
+      "call_times": "메소드가 %d번 호출되었습니다.",
+      "incorrect_return": "함수의 반환값을 확인하세요!",
+      "incorrect_this": "함수의 this를 확인하세요! 힌트: Function#apply",
+      "not_all_args": "인자를 모두 넘겼는지 확인하세요! 힌트: Function#apply"
+    },
+    "Trampoline": {
+      "intro": "%d번 반복 중",
+      "result": "성공적으로 %d번 실행되었습니다."
+    },
+    "Async Loops": {
+      "all_loaded": "모두 %d 사용자를 불러왔습니다!",
+      "bad_result": "expected: \n%s\n but got:\n%s",
+      "took_too_long": "너무 오래 걸립니다!"
+    },
+    "Currying": {
+      "five_words": "This,problem,has,been,solved"
+    }
+  }
+}
