@@ -24,6 +24,10 @@ console.log(output) // => [2,4,6,8,10]
 * input: an arbitrary Array of any type.
 * operation: an arbitrary Function which can be applied to items in `input`.
 
+## Hints
+
+* No need to implement the optional `thisArg` argument of `Array.prototype.map`, bonus points if you do!
+
 ## Resources
 
 * https://en.wikipedia.org/wiki/Reduce_(higher-order_function)
