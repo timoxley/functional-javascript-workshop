@@ -47,7 +47,6 @@ reduce([1,2,3], function(prev, curr, index, arr) {
 
 * N’utilisez pas de boucle (`for`, `while`…)
 * N’utilisez aucune méthode de `Array`, du genre `Array#map()` ou `Array#reduce()`
-* Ne créez aucune fonction superflue
 
 ## Ressources
 

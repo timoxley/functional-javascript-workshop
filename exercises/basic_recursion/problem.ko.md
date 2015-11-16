@@ -46,7 +46,6 @@ reduce([1,2,3], function(prev, curr, index, arr) {
 
 * for/while 반복문을 사용하지 마세요.
 * Array#map이나 Array#reduce 같은 Array 메소드를 사용하지 마세요.
-* 헬퍼 같은 불필요한 함수를 만들지 마세요.
 
 ## 참고
 
