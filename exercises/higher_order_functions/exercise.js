@@ -11,3 +11,5 @@ var exercise = module.exports = runner.init(function() {
 }).quiet(function count() {
   console.log(exercise.__('call_log', ++counter))
 }, random.int(3, 10))
+
+exercise.ignoreReturnValue = true

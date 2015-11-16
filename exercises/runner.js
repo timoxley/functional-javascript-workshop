@@ -83,7 +83,8 @@ function runner() {
     if (verbose) {
       console.log(__('solution'), util.inspect(solutionResult, { colors: true }).replace(/,\n\s*/g, ", "))
     }
-    callback(null, deepEqual(submittedResult, solutionResult))
+    var resultsMatch = exercise.ignoreReturnValue ? true : deepEqual(submittedResult, solutionResult)
+    callback(null, resultsMatch)
   })
 
   if (wrapUpFx) {
