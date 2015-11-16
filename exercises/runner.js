@@ -26,8 +26,9 @@ function runner() {
     }
 
     if (typeof submittedFx !== 'function') {
-        this.emit('fail', __('fail.must_export_function'))
-        return callback(null, false)
+        var message =  __('fail.must_export_function')
+        this.emit('fail', message)
+        return callback(new Error(message), false)
     }
 
     callback(null, true)
