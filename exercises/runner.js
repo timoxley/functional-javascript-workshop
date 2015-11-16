@@ -17,15 +17,12 @@ function runner() {
 
   exercise.addProcessor(function(mode, callback) {
     __ = exercise.__.bind(exercise)
+    var testFile = this.args[0]
     try {
-        submittedFx = require(path.resolve(process.cwd(), this.args[0]));
+        submittedFx = require(path.resolve(process.cwd(), testFile));
     } catch (e) {
-        var message = (e.code === 'MODULE_NOT_FOUND'
-                        ? __('fail.module_not_found')
-                        : __('fail.missing_deps'))
-
-        this.emit('fail', message)
-        return callback(null, false)
+        this.emit('fail', e.stack)
+        return callback(e, false)
     }
 
     if (typeof submittedFx !== 'function') {
