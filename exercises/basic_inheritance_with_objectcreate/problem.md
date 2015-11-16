@@ -51,7 +51,7 @@ console.log('Hello ' + joe) // 'Hello [BetterUser: Mr. Joe Smith]'
 
 * Don't call the User constructor unnecessarily!
 * Don't use `__proto__`
-* Do not create any unecessary functions e.g. helpers.
+* Do not create any unnecessary functions e.g. helpers.
 
 ## Resources
 

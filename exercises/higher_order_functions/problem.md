@@ -27,7 +27,7 @@ Use the boilerplate code given to you below to get started. Most/all future exer
 * https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions_and_function_scope
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype
 
-## Hints 
+## Hints
 
 * Don't overthink it, the code should be rather simple.
 * It's ok to use a loop in your implementation, bonus points

@@ -30,7 +30,7 @@ The order of the users should match the order of supplied user ids. Because this
 * Do not use for/while loops (Array#forEach ok).
 * The order of the results in `done` must be the same as they were specified in `userIds`.
 * Users should be loaded in parallel i.e. the entire job should not take more than 1 second.
-* Do not create any unecessary functions e.g. helpers.
+* Do not create any unnecessary functions e.g. helpers.
 
 ## Hint
 

@@ -22,7 +22,7 @@ module.exports = doubleAll
 
 * Your solution should use Array.prototype.map()
 * Do not use any for/while loops or Array.prototype.forEach.
-* Do not create any unecessary functions e.g. helpers.
+* Do not create any unnecessary functions e.g. helpers.
 
 ## Resources
 

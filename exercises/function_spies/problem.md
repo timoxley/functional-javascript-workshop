@@ -24,7 +24,7 @@ console.log(spy.count) // 3
 ## Conditions
 
 * Do not use any for/while loops or Array#forEach.
-* Do not create any unecessary functions e.g. helpers.
+* Do not create any unnecessary functions e.g. helpers.
 
 ## Hint
 
