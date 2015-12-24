@@ -7,9 +7,9 @@ All other functions are first order functions. [1]
 
 Unlike many other languages with imperative features, JavaScript allows you to utilize higher-order functions because it has "first-class functions". This means functions can be treated just like any other value in JavaScript: just like Strings or Numbers, Function values can be stored as variables, properties on objects or passed to other functions as arguments. Function values are actually Objects (inheriting from `Function.prototype`) so you can even add properties and store values on them, just like any regular Object.
 
-The key difference between Functions and other value types in JavaScript is the call syntax: if a reference to a function is followed by parens and some optional comma-separated values: `someFunctionValue(arg1, arg2, etc)`, then the function body will be executed with the supplied arguments (if any).
+The key difference between Functions and other value types in JavaScript is the call syntax: if a reference to a function is followed by parenthesis and some optional comma-separated values: `someFunctionValue(arg1, arg2, etc)`, then the function body will be executed with the supplied arguments (if any).
 
-In this exercise we're going demonstrate that functions can be passed as values by passing you a function as an argument.
+In this exercise we're going to demonstrate that functions can be passed as values by passing you a function as an argument.
 
 # Task
 
@@ -30,8 +30,7 @@ Use the boilerplate code given to you below to get started. Most/all future exer
 ## Hints
 
 * Don't overthink it, the code should be rather simple.
-* It's ok to use a loop in your implementation, bonus points
-if you use recursion instead.
+* It's ok to use a loop in your implementation, bonus points if you use recursion instead.
 * You may notice some output. That is coming from the function we passed you.
 * You do not need to console.log anything.
 
