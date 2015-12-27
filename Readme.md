@@ -120,6 +120,6 @@ This tutorial was built using rvagg's [workshopper](https://github.com/rvagg/wor
      1	Matthew Hokanson        0.7%
 ```
 
-## Licence
+## License
 
 MIT
