@@ -51,7 +51,8 @@
       "call_times": "메소드가 %d번 호출되었습니다.",
       "incorrect_return": "함수의 반환값을 확인하세요!",
       "incorrect_this": "함수의 this를 확인하세요! 힌트: Function#apply",
-      "not_all_args": "인자를 모두 넘겼는지 확인하세요! 힌트: Function#apply"
+      "not_all_args": "인자를 모두 넘겼는지 확인하세요! 힌트: Function#apply",
+      "incorrect_count": "Check that your Spy is counting the method invocations correctly!"
     },
     "Trampoline": {
       "intro": "%d번 반복 중",

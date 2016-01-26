@@ -51,7 +51,8 @@
       "call_times": "Méthode appelée %d fois.",
       "incorrect_return": "Vérifiez la valeur de retour de votre fonction !",
       "incorrect_this": "Vérifiez le `this` de votre fonction ! Conseil : `Function#apply()`.",
-      "not_all_args": "Vérifiez que vous transmettez bien TOUS les arguments ! Conseil : `Function#apply()`."
+      "not_all_args": "Vérifiez que vous transmettez bien TOUS les arguments ! Conseil : `Function#apply()`.",
+      "incorrect_count": "Vérifiez que votre Spy est compter les appels de méthode correctement!"
     },
     "Trampoline": {
       "intro": "Répétition de la fonction %d fois",

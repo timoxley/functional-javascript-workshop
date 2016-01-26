@@ -32,7 +32,13 @@ var exercise = module.exports = runner.custom(function(Spy, input) {
       exercise.emit('fail', exercise.__('incorrect_return'))
     }
   })
+  count++
 
-  result.push(exercise.__('call_times', spy.count))
+  if (!spy.count || spy.count !== count) {
+    exercise.emit('fail', exercise.__('incorrect_count'))
+  } else {
+    result.push(exercise.__('call_times', spy.count))
+  }
+
   return result
 }).quiet(input)
