@@ -30,7 +30,11 @@ console.log(output) // => [2,4,6,8,10]
 ## Base de travail
 
 ```js
-module.exports = function arrayMap(arr, fn) {
+
+function arrayMap(arr, fn) {
   // VOTRE SOLUTION ICI
 }
+
+module.exports = arrayMap;
+
 ```
