@@ -48,23 +48,23 @@ will build on skills developed by solving previous problems.
 
 #### 2. Writing your solution
 
-Once you have selected a problem, the workshop will remember which problem you are working on. 
+Once you have selected a problem, the workshop will remember which problem you are working on.
 Using your preferred editor, simply create a file to write your solution in. Most problems will
 supply some boilerplate with which to get started. Copy this from the problem description to your
 solution file.
 
 #### 3. Testing your solution
 
-Use the workshop's `run` command to point the workshop at your solution file. Your solution will loaded 
+Use the workshop's `run` command to point the workshop at your solution file. Your solution will be loaded 
 and passed the problem input. This usually won't perform any validation, it will only show the program output.
 
 ```
 $ functional-javascript-workshop run mysolution.js
 ```
- 
+
 #### 4. Verifying your solution
 
-Your solution will be verified against the output of the 'official' solution. 
+Your solution will be verified against the output of the 'official' solution.
 If all of the output matches, then you have successfully solved the problem!
 
 ```
@@ -73,7 +73,7 @@ $ functional-javascript-workshop verify mysolution.js
 
 ## Stuck?
 
-Feedback and criticism is welcome, please log your troubles in [issues](https://github.com/timoxley/functional-javascript-workshop/issues). 
+Feedback and criticism is welcome, please log your troubles in [issues](https://github.com/timoxley/functional-javascript-workshop/issues).
 
 Full curriculum reviews [like this one](https://github.com/timoxley/functional-javascript-workshop/issues/7) are incredibly helpful. More feedback like this please!
 
@@ -87,7 +87,7 @@ We're looking for more practical problems, so if you come across a problem in yo
 
 ## Resources
 
-[A growing collection of quality functional javascript resources can be found in the wiki](https://github.com/timoxley/functional-javascript-workshop/wiki). 
+[A growing collection of quality functional javascript resources can be found in the wiki](https://github.com/timoxley/functional-javascript-workshop/wiki).
 
 
 ## Thanks rvagg
