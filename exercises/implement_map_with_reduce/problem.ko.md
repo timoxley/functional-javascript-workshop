@@ -33,9 +33,11 @@ console.log(output) // => [2,4,6,8,10]
 
 ```js
 
-module.exports = function arrayMap(arr, fn) {
+function arrayMap(arr, fn) {
   // 여기에 해답을 적으세요
 }
+
+module.exports = arrayMap;
 
 ```
 
