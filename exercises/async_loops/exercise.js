@@ -41,6 +41,15 @@ module.exports = runner.custom(function(f) {
     clearTimeout(tooLong)
     console.log(submittedUsers)
 
+    var functionAsAString = fx.toString();
+    if (
+      functionAsAString.indexOf('for') !== -1 ||
+      functionAsAString.indexOf('while') !== -1
+    ) {
+      self.emit('fail', self.__('used_loops'));
+      return callback(null, false);
+    }
+
     if (!deepEqual(submittedUsers, users)) {
       self.emit('fail', self.__('bad_result', inspect(users), inspect(submittedUsers)))
       return callback(null, false)

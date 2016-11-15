@@ -41,7 +41,8 @@
     "Async Loops": {
       "all_loaded": "All %d users loaded!",
       "bad_result": "expected: \n%s\n but got:\n%s",
-      "took_too_long": "Took too long!"
+      "took_too_long": "Took too long!",
+      "used_loops": "Used a loop!",
     },
     "Currying": {
       "five_words": "This,problem,has,been,solved"
