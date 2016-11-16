@@ -40,3 +40,19 @@ function countWords(inputWords) {
 
 module.exports = countWords
 ```
+
+Helps & Hints: 
+The main idea of a reduce function is that you are reducing the values in an array down to a single value.
+  
+When you use the javascript array method for reduce, many of the examples have a one line return for this method, but it can be easier
+to return the result after performing your work. 
+
+```js
+var sum = [0, 1, 2, 3].reduce(function(accumulator, current_value) {
+  
+    accumulator = accumulator + current_value 
+  
+    return accumulator
+}, 0)
+// sum is 6
+```
