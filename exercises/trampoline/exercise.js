@@ -9,5 +9,9 @@ var exercise = module.exports = runner.custom(function(repeat) {
   repeat(function() {
     count++
   }, COUNT)
-  console.log(exercise.__('result', count))
+  if (count !== COUNT) {
+    exercise.emit('fail', exercise.__('count_mismatch', COUNT, count))
+  } else {
+    exercise.emit('pass', exercise.__('count_match', count))
+  }
 }).quiet()

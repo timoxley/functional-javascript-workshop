@@ -55,7 +55,8 @@
     },
     "Trampoline": {
       "intro": "%d번 반복 중",
-      "result": "성공적으로 %d번 실행되었습니다."
+      "count_mismatch": "실패.",
+      "count_match": "성공적으로 %d번 실행되었습니다."
     },
     "Async Loops": {
       "all_loaded": "모두 %d 사용자를 불러왔습니다!",

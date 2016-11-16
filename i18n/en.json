@@ -35,7 +35,8 @@
     },
     "Trampoline": {
       "intro": "repeating %d times",
-      "result": "Successfully executed %d times."
+      "count_mismatch": "Failed! Expected to be executed %d times, but was actually executed %d times.",
+      "count_match": "Successfully executed %d times."
     },
     "Async Loops": {
       "all_loaded": "All %d users loaded!",

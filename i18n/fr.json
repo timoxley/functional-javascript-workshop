@@ -55,7 +55,8 @@
     },
     "Trampoline": {
       "intro": "Répétition de la fonction %d fois",
-      "result": "La fonction a été exécutée avec succès %d fois."
+      "count_mismatch": "Échoué! Exécution prévue %d fois, mais effectivement exécuté %d fois.",
+      "count_match": "La fonction a été exécutée avec succès %d fois."
     },
     "Async Loops": {
       "all_loaded": "L’ensemble des %d utilisateurs a été chargé !",
