@@ -1,9 +1,15 @@
 function curryN(fn, n) {
-  n = n || fn.length
-  return function curriedN(arg) {
-    if (n <= 1) return fn(arg)
-    return curryN(fn.bind(this, arg), n - 1)
-  }
+
+    if (typeof  n !== 'number') n = fn.length;
+
+    function curriedN(prev) {
+        return function () {
+            var args = prev.concat(Array.prototype.slice.apply(arguments));
+            return (args.length >= n) ? fn.apply(null, args) : curriedN(args);
+        };
+    }
+
+    return curriedN([]);
 }
 
-module.exports = curryN
+module.exports = curryN;
