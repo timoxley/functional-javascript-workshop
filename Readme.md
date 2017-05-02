@@ -114,7 +114,7 @@ This tutorial was built using rvagg's [workshopper](https://github.com/rvagg/wor
      1	Yoshua Wuyts            0.7%
      1	flakyfilibuster         0.7%
      1	Arvid Andersson         0.7%
-     1	tim walker              0.7%
+     1	Tim Walker              0.7%
      1	Brendon Murphy          0.7%
      1	Lorcan Coyle            0.7%
      1	Matthew Hokanson        0.7%
