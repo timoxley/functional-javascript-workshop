@@ -1,12 +1,8 @@
-function loadUsers(userIds, load, done) {
-  var completed = 0
-  var users = []
-  userIds.forEach(function(id, index) {
-    load(id, function(user) {
-      users[index] = user
-      if (++completed === userIds.length) return done(users)
-    })
-  })
-}
+const Promise = require('bluebird');
 
-module.exports = loadUsers
+module.exports = function loadUsers(userIds, load, done) {
+  load = Promise.promisify(load); // could be eliminated
+  return Promise.resolve(userIds)
+    .map(id => load(id))
+    .then(done);
+}
