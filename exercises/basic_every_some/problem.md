@@ -34,7 +34,7 @@ testAllValid([
 
 * goodUsers: a list of valid users
 
-Use array#some and Array#every to check every user passed to your returned function exists in the array passed to the exported function.
+Use Array#some and Array#every to check every user passed to your returned function exists in the array passed to the exported function.
 
 ## Conditions
 
