@@ -26,21 +26,21 @@ var exercise = module.exports = runner.custom(function(fx, numbers) {
         var obj = Object.create(null)
         obj.quack = undefined
         return obj
-      case 3:
+      case 4:
         var proto = { quack: true }
         return Object.create(proto)
-      case 4:
+      case 5:
         var proto = Object.create(null)
         proto.quack = true
         return Object.create(proto)
-      case 5:
+      case 6:
         valid++
         var proto = Object.create(null)
         proto.quack = true
         var obj = Object.create(proto)
         obj.quack = undefined
         return obj
-      case 6:
+      case 7:
         valid++
         return {
           quack: true,
