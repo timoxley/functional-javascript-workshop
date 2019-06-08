@@ -1,0 +1,50 @@
+{
+  "title": "JAVASCRIPT FUNCIONAL ES GENIAL",
+  "subtitle": "\u001b[23mElige un ejercicio y oprime \u001b[3mEnter\u001b[23m para comenzar",
+  "common": {
+    "exercise": {
+      "fail": {
+        "missing_deps": "Necesitas instalar todas las dependencias que estés usando en tu solución (e.j. lodash)",
+        "module_not_found": "No se pudo encontrar tu archivo. Asegurate de que la ruta es correcta.",
+        "must_export_function": "Siempre deberías retornar una función usando el objeto module.exports."
+      },
+      "input": "input:      %s",
+      "submission": "sumisión: %s",
+      "solution": "solución:   %s"
+    }
+  },
+  "exercises": {
+    "Basic: Map": {
+      "didnt_use_map": "No usaste Array#map",
+      "used_map": "¡Sí! Usaste Array#map"
+    },
+    "Basic: Every Some": {
+      "found_good_lists": "!Encontré  %d buenas listas!"
+    },
+    "Basic: Call": {
+      "matched_objects": "Encontrados %d de %d objetos validos de %d."
+    },
+    "Higher Order Functions": {
+      "call_log": "La función se llamo %d veces."
+    },
+    "Function Spies": {
+      "call_times": "El método fue llamado %d veces.",
+      "incorrect_return": "¡Verifica el valor de retorno de tu función!",
+      "incorrect_this": "¡Verifica el valor de `this` en tu función! Pista: Function#apply",
+      "not_all_args": "¡Verifica que estés pasando TODOS los argumentos! Pista: Function#apply",
+      "incorrect_count": "!Verifica que tu `Spy` esté contando las invocaciones del método correctamente!"
+    },
+    "Trampoline": {
+      "intro": "Se repitió %d veces",
+      "result": "Se ejecuto exitosamente %d veces."
+    },
+    "Async Loops": {
+      "all_loaded": "¡Todos los %d usuarios fueron cargados!",
+      "bad_result": "esperado: \n%s\n pero se recibió:\n%s",
+      "took_too_long": "¡Tomó demasiado tiempo!"
+    },
+    "Currying": {
+      "five_words": "Este,problema,ha,sido,resuelto"
+    }
+  }
+}
