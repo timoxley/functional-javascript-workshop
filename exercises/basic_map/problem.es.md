@@ -1,6 +1,6 @@
 # Tarea
 
-Convert the following code from a for-loop to Array#map:
+Convierte el siguiente código de un ciclo `for` a un `Array#map`:
 
 ```js
 function doubleAll(numbers) {
@@ -16,11 +16,11 @@ module.exports = doubleAll;
 
 ## Argumentos
 
-- numbers: An Array of 0 to 20 Integers between 0 and 9
+- `numbers`: Un `Array` de 0 a 20 enteros entre 0 y 9.
 
 ## Condiciones
 
-- Your solution should use Array.prototype.map()
+- Tu solución debería user `Array.prototype.map()`
 - No uses ciclos `for/while` o `Array#forEach`.
 - No crees ninguna función innecesaria, e.j. funciones auxiliares.
 
