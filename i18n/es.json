@@ -5,7 +5,7 @@
     "exercise": {
       "fail": {
         "missing_deps": "Necesitas instalar todas las dependencias que estés usando en tu solución (e.j. lodash)",
-        "module_not_found": "No se pudo encontrar tu archivo. Asegurate de que la ruta es correcta.",
+        "module_not_found": "No se pudo encontrar tu archivo. Asegúrate de que la ruta es correcta.",
         "must_export_function": "Siempre deberías retornar una función usando el objeto module.exports."
       },
       "input": "input:      %s",
@@ -36,7 +36,7 @@
     },
     "Trampoline": {
       "intro": "Se repitió %d veces",
-      "result": "Se ejecuto exitosamente %d veces."
+      "result": "Se ejecutó exitosamente %d veces."
     },
     "Async Loops": {
       "all_loaded": "¡Todos los %d usuarios fueron cargados!",
