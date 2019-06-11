@@ -43,7 +43,7 @@ Los problemas están listados en un vago orden de dificultad. Se recomienda comp
 
 #### 2. Escribiendo tu solución
 
-Una vez has elegido un problema, el taller recordará en cual problema estás trabajando. Usando tu editor preferido, simplemente crea un archivo en el cual escribir tu solución. La mayoría de problemas proveerán algún contenido previo con el cual comenzar. Cópialo de la descripción del problema a tu archivo de solución.
+Una vez has elegido un problema, el taller recordará en cual problema estás trabajando. Usando tu editor preferido, simplemente crea un archivo en el cual escribir tu solución. La mayoría de problemas proveerán algúna plantilla con la cual comenzar. Cópialo de la descripción del problema a tu archivo de solución.
 
 #### 3. Probando tu solución
 
