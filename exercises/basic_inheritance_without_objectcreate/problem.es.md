@@ -75,7 +75,7 @@ console.log("Hello " + joe); // 'Hello [BetterUser: Mr. Joe Smith]'
 ```js
 // User is a constructor
 function upgradeUser(User) {
-  // EDIT THESE AS NECESSARY
+  // EDITA ESTO CUANTO NECESITES
   function BetterUser() {}
 
   return BetterUser;

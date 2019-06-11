@@ -1,15 +1,15 @@
 # Tarea
 
-Create a new "BetterUser" type that extends "User" by overriding the User's `.toString` method.
+Crea un nuevo tipo "BetterUser" que extienda "User" y sobreescribe el método `.toString` de "User".
 
-Your exported function will be passed the constructor function for a "User" type that looks like this:
+La función que exportes será pasada a la función del constructor de "User" que se verá así:
 
 ```js
 /**
- * User Constructor.
+ * Constructor de User.
  *
- * @param title {String} Title for User, e.g. 'Mr.', 'Mrs.', 'Dr.', etc.
- * @param name {String} Name of User e.g. 'John Smith'
+ * @param title {String} Prefijo para el Usuario. e.j: "Sr", "Sra", "Srta", etc.
+ * @param name {String} Nombre del Usuario. e.g: 'Pepito Peréz'.
  */
 
 function User(title, name) {
@@ -19,8 +19,8 @@ function User(title, name) {
 }
 
 /**
- * Creates full display name for a user.
- * @return {String} Display name
+ * Crea un nombre completo para un usuario.
+ * @return {String} Nombre a mostrar
  */
 
 User.prototype.displayName = function() {
@@ -28,7 +28,7 @@ User.prototype.displayName = function() {
 };
 
 /**
- * @return {String} Formatted name & title
+ * @return {String} Prefijo y nombre formateado.
  */
 
 User.prototype.toString = function() {
@@ -36,21 +36,21 @@ User.prototype.toString = function() {
 };
 ```
 
-Note: you do not need to copy this into your solution.
+Notas: No necesitas copiar esto en tu solución.
 
 ## Ejemplo
 
-From your exported function, return a `BetterUser` constructor function that extends `User` with a custom `toString` method that works like so:
+De tu función exportada, retorna un función constructora `BetterUser` que extienda `User` con un método personalizado `toString` que funcione de esta manera:
 
 ```js
-var joe = new BetterUser("Mr.", "Joe Smith"); // pass in title and name
-console.log("Hello " + joe); // 'Hello [BetterUser: Mr. Joe Smith]'
+var joe = new BetterUser("Sr.", "Elver Mires"); // pasa prefijo y nombre
+console.log("Hola " + joe); // 'Hola [BetterUser: Sr. Elver Mires]'
 ```
 
 ## Condiciones
 
-- Don't call the User constructor unnecessarily!
-- Don't use `__proto__`
+- ¡No llames el constructor de `User` innecesariamente!
+- No uses `__proto__`
 - No crees ninguna función innecesaria, e.j. funciones auxiliares.
 
 ## Recursos
@@ -62,9 +62,9 @@ console.log("Hello " + joe); // 'Hello [BetterUser: Mr. Joe Smith]'
 ## Plantilla
 
 ```js
-// User is a constructor
+// User es un constructor
 function upgradeUser(User) {
-  // EDIT THESE AS NECESSARY
+  // EDITA ESTO CUANTO NECESITES
   function BetterUser() {}
 
   return BetterUser;
