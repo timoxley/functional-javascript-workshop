@@ -1,41 +1,41 @@
-Recursion is a fundamental programming concept which can lead to elegant and efficient solutions to algorithmic problems. In fact, recursion is so powerful, all iterating behaviour can be defined using recursive functions. You will find recursion indispensable when iterating over nested data structures.
+La recursión es un concepto de programación fundamental el cual puede llevar a soluciones elegantes y eficientes a problemas algorítmicos. De hecho, la recursion es tan poderosa, que todo el comportamiento de iteración puede ser definido usando funciones recursivas. Encontrarás que la recursión es indispensable cuando se itera sobre estructuras de datos anidados.
 
-A recursive function is a function which calls itself. For example, this recursive function will take an array of words, and return an array of those words, uppercased.
+Una función recursiva es una función la cual se llama a sí misma. Por ejemplo, esta función recursiva tomará un `array` de palabras, y retornara un `array` de esas palabras, en mayúscula.
 
 ```js
 function toUpperArray(items) {
-  if (!items.length) return []; // end condition
-  var head = items[0]; // item to operate on
-  head = head.toUpperCase(); // perform action
-  var tail = items.slice(1); // next
-  return [head].concat(toUpperArray(tail)); // recursive step
+  if (!items.length) return []; // condición final
+  var head = items[0]; // elemento con el que trabajar
+  head = head.toUpperCase(); // ejecuta acción
+  var tail = items.slice(1); // siguiente
+  return [head].concat(toUpperArray(tail)); // paso recursivo
 }
 
 toUpperArray(["hello", "world"]); // => ['HELLO', 'WORLD']
 ```
 
-The point of this exercise is to familiarise yourself with recursion by implementing a familiar interface using a recursive function.
+El punto de este ejercicio es familiarizarte con la recursion al implementar una interfaz familiar usando funciones recursivas.
 
 # Tarea
 
-Implement Array#reduce using recursion.
+Implementa `Array#reduce` usando recursión.
 
-To test your reduction works correctly we will use your reduce implementation to execute our solution to the previous basic_reduce problem. i.e. your reduce function will be passed an array of words, and a function, and an initial value which will return an object containing the counts for each word found in the array. You don't need to implement this functionality, it will be supplied to your reduce implementation.
+Para probar que tu recursión funciona correctamente, usaremos tu implementación de `reduce` para ejecutar nuestra solución al previo problema de `basic_reduce`. e.j: tu función de `reduce` se le pasará un `array` de palabras, y una función, y el valor inicial el cual retornará un objeto conteniendo el contado por cada palabra encontrada en el `array`. No necesitas implementar esta función, se te proveerá a tu implementación de `reduce`.
 
-For simplicity, your implementation of reduce **need not replicate the behaviour of a reduce missing an initial value**. You may assume the initial value will always be supplied.
+Para simplificar, tu implementación de `reduce` **debe replicar el comportamiento de un reductor sin un valor inicial**. Puedes asumir que el valor inicial siempré será provisto.
 
 ## Argumentos
 
-- arr: An Array to reduce over
-- fn: Function to use as the reduction step. Like regular Array#reduce, this function must be passed previousValue, currentValue, index and the array we're iterating over.
-- init: Initial value of the reduction. Unlike Array#reduce, this value is required (and you may assume it will always be supplied).
+- `arr`: Un `Array` el cual reducir.
+- `fn`: Function para usar en el paso de reducción. Al igual que `Array#reduce`, esta función debe ser pasada `valorPrevio`, `valorActual`, `indice` y el `array` que estamos iterando.
+- `init`: Valor inicial de la reducción. A diferencia de `Array#reduce`, este valor es requerido (puedes asumir que siempre te será provisto).
 
 ## Ejemplo
 
 ```js
-// Your reduce function should behave the same as a
-// regular Array#reduce, but it will take the array
-// to operate on as the first argument:
+// Tu función de reduce se debería comportar al
+// igual que `Array#reduce`, pero tomará el `array`
+// para operar como el primer argumento:
 
 reduce(
   [1, 2, 3],
