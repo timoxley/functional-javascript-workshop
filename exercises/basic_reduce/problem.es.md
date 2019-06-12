@@ -1,6 +1,6 @@
 # Tarea
 
-Given an Array of strings, use `Array#reduce` to create an object that contains the number of times each string occured in the array. Return the object directly (no need to console.log).
+Dado un `Array` de `strings`, usa `Array#reduce` para crear un objeto que contenga el numero de veces que cada `string` se encuentra en el `array`. Devuelve el objeto directamente (no hay necesidad de usar `console.log`).
 
 ## Ejemplo
 
@@ -19,11 +19,11 @@ console.log(countWords(inputWords));
 
 ## Argumentos
 
-- inputWords: An array of random Strings.
+- `inputWords`: Un `array` de `strings` aleatorios.
 
 ## Condiciones
 
-- Do not use any for/while loops or Array#forEach.
+- No uses ciclos `for/while` o `Array#forEach`.
 - No crees ninguna función innecesaria, e.j. funciones auxiliares.
 
 ## Recursos

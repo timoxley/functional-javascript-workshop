@@ -43,7 +43,7 @@ nums.slice(1, 2); // [2]
 
 ## Condiciones
 
-- Do not use any for/while loops or Array#forEach.
+- No uses ciclos `for/while` o `Array#forEach`.
 - Do not use the `function` keyword :D
 
 ## Pista

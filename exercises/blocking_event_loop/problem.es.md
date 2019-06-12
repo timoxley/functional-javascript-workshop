@@ -8,7 +8,7 @@ Try to perform as many operations as you can before the timeout fires!
 
 ## Condiciones
 
-- Do not use any for/while loops or Array#forEach.
+- No uses ciclos `for/while` o `Array#forEach`.
 - No crees ninguna función innecesaria, e.j. funciones auxiliares.
 
 ## Pista
