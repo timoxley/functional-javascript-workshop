@@ -1,18 +1,18 @@
 function repeat(operation, num) {
-  if (num <= 0) return
+  if (num <= 0) return;
 
-  operation()
+  operation();
 
-  // release control every 10 or so
-  // iterations.
-  // 10 is arbitrary.
+  // libera el control cada 10
+  // iteraciones o similar
+  // 10 es aleatorio.
   if (num % 10 === 0) {
     setTimeout(function() {
-      repeat(operation, --num)
-    })
+      repeat(operation, --num);
+    });
   } else {
-    repeat(operation, --num)
+    repeat(operation, --num);
   }
 }
 
-module.exports = repeat
+module.exports = repeat;

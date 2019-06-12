@@ -1,10 +1,10 @@
 # Tarea
 
-Modify the recursive `repeat` function provided in the boilerplate, such that it does not block the event loop (i.e. Timers and IO handlers can fire). This necessarily requires repeat to be asynchronous.
+Modifica la función recursiva `repeat` provista en la plantilla, de forma que no bloquea el ciclo del evento (e.j. `Timers` y manejadores de `IO` que se puedan disparar). Esto necesariamente requiere que `repeat` sea asíncrono.
 
-A timeout is queued to fire after 100 milliseconds, which will print the results of the test and exit the process. `repeat` should release control of the event loop to allow the timeout to interrupt before all of the operations complete.
+Un `timeout` es puesto en cola luego de 100 milisegundo, el cual imprimirá los resultados de la prueba y saldrá del proceso. `repeat` debería liberar el control del ciclo del evento para permitir que el `timeout` interrupta antes de que todas las operaciones se completen.
 
-Try to perform as many operations as you can before the timeout fires!
+Trata de realizar tantas operaciones como puedas antes de que el `timeout` se dispare.
 
 ## Condiciones
 
@@ -13,8 +13,7 @@ Try to perform as many operations as you can before the timeout fires!
 
 ## Pista
 
-- If your program takes a long time to run, something is probably wrong.
-  Use Control - C to kill the node process.
+- Si tu programa tarda en correr, algo está probablemente mal. Usa `Ctrl+C` para matar el proceso de `node`.
 
 ## Recursos
 
@@ -24,7 +23,7 @@ Try to perform as many operations as you can before the timeout fires!
 
 ```js
 function repeat(operation, num) {
-  // modify this so it can be interrupted
+  // modifica esto para que pueda ser interrumpido
   if (num <= 0) return;
   operation();
   return repeat(operation, --num);
