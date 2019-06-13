@@ -1,26 +1,26 @@
-A higher-order function is a function that does at least one of the following:
+Una función `higher-order` (de alto orden) es una función que hace al menos una de las siguientes cosas:
 
-- Take one or more functions as an input
-- Output a function
+- Toma una o más funciones como argumentos.
+- Retorna una función.
 
-All other functions are first order functions. [1]
+Todas las demás funciones son de primer orden. [1]
 
-Unlike many other languages with imperative features, JavaScript allows you to utilize higher-order functions because it has "first-class functions". This means functions can be treated just like any other value in JavaScript: just like Strings or Numbers, Function values can be stored as variables, properties on objects or passed to other functions as arguments. Function values are actually Objects (inheriting from `Function.prototype`) so you can even add properties and store values on them, just like any regular Object.
+A diferencia de muchos otros lenguajes con capacidades imperativas, JavaScript te permite utilizar funciones `higher-order` porque tiene funciones de "primera clase". Esto significa que las funciones pueden ser tratadas como cualquier otro valor en JavaScript: justo como con números o `strings`, el valor de una función puede ser almacenada como variable, propiedades en objetos o pasadas a otras funciones como argumentos. El valor de una función es de hecho un objeto (que hereda de `Function.prototype`) así que inclusive puedes agregar propiedades y guardar valores en ellas, como con cualquier objeto.
 
-The key difference between Functions and other value types in JavaScript is the call syntax: if a reference to a function is followed by parenthesis and some optional comma-separated values: `someFunctionValue(arg1, arg2, etc)`, then the function body will be executed with the supplied arguments (if any).
+La diferencia clave entre las funciones y cualquier otro tipo de valor en JavaScript es la sintaxis de llamado: Si una referencia a una función le sigue unos paréntesis y valores opciones separado por coma: `algunaFuncion(a, b, ...etc)`, entonces el cuerpo de la función sera ejecutado con los argumentos provistos (si hay).
 
-In this exercise we're going to demonstrate that functions can be passed as values by passing you a function as an argument.
+En este ejercicio vamos a demostrar que las funciones pueden ser pasadas como valores al pasar una función como argumento.
 
 # Tarea
 
-Implement a function that takes a function as its first argument, a number `num` as its second argument, then executes the passed in function `num` times.
+Implementa una función que toma una función como su primer argumento, un numero `num` como su segundo argumento, entonces ejecuta la función pasada `num` veces.
 
-Use the boilerplate code given to you below to get started. Most/all future exercises will provide boilerplate.
+Usa la plantilla de código dada a ti en la parte inferior, La mayoría o todos los ejercicios proveerán una plantilla.
 
 ## Argumentos
 
-- operation: A Function, takes no arguments, returns no useful value.
-- num: the number of times to call `operation`
+- `operation`: Una function, no toma argumentos y no retorna ningún valor de uso.
+- `num`: El numero de veces que se debe llamar la función `operation`.
 
 ## Recursos
 
@@ -29,10 +29,10 @@ Use the boilerplate code given to you below to get started. Most/all future exer
 
 ## Pista
 
-- Don't overthink it, the code should be rather simple.
-- It's ok to use a loop in your implementation, bonus points if you use recursion instead.
-- You may notice some output. That is coming from the function we passed you.
-- You do not need to console.log anything.
+- No lo pienses de mas, el código debería ser simple.
+- Está bien usar un ciclo en tu implementación, puntos extra si usas recursion en vez.
+- Quizás notes algún valor de retorno. Viene de la función que te otorgamos.
+- No necesitas usar `console.log` para nada.
 
 ## Plantilla
 
@@ -41,6 +41,6 @@ function repeat(operation, num) {
   // TU SOLUCIÓN
 }
 
-// Do not remove the line below
+// No remuevas o edites esta linea
 module.exports = repeat;
 ```
