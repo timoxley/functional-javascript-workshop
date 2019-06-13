@@ -1,15 +1,15 @@
 # Tarea
 
-Use Array#reduce to implement a simple version of Array#map.
+Usa `Array#reduce` para implementar una versión simple de `Array#map`.
 
 ## Resultado esperado
 
-A function `map` that applies a function to each item in an array and collects the results in a new Array.
+Una función `map` que aplique una función a cada elemento en el `array` y recolecte el resultado en un nuevo `Array`.
 
 ```js
 var nums = [1, 2, 3, 4, 5];
 
-// `map` is your exported function
+// `map` es la función que exportas
 var output = map(nums, function double(item) {
   return item * 2;
 });
@@ -19,12 +19,12 @@ console.log(output); // => [2,4,6,8,10]
 
 ## Argumentos
 
-- input: an arbitrary Array of any type.
-- operation: an arbitrary Function which can be applied to items in `input`.
+- `input`: Un `Array` aleatorio de cualquier tipo.
+- `operation`: Una función arbitraria la cual puede ser aplicada a los elementos en `input`.
 
 ## Pista
 
-- No need to implement the optional `thisArg` argument of `Array.prototype.map`, bonus points if you do!
+- No hay necesidad de implementar el argumento opcional `thisArg` de `Array.prototype.map`, ¡puntos adicionales si lo haces!
 
 ## Recursos
 
@@ -35,7 +35,7 @@ console.log(output); // => [2,4,6,8,10]
 
 ```js
 function arrayMap(arr, fn) {
-  //SOLUTION GOES HERE
+  // TU SOLUCIÓN
 }
 
 module.exports = arrayMap;
