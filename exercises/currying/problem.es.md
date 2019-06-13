@@ -1,4 +1,4 @@
-This is an example implementation of `curry3`, which curries up to 3 arguments:
+Este es un ejemplo de la implementación de `curry3`, el cual hace "curry" de hasta 3 argumentos:
 
 ```js
 function curry3(fun) {
@@ -12,7 +12,7 @@ function curry3(fun) {
 }
 ```
 
-If we were to use this implementation with this sample function:
+Si fuésemos a utilizar está implementación con una función de prueba:
 
 ```js
 function abc(one, two, three) {
@@ -20,7 +20,7 @@ function abc(one, two, three) {
 }
 ```
 
-It would work like so:
+Funcionaría así:
 
 ```js
 var curryC = curry3(abc);
@@ -32,12 +32,12 @@ console.log(curryA(2)); // => 1
 
 # Tarea
 
-In this challenge, we're going to implement a 'curry' function for an arbitrary number of arguments.
+En este reto, vamos a implementar una función de "curry" para un numero arbitrario de argumentos.
 
-`curryN` will take two parameters:
+`curryN` tomará dos parámetros:
 
-- fn: The function we want to curry.
-- n: Optional number of arguments to curry. If not supplied, `curryN` should use the fn's arity as the value for `n`.
+- `fn`: La función que queremos convertir en "curry".
+- `n`: Un numero opcional de argumentos que se van a convertir en "curry". Si no se provee `curryN` debería usar el numero de argumento de `fn` como valor de `n`.
 
 ## Ejemplo
 
@@ -57,11 +57,11 @@ console.log(curryN(add3)(1)(2)(3)); // => 6
 
 ## Condiciones
 
-- Do not use any for/while loops or `Array.prototype.forEach`.
+- No uses ciclos `for/while` o `Array#forEach`.
 
 ## Pista
 
-- You can detect the number of expected arguments to a function (it's arity) by checking a function's .length property.
+- Puedes detectar el numero de argumentos provistos a una función (su aridad) al revisar la propiedad `.length` de la función.
 
 ## Plantilla
 
