@@ -1,8 +1,7 @@
 # Tarea
 
-Override a specified method of an object with new functionality while still maintaining all of the old behaviour.
-
-Create a spy that keeps track of how many times a function is called.
+Sobrescribe la función especifica de un objeto con una nueva funcionalidad mientras mantienes el comportamiento anterior.
+Crea un espía que mantiene cuenta de cuantas veces una función fue llamada;
 
 ## Ejemplo
 
@@ -18,8 +17,8 @@ console.log(spy.count); // 3
 
 ## Argumentos
 
-- target: an object containing the method `method`
-- method: a string with the name of the method on `target` to spy on.
+- `target`: Un objeto conteniendo el método `method`.
+- `method`: Un `string` con el nombre del método en `target` que debería espiar.
 
 ## Condiciones
 
@@ -28,7 +27,7 @@ console.log(spy.count); // 3
 
 ## Pista
 
-- Functions have context, input and output. Make sure you consider the context, input to _and output from_ the function you are spying on.
+- Las funciones tienen contexto, entrada y retorno. Asegurate de considerar el contexto, entrada y _el retorno de_ la función que estás espiando.
 
 ## Plantilla
 

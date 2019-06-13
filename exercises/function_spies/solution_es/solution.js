@@ -1,19 +1,19 @@
 function Spy(target, method) {
-  var originalFunction = target[method]
-
-  // use an object so we can pass by reference, not value
-  // i.e. we can return result, but update count from this scope
+  var originalFunction = target[method];
+  // usa un objeto de manera que podamos pasar
+  //por referencia, no por valor, e.j: podemos
+  // devolver el resultado, pero actualizar el contador de este `scope
   var result = {
     count: 0
-  }
+  };
 
-  // replace method with spy method
+  // reemplaza el método con la función espiá.
   target[method] = function() {
-    result.count++ // track function was called
-    return originalFunction.apply(this, arguments) // invoke original function
-  }
+    result.count++; // revisa que la función fue llamada
+    return originalFunction.apply(this, arguments); // invoca la función original
+  };
 
-  return result
+  return result;
 }
 
-module.exports = Spy
+module.exports = Spy;
