@@ -1,10 +1,10 @@
 # Tarea
 
-Write a function that takes an input string and returns it uppercased.
+Escribe una función que tome como argumento un `string` y lo retorne en mayúsculas.
 
 ## Argumentos
 
-- input: a String of random words (lorem ipsum).
+- `input`: Un `string` de palabras aleatorias (lorem ipsum).
 
 ## Plantilla
 
