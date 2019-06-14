@@ -1,32 +1,32 @@
 # Tarea
 
-**Use Function#bind** to implement a logging function that allows you to namespace messages.
+**Usa `Function#bind`** para implementar una función que imprima y te permita crear un `namespace` para los mensajes.
 
-Your implementation should take a namespace string, and return a function that prints messages to the console with the namespace prepended.
+Tu implementación debería tomar un `string` como `namespace`, y devolver una función que imprima el mensaje a la consola con el `namespace` como prefijo.
 
-Make sure _all_ arguments passed to the returned logging function are printed.
+Asegurate que _todos_ los argumentos pasados a la función que retornes sean impresos.
 
-** Print the output to the console directly **
+**Imprime los argumentos directamente en la consola**
 
 ## Argumentos
 
-- namespace: a String to prepend to each message passed to the returned function.
+- `namespace`: Un `string` que será el sufijo a cada mensaje enviado a la función retornada.
 
 ## Ejemplo
 
 ```js
 var info = logger("INFO:");
-info("this is an info message");
-// INFO: this is an info message
+info("este es un mensaje informativo");
+// INFO: este es un mensaje informativo
 
-var warn = logger("WARN:");
-warn("this is a warning message", "with more info");
-// WARN: this is a warning message with more info
+var warn = logger("AVISO:");
+warn("este es un aviso", "con mas información");
+// AVISO: este es un aviso con mas información
 ```
 
 ## Condiciones
 
-- Use Function#bind
+- Usa `Function#bind`.
 
 ## Plantilla
 
