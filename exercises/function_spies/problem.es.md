@@ -8,9 +8,9 @@ Crea un espía que mantiene cuenta de cuantas veces una función fue llamada;
 ```js
 var spy = Spy(console, "error");
 
-console.error("calling console.error");
-console.error("calling console.error");
-console.error("calling console.error");
+console.error("llamando `console.error`");
+console.error("llamando `console.error`");
+console.error("llamando `console.error`");
 
 console.log(spy.count); // 3
 ```

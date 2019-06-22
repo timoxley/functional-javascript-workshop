@@ -20,7 +20,7 @@ module.exports = loadUsers;
 
 ## Parámetros
 
-- `userIds`: Un Array de IDs de usuario numéricos.
+- `userIds`: Un `Array` de IDs de usuario numéricos.
 - `load`: Una función usada para cargar un objeto de tipo usuario. Recibe un ID numérico y un callback. El callback será llamado con el resultado de cargar el usuario con el ID provisto (puede ser un objeto usuario o `null`).
 - `done`: Una función que recibe un Array de objetos usuario (como los devueltos en `load`).
 
