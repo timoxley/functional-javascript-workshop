@@ -8,5 +8,5 @@ var path = require('path')
 Workshopper({
     name   : 'functional-javascript'
   , appDir : __dirname
-  , languages   : ['en', 'fr', 'ko']
+  , languages   : ['en', 'fr', 'ko', 'es']
 })
