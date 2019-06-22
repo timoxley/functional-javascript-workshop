@@ -1,12 +1,12 @@
 # Tarea
 
-Implement a recursive function that returns all of the unique dependencies, and sub-dependencies of a module, sorted alphabetically. Dependencies should be printed as dependency@version e.g. 'inflection@1.2.6'.
+Implementa una función recursiva que retorne todas las dependencias únicas, y sub-dependencias de un modulo, organizado alfabéticamente. Las dependencias deberían ser impresas en forma `dependencia@version`, por ejemplo `inflection@1.3.6`.
 
-Multiple versions of the same module are allowed, but duplicates modules of the same version should be removed.
+Se permite tener múltiples versiones de un mismo modulo, pero los módulos duplicados de la misma version deben ser removidos.
 
 ## Argumentos:
 
-- tree: A dependency tree. See below for an example of the structure.
+- `tree`: Una árbol de dependencias. Abajo encontrarás un ejemplo de la estructura.
 
 ## Ejemplo
 
@@ -41,9 +41,10 @@ getDependencies(loremIpsum); // => [ 'inflection@1.2.6', 'optimist@0.3.7', 'word
 ```js
 function getDependencies(tree) {
   // TU SOLUCIÓN
-  // Note: Feel free to add additional arguments
-  // to this function for use with recursive calls.
-  // Or not! There are many ways to recurse.
+  // Nota: Sientete libre de agregar
+  // argumentos adicionales a esta funcion
+  // para usar con un llamado recursivo,
+  // ¡o no lo hagas!, hay varias maneras de hacer recursión.
 }
 
 module.exports = getDependencies;
