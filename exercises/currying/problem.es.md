@@ -32,12 +32,12 @@ console.log(curryA(2)); // => 1
 
 # Tarea
 
-En este reto, vamos a implementar una función de "curry" para un numero arbitrario de argumentos.
+En este reto, vamos a implementar una función de "curry" para un número arbitrario de argumentos.
 
 `curryN` tomará dos parámetros:
 
 - `fn`: La función que queremos convertir en "curry".
-- `n`: Un numero opcional de argumentos que se van a convertir en "curry". Si no se provee `curryN` debería usar el numero de argumento de `fn` como valor de `n`.
+- `n`: Un número opcional de argumentos que se van a convertir en "curry". Si no se provee `curryN` debería usar el número de argumento de `fn` como valor de `n`.
 
 ## Ejemplo
 
@@ -61,7 +61,7 @@ console.log(curryN(add3)(1)(2)(3)); // => 6
 
 ## Pista
 
-- Puedes detectar el numero de argumentos provistos a una función (su aridad) al revisar la propiedad `.length` de la función.
+- Puedes detectar el número de argumentos provistos a una función (su aridad) al revisar la propiedad `.length` de la función.
 
 ## Plantilla
 

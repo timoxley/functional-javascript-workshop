@@ -54,7 +54,7 @@ Object.prototype.hasOwnProperty.call(object, "quack"); // => true
 
 # Tarea:
 
-Escribe una función `duckCount` que retorne el numero de argumentos provistos que contienen una propiedad "quack" definida en ellos. No cuentes valores heredados de los prototipos.
+Escribe una función `duckCount` que retorne el número de argumentos provistos que contienen una propiedad "quack" definida en ellos. No cuentes valores heredados de los prototipos.
 
 Ejemplo:
 

@@ -8,10 +8,30 @@
         "module_not_found": "No se pudo encontrar tu archivo. Asegúrate de que la ruta es correcta.",
         "must_export_function": "Siempre deberías retornar una función usando el objeto module.exports."
       },
-      "input": "input:      %s",
+      "input": "input:         %s",
       "submission": "sumisión: %s",
       "solution": "solución:   %s"
     }
+  },
+  "exercise": {
+    "Hello World": "Hola Mundo",
+    "Higher Order Functions": "Funciones `higher-order` (de alto orden)",
+    "Basic: Map": "Fundamentos: `Map`",
+    "Basic: Filter": "Fundamentos: `Filter`",
+    "Basic: Every Some": "Fundamentos: `Every`, `Some`",
+    "Basic: Reduce": "Fundamentos: `Reduce`",
+    "Basic: Recursion": "Fundamentos: Recursividad",
+    "Basic: Call": "Fundamentos: `Call`",
+    "Partial Application without Bind": "Aplicación parcial sin Bind",
+    "Partial Application with Bind": "Aplicación parcial con Bind",
+    "Implement Map with Reduce": "Implementar `Map` con la ayuda de `Reduce`",
+    "Function Spies": "Espiás en las funciones",
+    "Blocking Event Loop": "Bloqueando ciclos de eventos",
+    "Trampoline": "Trampolines",
+    "Async Loops": "Ciclos asíncronos",
+    "Recursion": "Recursividad",
+    "Currying": "`Currying`",
+    "Function Call": "Llamada de funciones"
   },
   "exercises": {
     "Basic: Map": {

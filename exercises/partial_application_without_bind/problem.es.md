@@ -1,6 +1,6 @@
-La aplicación parcial te permite crear nuevas funciónes de funciónes existentes, mientras permite ajustar algún numero de argumentos. Luego de ajustar algunos argumentos para ser aplicados parcialmente, obtienes una nueva función para obtener el resto de los argumentos y quizás ejecutar la función original.
+La aplicación parcial te permite crear nuevas funciónes de funciónes existentes, mientras permite ajustar algún número de argumentos. Luego de ajustar algunos argumentos para ser aplicados parcialmente, obtienes una nueva función para obtener el resto de los argumentos y quizás ejecutar la función original.
 
-Formalmente: La aplicación parcial se refiere al proceso de ajustar un numero de argumentos para una función, produciendo una función con una aridad (cantidad de argumentos) menor.
+Formalmente: La aplicación parcial se refiere al proceso de ajustar un número de argumentos para una función, produciendo una función con una aridad (cantidad de argumentos) menor.
 
 Como ejemplo, digamos que tenemos una función `add`, que toma dos argumentos y los suma:
 
@@ -84,7 +84,7 @@ module.exports = logger;
 
 ## Pista
 
-Recuerda que `console.log` toma cualquier numero de argumentos y los imprime, separados por espacios:
+Recuerda que `console.log` toma cualquier número de argumentos y los imprime, separados por espacios:
 
 ```js
 console.log("hello", "world"); // => 'hello world'

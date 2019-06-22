@@ -13,14 +13,14 @@ En este ejercicio vamos a demostrar que las funciones pueden ser pasadas como va
 
 # Tarea
 
-Implementa una función que toma una función como su primer argumento, un numero `num` como su segundo argumento, entonces ejecuta la función pasada `num` veces.
+Implementa una función que toma una función como su primer argumento, un número `num` como su segundo argumento, entonces ejecuta la función pasada `num` veces.
 
 Usa la plantilla de código dada a ti en la parte inferior, La mayoría o todos los ejercicios proveerán una plantilla.
 
 ## Argumentos
 
 - `operation`: Una function, no toma argumentos y no retorna ningún valor de uso.
-- `num`: El numero de veces que se debe llamar la función `operation`.
+- `num`: El número de veces que se debe llamar la función `operation`.
 
 ## Recursos
 

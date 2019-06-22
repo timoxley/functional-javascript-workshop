@@ -1,6 +1,6 @@
 # Tarea
 
-Dado un `Array` de `strings`, usa `Array#reduce` para crear un objeto que contenga el numero de veces que cada `string` se encuentra en el `array`. Devuelve el objeto directamente (no hay necesidad de usar `console.log`).
+Dado un `Array` de `strings`, usa `Array#reduce` para crear un objeto que contenga el número de veces que cada `string` se encuentra en el `array`. Devuelve el objeto directamente (no hay necesidad de usar `console.log`).
 
 ## Ejemplo
 

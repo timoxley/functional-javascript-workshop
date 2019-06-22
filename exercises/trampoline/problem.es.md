@@ -1,4 +1,4 @@
-The boilerplate includes a definition of `repeat`. `repeat` will take a Function operation, and a Number num, and invoke operation num times:
+La plantilla incluye una definición de `repeat`. `repeat` tomará como argumentos una función y un número `num`, e invocará la función `num` veces:
 
 ```js
 var count = 0;
@@ -6,11 +6,11 @@ repeat(function() {
   count++;
 }, 100);
 
-console.log("executed %d times.", count);
-// => executed 100 times.
+console.log("se ejecutó %d veces.", count);
+// => se ejecuto 100 veces.
 ```
 
-BUT note that executing `repeat` with a large `num` causes a stack overflow:
+PERO nota que ejecutar `repeat` con un número grande en `num` genera un `stack overflow`:
 
 ```
 var count = 0
@@ -18,43 +18,42 @@ repeat(function() {
   count++
 }, 100000)
 
-console.log('executed %d times', count)
+console.log('se ejecutó %d veces', count)
 // => RangeError: Maximum call stack size exceeded
 ```
 
 # Tarea
 
-Modify the boilerplate below such that it uses a trampoline to continuously call itself synchronously.
+Modifica la plantilla abajo de forma que use un trampolín para llamarse continuamente a si mismo de forma sincronizada.
 
-You can assume that the operation passed to repeat does not take arguments (or they are already bound to the function) and the return value is not important.
+Puedes asumir que la operación pasada a `repeat` no recibe argumentos (o que han sido conectados previamente a la función) y el valor de retorno de la función no es importante.
 
 ## Condiciones
 
-- Do not change the implementation of repeat to include any loops
-  (you may change it in other ways though).
+- No cambies la implementación de `repeat` para que incluya ciclos (aunque la puedes cambiar de otras maneras).
 
 ## Pista
 
-- Modify `repeat` so it returns the 'next step', if there is one.
-- A trampoline continues to synchronously execute steps, getting new steps, until there are no more steps. You can use a loop here!
-- If your program takes a long time to run, something is probably wrong. Use Control - C to kill the node process.
+- Modifica `repeat` para que retorne el "siguiente paso, si lo hay.
+- Un trampolín continua ejecutando los pasos de forma sincronizada, obteniendo nuevos pasos hasta que no haya mas pasos. !Puedes usar un ciclo aquí!.
+- Si tu programa toma mucho tiempo en correr, probablemente algo se encuentre mal. Usa `Ctrl+C` para matar el proceso de `Node`.
 
 ## Plantilla
 
 ```js
 function repeat(operation, num) {
-  // Modify this so it doesn't cause a stack overflow!
+  // Modifica esto de manera que no cause un `stack overflow`!
   if (num <= 0) return;
   operation();
   return repeat(operation, --num);
 }
 
-function trampoline(fn) {
-  // You probably want to implement a trampoline!
+function trampolíne(fn) {
+  // ¡Probablemente quieras implementar un trampolín!
 }
 
 module.exports = function(operation, num) {
-  // You probably want to call your trampoline here!
+  // ¡Probablemente quieras llamar tu trampolín aquí!
   return repeat(operation, num);
 };
 ```
