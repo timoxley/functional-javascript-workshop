@@ -37,7 +37,7 @@ console.log(output) // => [2,4,6,8,10]
 
 ```js
 
-function arrayMap(arr, fn) {
+function arrayMap(arr, fn, thisArg) {
   //SOLUTION GOES HERE
 }
 
